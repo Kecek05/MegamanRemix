@@ -234,7 +234,7 @@ TextureImporter:
       213: 21300152
     second: sprites1_76
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -251,9 +251,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -262,9 +265,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -285,10 +288,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -300,6 +308,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -312,6 +321,46 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1944,9 +1993,86 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      sprites1_0: 21300000
+      sprites1_1: 21300002
+      sprites1_10: 21300020
+      sprites1_11: 21300022
+      sprites1_12: 21300024
+      sprites1_13: 21300026
+      sprites1_14: 21300028
+      sprites1_15: 21300030
+      sprites1_16: 21300032
+      sprites1_17: 21300034
+      sprites1_18: 21300036
+      sprites1_19: 21300038
+      sprites1_2: 21300004
+      sprites1_20: 21300040
+      sprites1_21: 21300042
+      sprites1_22: 21300044
+      sprites1_23: 21300046
+      sprites1_24: 21300048
+      sprites1_25: 21300050
+      sprites1_26: 21300052
+      sprites1_27: 21300054
+      sprites1_28: 21300056
+      sprites1_29: 21300058
+      sprites1_3: 21300006
+      sprites1_30: 21300060
+      sprites1_31: 21300062
+      sprites1_32: 21300064
+      sprites1_33: 21300066
+      sprites1_34: 21300068
+      sprites1_35: 21300070
+      sprites1_36: 21300072
+      sprites1_37: 21300074
+      sprites1_38: 21300076
+      sprites1_39: 21300078
+      sprites1_4: 21300008
+      sprites1_40: 21300080
+      sprites1_41: 21300082
+      sprites1_42: 21300084
+      sprites1_43: 21300086
+      sprites1_44: 21300088
+      sprites1_45: 21300090
+      sprites1_46: 21300092
+      sprites1_47: 21300094
+      sprites1_48: 21300096
+      sprites1_49: 21300098
+      sprites1_5: 21300010
+      sprites1_50: 21300100
+      sprites1_51: 21300102
+      sprites1_52: 21300104
+      sprites1_53: 21300106
+      sprites1_54: 21300108
+      sprites1_55: 21300110
+      sprites1_56: 21300112
+      sprites1_57: 21300114
+      sprites1_58: 21300116
+      sprites1_59: 21300118
+      sprites1_6: 21300012
+      sprites1_60: 21300120
+      sprites1_61: 21300122
+      sprites1_62: 21300124
+      sprites1_63: 21300126
+      sprites1_64: 21300128
+      sprites1_65: 21300130
+      sprites1_66: 21300132
+      sprites1_67: 21300134
+      sprites1_68: 21300136
+      sprites1_69: 21300138
+      sprites1_7: 21300014
+      sprites1_70: 21300140
+      sprites1_71: 21300142
+      sprites1_72: 21300144
+      sprites1_73: 21300146
+      sprites1_74: 21300148
+      sprites1_75: 21300150
+      sprites1_76: 21300152
+      sprites1_8: 21300016
+      sprites1_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

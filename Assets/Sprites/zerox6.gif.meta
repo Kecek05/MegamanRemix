@@ -492,7 +492,7 @@ TextureImporter:
       213: 21300324
     second: zerox6_162
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -509,9 +509,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -521,8 +524,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -543,10 +546,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -558,6 +566,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -570,6 +579,46 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -4008,9 +4057,172 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      zerox6_0: 21300000
+      zerox6_1: 21300002
+      zerox6_10: 21300020
+      zerox6_100: 21300200
+      zerox6_101: 21300202
+      zerox6_102: 21300204
+      zerox6_103: 21300206
+      zerox6_104: 21300208
+      zerox6_105: 21300210
+      zerox6_106: 21300212
+      zerox6_107: 21300214
+      zerox6_108: 21300216
+      zerox6_109: 21300218
+      zerox6_11: 21300022
+      zerox6_110: 21300220
+      zerox6_111: 21300222
+      zerox6_112: 21300224
+      zerox6_113: 21300226
+      zerox6_114: 21300228
+      zerox6_115: 21300230
+      zerox6_116: 21300232
+      zerox6_117: 21300234
+      zerox6_118: 21300236
+      zerox6_119: 21300238
+      zerox6_12: 21300024
+      zerox6_120: 21300240
+      zerox6_121: 21300242
+      zerox6_122: 21300244
+      zerox6_123: 21300246
+      zerox6_124: 21300248
+      zerox6_125: 21300250
+      zerox6_126: 21300252
+      zerox6_127: 21300254
+      zerox6_128: 21300256
+      zerox6_129: 21300258
+      zerox6_13: 21300026
+      zerox6_130: 21300260
+      zerox6_131: 21300262
+      zerox6_132: 21300264
+      zerox6_133: 21300266
+      zerox6_134: 21300268
+      zerox6_135: 21300270
+      zerox6_136: 21300272
+      zerox6_137: 21300274
+      zerox6_138: 21300276
+      zerox6_139: 21300278
+      zerox6_14: 21300028
+      zerox6_140: 21300280
+      zerox6_141: 21300282
+      zerox6_142: 21300284
+      zerox6_143: 21300286
+      zerox6_144: 21300288
+      zerox6_145: 21300290
+      zerox6_146: 21300292
+      zerox6_147: 21300294
+      zerox6_148: 21300296
+      zerox6_149: 21300298
+      zerox6_15: 21300030
+      zerox6_150: 21300300
+      zerox6_151: 21300302
+      zerox6_152: 21300304
+      zerox6_153: 21300306
+      zerox6_154: 21300308
+      zerox6_155: 21300310
+      zerox6_156: 21300312
+      zerox6_157: 21300314
+      zerox6_158: 21300316
+      zerox6_159: 21300318
+      zerox6_16: 21300032
+      zerox6_160: 21300320
+      zerox6_161: 21300322
+      zerox6_162: 21300324
+      zerox6_17: 21300034
+      zerox6_18: 21300036
+      zerox6_19: 21300038
+      zerox6_2: 21300004
+      zerox6_20: 21300040
+      zerox6_21: 21300042
+      zerox6_22: 21300044
+      zerox6_23: 21300046
+      zerox6_24: 21300048
+      zerox6_25: 21300050
+      zerox6_26: 21300052
+      zerox6_27: 21300054
+      zerox6_28: 21300056
+      zerox6_29: 21300058
+      zerox6_3: 21300006
+      zerox6_30: 21300060
+      zerox6_31: 21300062
+      zerox6_32: 21300064
+      zerox6_33: 21300066
+      zerox6_34: 21300068
+      zerox6_35: 21300070
+      zerox6_36: 21300072
+      zerox6_37: 21300074
+      zerox6_38: 21300076
+      zerox6_39: 21300078
+      zerox6_4: 21300008
+      zerox6_40: 21300080
+      zerox6_41: 21300082
+      zerox6_42: 21300084
+      zerox6_43: 21300086
+      zerox6_44: 21300088
+      zerox6_45: 21300090
+      zerox6_46: 21300092
+      zerox6_47: 21300094
+      zerox6_48: 21300096
+      zerox6_49: 21300098
+      zerox6_5: 21300010
+      zerox6_50: 21300100
+      zerox6_51: 21300102
+      zerox6_52: 21300104
+      zerox6_53: 21300106
+      zerox6_54: 21300108
+      zerox6_55: 21300110
+      zerox6_56: 21300112
+      zerox6_57: 21300114
+      zerox6_58: 21300116
+      zerox6_59: 21300118
+      zerox6_6: 21300012
+      zerox6_60: 21300120
+      zerox6_61: 21300122
+      zerox6_62: 21300124
+      zerox6_63: 21300126
+      zerox6_64: 21300128
+      zerox6_65: 21300130
+      zerox6_66: 21300132
+      zerox6_67: 21300134
+      zerox6_68: 21300136
+      zerox6_69: 21300138
+      zerox6_7: 21300014
+      zerox6_70: 21300140
+      zerox6_71: 21300142
+      zerox6_72: 21300144
+      zerox6_73: 21300146
+      zerox6_74: 21300148
+      zerox6_75: 21300150
+      zerox6_76: 21300152
+      zerox6_77: 21300154
+      zerox6_78: 21300156
+      zerox6_79: 21300158
+      zerox6_8: 21300016
+      zerox6_80: 21300160
+      zerox6_81: 21300162
+      zerox6_82: 21300164
+      zerox6_83: 21300166
+      zerox6_84: 21300168
+      zerox6_85: 21300170
+      zerox6_86: 21300172
+      zerox6_87: 21300174
+      zerox6_88: 21300176
+      zerox6_89: 21300178
+      zerox6_9: 21300018
+      zerox6_90: 21300180
+      zerox6_91: 21300182
+      zerox6_92: 21300184
+      zerox6_93: 21300186
+      zerox6_94: 21300188
+      zerox6_95: 21300190
+      zerox6_96: 21300192
+      zerox6_97: 21300194
+      zerox6_98: 21300196
+      zerox6_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
