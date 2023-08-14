@@ -41,7 +41,7 @@ public class Control : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             fire.Emit(1);
-            anima.SetBool("Fire", true);
+            anima.SetBool   ("Fire", true);
         }
 
     }
