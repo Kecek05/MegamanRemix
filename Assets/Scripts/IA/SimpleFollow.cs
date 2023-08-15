@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SimpleFollow : MonoBehaviour
+public class SimpleFollow : MonoBehaviour, IDamageable
 {
     public GameObject target;
     Rigidbody2D rdb;
@@ -22,20 +23,15 @@ public class SimpleFollow : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
 
-            target = collision.gameObject;
-        }
+    public void Damage(float damageAmount)
+    {
+        Hit();
+
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
 
-            target = null;
-        }
+    public void Hit()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
