@@ -12,6 +12,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baril01 (2) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -87,6 +103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 61510800422729660, guid: 530452a3669f48d4e9e34de2108bab85,
         type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61510800422729660, guid: 530452a3669f48d4e9e34de2108bab85,
+        type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1
       objectReference: {fileID: 0}
@@ -105,5 +126,34 @@ PrefabInstance:
     - {fileID: 114031528727833752, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7610358252509131926}
   m_SourcePrefab: {fileID: 100100000, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+--- !u!1 &3760862202310535893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85,
+    type: 3}
+  m_PrefabInstance: {fileID: 3761873177606402863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &7610358252509131926
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3760862202310535893}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
