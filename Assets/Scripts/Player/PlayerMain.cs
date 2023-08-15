@@ -45,7 +45,7 @@ public class PlayerMain : MonoBehaviour
 
     void Update()
     {
-        
+        Cursor.visible = false;
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
