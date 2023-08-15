@@ -1,0 +1,1624 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.6f1 (b9e6e7e9fa2d) revision 12183271'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'pt' Physical Memory: 16089 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/ra00331197/Desktop/mega/MegamanRemix
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+49893
+Successfully changed project path to: C:/Users/ra00331197/Desktop/mega/MegamanRemix
+C:/Users/ra00331197/Desktop/mega/MegamanRemix
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [2248] Host "[IP] 172.17.11.31 [Port] 0 [Flags] 2 [Guid] 2134284157 [EditorId] 2134284157 [Version] 1048832 [Id] WindowsEditor(7,DSP-BRJ3055CGG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [2248] Host "[IP] 172.17.11.31 [Port] 0 [Flags] 2 [Guid] 2134284157 [EditorId] 2134284157 [Version] 1048832 [Id] WindowsEditor(7,DSP-BRJ3055CGG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 77.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ra00331197/Desktop/mega/MegamanRemix/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA T400 4GB (ID=0x1ff2)
+    Vendor:   NVIDIA
+    VRAM:     3970 MB
+    Driver:   30.0.15.1165
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006644 seconds.
+- Loaded All Assemblies, in  0.296 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 241 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.594 seconds
+Domain Reload Profiling: 890ms
+	BeginReloadAssembly (51ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (51ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (126ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (595ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (535ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (382ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (101ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.619 seconds
+Refreshing native plugins compatible for Editor in 6.70 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.662 seconds
+Domain Reload Profiling: 1281ms
+	BeginReloadAssembly (113ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (423ms)
+		LoadAssemblies (222ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (233ms)
+				TypeCache.ScanAssembly (218ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (663ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (493ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (79.6 KB). Loaded Objects now: 2864.
+Memory consumption went from 108.5 MB to 108.4 MB.
+Total: 4.286700 ms (FindLiveObjects: 0.125000 ms CreateObjectMapping: 0.046300 ms MarkObjects: 4.021300 ms  DeleteObjects: 0.092600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 448.681648 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(9fc74c47b1ffcdc479e2428f54896ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(9fc74c47b1ffcdc479e2428f54896ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246cd626d39e1bb1f6e903c4e4c7d5de') in 0.003384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 52.809083 seconds.
+  path: Assets/AnimationsZero
+  artifactKey: Guid(4168719f02dade140b7e7fcf54ac57ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AnimationsZero using Guid(4168719f02dade140b7e7fcf54ac57ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eae73cc6c51a1d5dfe014aa7cf270ca') in 0.000428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.088900 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(720712be6e31c444f88f57bb85bf5fa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(720712be6e31c444f88f57bb85bf5fa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6574eb4dbb88e82814c0141998deb5') in 0.000447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.423287 seconds.
+  path: Assets/Pixel Lost Game Scene
+  artifactKey: Guid(0beec54067dceff4c86ef18d72aa2b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene using Guid(0beec54067dceff4c86ef18d72aa2b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8348f45793e9e717cf7dacf2ba15423') in 0.000434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.994863 seconds.
+  path: Assets/Pixel Lost Game Scene/Scene
+  artifactKey: Guid(5aaa56658c796cb4cbcf331ee27cae88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Scene using Guid(5aaa56658c796cb4cbcf331ee27cae88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6cf73353dd9a34afea151bcfc40d8f') in 0.000416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.915267 seconds.
+  path: Assets/Pixel Lost Game Scene/Scene/Demo.unity
+  artifactKey: Guid(4cd00a2cb9f054a4a9375be9ad3f8db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Scene/Demo.unity using Guid(4cd00a2cb9f054a4a9375be9ad3f8db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e22b6dd3e12e6f50a82345868541682') in 0.000420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.771128 seconds.
+  path: Assets/Pack 01 (Pixel Art)
+  artifactKey: Guid(7b529eb8fee74ad43a0545d16c4ff61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art) using Guid(7b529eb8fee74ad43a0545d16c4ff61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c9d5098897d613cee65ae41188889e') in 0.000383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.475647 seconds.
+  path: Assets/Phisical
+  artifactKey: Guid(cd250e0bae49aea4296b892edc0f623e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phisical using Guid(cd250e0bae49aea4296b892edc0f623e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec5cc50e75aebf9c5faef2977e8dba3') in 0.000411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.758465 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites
+  artifactKey: Guid(f429a222793db3d40bdd7ce4505f783a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites using Guid(f429a222793db3d40bdd7ce4505f783a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d3d804360ac949a8d17260bf94aa68') in 0.000432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.057244 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/background.png
+  artifactKey: Guid(80e59d85317b47843bbfd01e336512c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/background.png using Guid(80e59d85317b47843bbfd01e336512c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0557f5b37534c30446f585c31352a5') in 0.187176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_17.asset
+  artifactKey: Guid(658312186240580458cd301a0c9543f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_17.asset using Guid(658312186240580458cd301a0c9543f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8572d91603fecc6cbd3f97a12e1451') in 0.026923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_41.asset
+  artifactKey: Guid(1ec94920e9631054784e032c177d3777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_41.asset using Guid(1ec94920e9631054784e032c177d3777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea63cd1dee665a77216248873afce548') in 0.010769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_24.asset
+  artifactKey: Guid(04c3693969c02934da077bc3aa18a1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_24.asset using Guid(04c3693969c02934da077bc3aa18a1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba618d702ac9a2c3d758bac4ee242bb') in 0.008264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_2.asset
+  artifactKey: Guid(1456e0a9cd9010c42be20840f55b713e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_2.asset using Guid(1456e0a9cd9010c42be20840f55b713e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14063bcbd51042e7df82c0a91c7fc984') in 0.006165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_40.asset
+  artifactKey: Guid(2eee4379348108d44b42cca0f57eaf70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_40.asset using Guid(2eee4379348108d44b42cca0f57eaf70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316376b0d760a4f39b7fc542de883481') in 0.004184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_12.asset
+  artifactKey: Guid(69f9e0748735c02498dd8e94c75c46cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_12.asset using Guid(69f9e0748735c02498dd8e94c75c46cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc06be8978fe68f0ce2d055abff425b') in 0.006283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_13.asset
+  artifactKey: Guid(900acda33e3166541b707212e929ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_13.asset using Guid(900acda33e3166541b707212e929ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff23c71510669253aa41a7ba7cb62a9') in 0.012451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_16.asset
+  artifactKey: Guid(909ba0077bbb46945b52828981b87fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_16.asset using Guid(909ba0077bbb46945b52828981b87fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76b3ef165b977f1c8b68cbd90d42ad0') in 0.016069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_34.asset
+  artifactKey: Guid(20e35a2310b39554bbac23c4df863ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_34.asset using Guid(20e35a2310b39554bbac23c4df863ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1844fcd7f83fb2704dd2ed03533af9be') in 0.006644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_32.asset
+  artifactKey: Guid(7fd73cc47aac1f34b9923d05077dbabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_32.asset using Guid(7fd73cc47aac1f34b9923d05077dbabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12fe150b14ee4f802ab0802e2742b96') in 0.010533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_52.asset
+  artifactKey: Guid(d6f2e901e656fb048b35a9040831f7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_52.asset using Guid(d6f2e901e656fb048b35a9040831f7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b145630a9f7b3c9e852b9704886636c6') in 0.009687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_7.asset
+  artifactKey: Guid(44f2cebde98879141a915cc68275d8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_7.asset using Guid(44f2cebde98879141a915cc68275d8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13c960dd7eae29d849521e85e15e5a0') in 0.006500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_29.asset
+  artifactKey: Guid(d8191d2f66e83ef4c9a872594de3ed83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_29.asset using Guid(d8191d2f66e83ef4c9a872594de3ed83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055c661f382eaebfa1015b0dec9fd3cb') in 0.009817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_51.asset
+  artifactKey: Guid(00359120896a4054a82424f15f75bcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_51.asset using Guid(00359120896a4054a82424f15f75bcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fea23eb341c39e02c582b4e3862ed8e') in 0.012449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_18.asset
+  artifactKey: Guid(39094abe1a106d84ea4823d267698ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_18.asset using Guid(39094abe1a106d84ea4823d267698ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5be125cb034664f4e75836e05cd2355') in 0.018721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_6.asset
+  artifactKey: Guid(bdebddea13f4c9c4fa75ef3a6d9e75db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_6.asset using Guid(bdebddea13f4c9c4fa75ef3a6d9e75db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb44ad02a25b825ad558982e401758e4') in 0.015300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_9.asset
+  artifactKey: Guid(0d744389efe907c4e8f4193c542a378c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_9.asset using Guid(0d744389efe907c4e8f4193c542a378c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c681e066f6c5de150bf9716f27c767a8') in 0.008826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_4.asset
+  artifactKey: Guid(d28d4e3f2c0387342aeee5a327d21d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_4.asset using Guid(d28d4e3f2c0387342aeee5a327d21d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f029dcf9a2d7def8fc3c195a766ade7c') in 0.006580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_50.asset
+  artifactKey: Guid(76d87016c4d3b614db1a7091189e47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_50.asset using Guid(76d87016c4d3b614db1a7091189e47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbfbac430a62fdb504f167fc2383596') in 0.008900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_49.asset
+  artifactKey: Guid(c8add0220fccf6f48bd8c3a5b0a3b0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_49.asset using Guid(c8add0220fccf6f48bd8c3a5b0a3b0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f5e3a9382192251b93ccf4b91d7ff8') in 0.008619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_45.asset
+  artifactKey: Guid(604f64497cd640f4ab236830e8afe380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_45.asset using Guid(604f64497cd640f4ab236830e8afe380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ba77f23c259bfc3cbc8e0932199182') in 0.008823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_20.asset
+  artifactKey: Guid(804441bae2c248e4ebdc0dd8289d18a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_20.asset using Guid(804441bae2c248e4ebdc0dd8289d18a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7442e45d4a52410ff459d90c1e1c963c') in 0.008910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.317569 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_54.asset
+  artifactKey: Guid(a265b67c43c0c31469745be385fc9f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_54.asset using Guid(a265b67c43c0c31469745be385fc9f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fed5b691b35b7b8a9d438c678550ed9') in 0.009733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_62.asset
+  artifactKey: Guid(54e1eed44122bd044a5569d131134e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_62.asset using Guid(54e1eed44122bd044a5569d131134e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13e3ee379f8a7ce6165c68eec1412a66') in 0.010049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_67.asset
+  artifactKey: Guid(4cffc3dd3ddfe16498831eae5e1e9af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_67.asset using Guid(4cffc3dd3ddfe16498831eae5e1e9af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2b67d55f1d06c7a6789bd014fd236b') in 0.010400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_58.asset
+  artifactKey: Guid(bb5ff9f3cd8cbfe49a613f82f1069256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_58.asset using Guid(bb5ff9f3cd8cbfe49a613f82f1069256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd49f4d89dd68b590de820fa63d95d54c') in 0.009872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_57.asset
+  artifactKey: Guid(0a636dfc9559a6a479f38dd4ad240688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_57.asset using Guid(0a636dfc9559a6a479f38dd4ad240688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc58bf081f0ab479724749b8149ef4e') in 0.013899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_66.asset
+  artifactKey: Guid(106c96a0e471e3040b5d6a1af8e09f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_66.asset using Guid(106c96a0e471e3040b5d6a1af8e09f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf50d455d1791e71b4116f73114780f') in 0.004958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_63.asset
+  artifactKey: Guid(00b57e02eddaf1b4dbd6509719525374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_63.asset using Guid(00b57e02eddaf1b4dbd6509719525374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bcc994ef510f9dedb036862d04134f5') in 0.011472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.085025 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_68.asset
+  artifactKey: Guid(8a69d88226fa244498c3d0fc452ccc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_68.asset using Guid(8a69d88226fa244498c3d0fc452ccc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa58541af27b761640b7366a14ab669') in 0.010791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_74.asset
+  artifactKey: Guid(13b88ec3a3138944eb028e09db80ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_74.asset using Guid(13b88ec3a3138944eb028e09db80ab0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4652d243dd28d157560c357b0a714e58') in 0.012115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_76.asset
+  artifactKey: Guid(a97d4683bc360b5428b1739131c94142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_76.asset using Guid(a97d4683bc360b5428b1739131c94142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8417c4fb725ddea185426cc3bb4f158f') in 0.009646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_78.asset
+  artifactKey: Guid(6022659ab71b4764b879d2b1d1fa6bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_78.asset using Guid(6022659ab71b4764b879d2b1d1fa6bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75b0e65cc846d94720c118741872846') in 0.005666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_75.asset
+  artifactKey: Guid(883e357fc18e71645bd56daed02b2d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_75.asset using Guid(883e357fc18e71645bd56daed02b2d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4280bc7f325fcd30402f7c2eb1a1903') in 0.014159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_77.asset
+  artifactKey: Guid(617d8b1ea7c88144796edb3d12729d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_77.asset using Guid(617d8b1ea7c88144796edb3d12729d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb76d17c5572535321fa755f3b1460b') in 0.004712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_71.asset
+  artifactKey: Guid(1a12b433c08fdbc4281e35876c054ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_71.asset using Guid(1a12b433c08fdbc4281e35876c054ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62907a3e2c1a69e51bd92304bd8f9ae') in 0.011192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.023410 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_82.asset
+  artifactKey: Guid(6fc1b7160c39f904e8cd2f265fe827d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_82.asset using Guid(6fc1b7160c39f904e8cd2f265fe827d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ce18f4aae1d946fd977491f94557d8') in 0.015289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_85.asset
+  artifactKey: Guid(c1e4f679242bb9d49a8843f4d7d45dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_85.asset using Guid(c1e4f679242bb9d49a8843f4d7d45dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c60254934f5f9d2d70e6ec4b368386') in 0.005181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_95.asset
+  artifactKey: Guid(f1c6743b7fcbc594687a28165dd2dd54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_95.asset using Guid(f1c6743b7fcbc594687a28165dd2dd54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e97084ad9632d83ae77fd6eef9cbca') in 0.011261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_84.asset
+  artifactKey: Guid(95a5cffb617e0bb478de8a3d1ad694be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_84.asset using Guid(95a5cffb617e0bb478de8a3d1ad694be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3d102a55e5b395b1a48fefd97158e5') in 0.007466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_88.asset
+  artifactKey: Guid(a2c5ab2bb657ce94ab5067c6d2488921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_88.asset using Guid(a2c5ab2bb657ce94ab5067c6d2488921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05e3be6ee0082df007534b7f914007a') in 0.004760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_90.asset
+  artifactKey: Guid(19749239c59d4cc4f9c886c7aa59e726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_90.asset using Guid(19749239c59d4cc4f9c886c7aa59e726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98064bbd6f8ef36ae0cd8c53f1ae4d7e') in 0.004502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_92.asset
+  artifactKey: Guid(30eb6c1367813be47b8cb2a152495a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_92.asset using Guid(30eb6c1367813be47b8cb2a152495a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c6205497e22973c7db09704baad33c') in 0.010827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.400444 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_96.asset
+  artifactKey: Guid(1835688ba9b67e84eb129a0c2ccdabe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_96.asset using Guid(1835688ba9b67e84eb129a0c2ccdabe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94cd909e54a364948c3e7679ea0ad67') in 0.010030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_106.asset
+  artifactKey: Guid(accec1a518ab60f4d957952e0c11b834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_106.asset using Guid(accec1a518ab60f4d957952e0c11b834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a169581d9a7c7cc9eb0095760da0fc0') in 0.010884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_99.asset
+  artifactKey: Guid(b369fbd10529560489add2553674c10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_99.asset using Guid(b369fbd10529560489add2553674c10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd032d84238332eb27b33142f83943ab0') in 0.011174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_109.asset
+  artifactKey: Guid(91fd600da45efae4086cf56e1ca3830e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_109.asset using Guid(91fd600da45efae4086cf56e1ca3830e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f69b6d54b3fb1f207928631512579fe') in 0.010417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_108.asset
+  artifactKey: Guid(a03e2ecfb83ef0e43a325b35d5a86241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_108.asset using Guid(a03e2ecfb83ef0e43a325b35d5a86241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82c5f8e33c62d2278f7c7affdb46be8') in 0.006081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_98.asset
+  artifactKey: Guid(66f52b505ed9fc544b97e7c04db3c665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_98.asset using Guid(66f52b505ed9fc544b97e7c04db3c665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cd173dec429f2892266eeeab4f5fc4') in 0.011613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002923 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_110.asset
+  artifactKey: Guid(15989a6007c625d48827241516b90140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_110.asset using Guid(15989a6007c625d48827241516b90140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a658d553cb6cab5151ae071940c1ad0') in 0.011690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_116.asset
+  artifactKey: Guid(1c35428d2242ea3488afa1d70c361601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_116.asset using Guid(1c35428d2242ea3488afa1d70c361601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bf8ecd8f09ba5fd2382c2cd3075cbe') in 0.008975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_112.asset
+  artifactKey: Guid(4309abdca5a16ec4e9f5791176fea7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_112.asset using Guid(4309abdca5a16ec4e9f5791176fea7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31cafb83ba4597eb77c5cb0fbff5320') in 0.012944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_115.asset
+  artifactKey: Guid(e509eb9e1845ac447994038d5f4d639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_115.asset using Guid(e509eb9e1845ac447994038d5f4d639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2deb610663f9b8f2fa97c77b86bdd7') in 0.006666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_114.asset
+  artifactKey: Guid(556472df7eea87a48854111831749f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_114.asset using Guid(556472df7eea87a48854111831749f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544d2af99a03fb180c821f7eb6f57ef8') in 0.005841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_113.asset
+  artifactKey: Guid(fc4c65899bb94b745b56e26205c923c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_113.asset using Guid(fc4c65899bb94b745b56e26205c923c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c855941b8d2a234870dc6271e18bb4bc') in 0.008654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_118.asset
+  artifactKey: Guid(5230a7185f2ba34498fa4538f9b93746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_118.asset using Guid(5230a7185f2ba34498fa4538f9b93746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0644bbca3ea1262c1fc262a939416a') in 0.010183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.672672 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_124.asset
+  artifactKey: Guid(a4ceb7115eabc764e8c26f06c93820ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_124.asset using Guid(a4ceb7115eabc764e8c26f06c93820ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1eb8268f6627fb4e6d3b3c07fb13f1b') in 0.005657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_126.asset
+  artifactKey: Guid(0dfde01990f1c0f4ba2c4ffd1735ce7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_126.asset using Guid(0dfde01990f1c0f4ba2c4ffd1735ce7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb566e5af2ff3a1be2ce147cd6dc2269') in 0.006246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_137.asset
+  artifactKey: Guid(bee0b90d9d689854b9b4b40fc70d9357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_137.asset using Guid(bee0b90d9d689854b9b4b40fc70d9357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4196138d283dd89d43b58e6765e1818') in 0.005190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_130.asset
+  artifactKey: Guid(f77ef6bb4fb0d9742983dec18ea58cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_130.asset using Guid(f77ef6bb4fb0d9742983dec18ea58cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bff3a00387da305ea45f696937bb4c') in 0.011020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_131.asset
+  artifactKey: Guid(e3ce0e0b16beca5408d795552f6ad558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_131.asset using Guid(e3ce0e0b16beca5408d795552f6ad558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1178a206013146ea0e6f5bc74f066fec') in 0.011177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_136.asset
+  artifactKey: Guid(241fe23e74d3ea844b36dce465caf29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_136.asset using Guid(241fe23e74d3ea844b36dce465caf29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5276b2b5f658a14f615e350ba27c6424') in 0.006922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_135.asset
+  artifactKey: Guid(505e9fd84babec44988a8db5f5c2a5c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_135.asset using Guid(505e9fd84babec44988a8db5f5c2a5c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc967d9335596b3bf4f5d26ca9245617') in 0.004721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_127.asset
+  artifactKey: Guid(d7f5f34dba997e24799658eb4265ab7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_127.asset using Guid(d7f5f34dba997e24799658eb4265ab7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bdaea584d4dd7f4f82f78825590a502') in 0.009850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.011849 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_138.asset
+  artifactKey: Guid(9efc9d304bb49af44bd8bf7e7c8cc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_138.asset using Guid(9efc9d304bb49af44bd8bf7e7c8cc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0611dd6d0fd5b68fa81d9086ffc6dc9d') in 0.006090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_151.asset
+  artifactKey: Guid(19a1eade6fe64274288bc28813eafb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_151.asset using Guid(19a1eade6fe64274288bc28813eafb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec3748171d57fc3611a59e0b5ae2899') in 0.010361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_149.asset
+  artifactKey: Guid(fa11ced0a1cd72b429c435b1e070a4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_149.asset using Guid(fa11ced0a1cd72b429c435b1e070a4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d971e6ae7d7ce0dee9a92ef10b80df') in 0.009843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_144.asset
+  artifactKey: Guid(ba90087e3ded0674781c3e0db2b3c903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_144.asset using Guid(ba90087e3ded0674781c3e0db2b3c903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fac934de6c55232a3d96ed39f89b92c') in 0.010230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_143.asset
+  artifactKey: Guid(63908e3835fba524b86c948316393dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_143.asset using Guid(63908e3835fba524b86c948316393dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1265d91f018f2810623e6d102053c9') in 0.009273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_150.asset
+  artifactKey: Guid(e5911841109bf7342abefe04f27e0fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_150.asset using Guid(e5911841109bf7342abefe04f27e0fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd6b426d659e859828361c4894e0a7c') in 0.013127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_142.asset
+  artifactKey: Guid(042298ecc1b8e564c9b6d2cc341d8a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_142.asset using Guid(042298ecc1b8e564c9b6d2cc341d8a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61db79dd5da14628bcda9cc4c1787f1e') in 0.011910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.131763 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_153.asset
+  artifactKey: Guid(3df7071be3154a1439c7f3b0c7f3ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_153.asset using Guid(3df7071be3154a1439c7f3b0c7f3ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277a5eaa44d5675df40faf65ce94e12f') in 0.020031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_160.asset
+  artifactKey: Guid(c82fae6ce6f6fc844b3bbefd24c0a7f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_160.asset using Guid(c82fae6ce6f6fc844b3bbefd24c0a7f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d30a1d1ecbc29125ec1df4935f2231') in 0.009320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_163.asset
+  artifactKey: Guid(4a20f94e9b4462f4e817d226b0677f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_163.asset using Guid(4a20f94e9b4462f4e817d226b0677f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90427404ab332ff859cfbdece637392') in 0.011360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_158.asset
+  artifactKey: Guid(6ebb8d7875f8b8f4e927733b2f6a9f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_158.asset using Guid(6ebb8d7875f8b8f4e927733b2f6a9f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3e96da32de9144d5f47a73ded99614') in 0.013721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_164.asset
+  artifactKey: Guid(bf4ca6b553aba774194aa3453c7d7f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_164.asset using Guid(bf4ca6b553aba774194aa3453c7d7f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c194b787450159862f6abe920b177c3') in 0.010876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.394170 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_167.asset
+  artifactKey: Guid(c6eddd752126fc3419b6773aa73d731c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_167.asset using Guid(c6eddd752126fc3419b6773aa73d731c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf0027d05a4da9c9d78e7932f66cedb') in 0.010572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_173.asset
+  artifactKey: Guid(a73711ac022fb6642b29cc3c04cf2cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_173.asset using Guid(a73711ac022fb6642b29cc3c04cf2cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742dc040fde45006f2a068d9441ef0ac') in 0.011370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_177.asset
+  artifactKey: Guid(009f56cc266026b479533d1e2d3f3498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_177.asset using Guid(009f56cc266026b479533d1e2d3f3498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6371a69ac89f6a880ef933892816b7') in 0.014826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.190902 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_181.asset
+  artifactKey: Guid(7adcbda73d588954592d142c170cf579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_181.asset using Guid(7adcbda73d588954592d142c170cf579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a44b194fce189f2fcabd07893a8f47') in 0.027706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_190.asset
+  artifactKey: Guid(a67ecf2ef80a93a46bad840b32f1e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_190.asset using Guid(a67ecf2ef80a93a46bad840b32f1e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9cd3ea95f420940976345e885ffcb0') in 0.009899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.401411 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_195.asset
+  artifactKey: Guid(2667d616a78aea3439b4574b276642fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_195.asset using Guid(2667d616a78aea3439b4574b276642fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76b71d634bb1f8af1c1353f865250fa') in 0.014922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_199.asset
+  artifactKey: Guid(8eeb4fe226efc0945ae4136764cf68d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_199.asset using Guid(8eeb4fe226efc0945ae4136764cf68d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '215cc150a90d3ba2007474ea02015c78') in 0.018157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_200.asset
+  artifactKey: Guid(b6c07786b4867b84584ac84abc1f4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_200.asset using Guid(b6c07786b4867b84584ac84abc1f4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b267f863cbff8ac7aeef914222981d') in 0.011239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006786 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_209.asset
+  artifactKey: Guid(103ffe218f689d1488063a805393f02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_209.asset using Guid(103ffe218f689d1488063a805393f02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bcad2e24d5220386cb8304a10732b6') in 0.033856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_214.asset
+  artifactKey: Guid(41a3a2cdeb3fb6c4c85d4c36ee109484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_214.asset using Guid(41a3a2cdeb3fb6c4c85d4c36ee109484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3bb12849d9f8466a862386db3d62efc') in 0.011792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.086578 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_223.asset
+  artifactKey: Guid(0046f2c0f78db374bb2e1adbe02a44ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_223.asset using Guid(0046f2c0f78db374bb2e1adbe02a44ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863a17ec2586a2ba432e3cd4c282ba7e') in 0.010283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_228.asset
+  artifactKey: Guid(6357434451b084b47b8fdca75b75699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_228.asset using Guid(6357434451b084b47b8fdca75b75699f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003c5eaa4f5ce0101a0859cbc3be93a7') in 0.031909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.013829 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_237.asset
+  artifactKey: Guid(f3431726e8d250a41ae7a3f2d4f222f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_237.asset using Guid(f3431726e8d250a41ae7a3f2d4f222f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da388369a5059731b988c4e44b34fcd8') in 0.018590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_246.asset
+  artifactKey: Guid(9fecf353520c6ee4f88a5e305962c989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_246.asset using Guid(9fecf353520c6ee4f88a5e305962c989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b384e14ebf4684357243ab759ce452') in 0.009040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_240.asset
+  artifactKey: Guid(59dcb7756027a474c884ef7e5dec5d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_240.asset using Guid(59dcb7756027a474c884ef7e5dec5d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5121ace5f5f47100cd1c6257456dbb') in 0.012972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.491847 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_251.asset
+  artifactKey: Guid(b640186236fa93a40bdf074bdce7f958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_251.asset using Guid(b640186236fa93a40bdf074bdce7f958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57f2f5dcb947189fc68412887c19f5e') in 0.010637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_257.asset
+  artifactKey: Guid(98e67acd66ec3e747b52af58b892dfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_257.asset using Guid(98e67acd66ec3e747b52af58b892dfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceda4359ca6452ba80ffe84c03005692') in 0.028105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_255.asset
+  artifactKey: Guid(07df349ac18777f4d8e19228f40b94f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_255.asset using Guid(07df349ac18777f4d8e19228f40b94f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b364de86506939e6a73903a4878cfc') in 0.009227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028116 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_265.asset
+  artifactKey: Guid(e62992aa28c0a4f498e66765c83fd937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_265.asset using Guid(e62992aa28c0a4f498e66765c83fd937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a497e924fac413ef79bbe46c652bb5e8') in 0.010933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_273.asset
+  artifactKey: Guid(5562376ef9886604e875b710fe7154da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_273.asset using Guid(5562376ef9886604e875b710fe7154da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a61d0d6d30dd25ebffa0f393f996249') in 0.012904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_274.asset
+  artifactKey: Guid(2843f07d2110e2043bcd7d04d73ce143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_274.asset using Guid(2843f07d2110e2043bcd7d04d73ce143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c9ef39ec967692feb2e63bbcc64185') in 0.011316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.470075 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_279.asset
+  artifactKey: Guid(70d5179b20359944ebd832d9e9603173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_279.asset using Guid(70d5179b20359944ebd832d9e9603173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0185e55378147adf9a859d669e364e87') in 0.018002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_285.asset
+  artifactKey: Guid(f75199e55ef20db41a4b2447402445e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_285.asset using Guid(f75199e55ef20db41a4b2447402445e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccaab580b81fe0f1d9004e608d76eac') in 0.010763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017476 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_293.asset
+  artifactKey: Guid(cb18b8fae1bb8074aa7a1e73092785df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_293.asset using Guid(cb18b8fae1bb8074aa7a1e73092785df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0c9e8baf3b958550ffcecd2b0ecec6') in 0.010138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_301.asset
+  artifactKey: Guid(6535fda2c216c3a4489c9cf795fd95cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_301.asset using Guid(6535fda2c216c3a4489c9cf795fd95cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ef2cbaecb7b88875cd52d02b51d9cc') in 0.005873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_305.asset
+  artifactKey: Guid(47c82956452a0d94594d5171922b7aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_305.asset using Guid(47c82956452a0d94594d5171922b7aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf09cb091cac909f3c088d3cb8df65c') in 0.010216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.121227 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_307.asset
+  artifactKey: Guid(7a3c012179f55644d84c282599b7f3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_307.asset using Guid(7a3c012179f55644d84c282599b7f3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c59f1de0f120cfa7aef1327cc434699') in 0.018547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_316.asset
+  artifactKey: Guid(af46dd71993ad4045bf3db5f44455c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_316.asset using Guid(af46dd71993ad4045bf3db5f44455c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce787eb2e66890f22d606c1ed98af9a2') in 0.010273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.309585 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_321.asset
+  artifactKey: Guid(9c2a31474f00601469cf339b957fee12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_321.asset using Guid(9c2a31474f00601469cf339b957fee12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752abdc4d8cb495cedbe192fd4b14b06') in 0.012048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_331.asset
+  artifactKey: Guid(3737ce455a99fb8489a3c82c0f4d5c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_331.asset using Guid(3737ce455a99fb8489a3c82c0f4d5c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8288916446c104ca2f226e79916f57f') in 0.012473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_328.asset
+  artifactKey: Guid(db81d6d5c6391374186a668edabf6519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_328.asset using Guid(db81d6d5c6391374186a668edabf6519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edf5402aef0d28d8e282e640b47b110') in 0.010875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.618609 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_335.asset
+  artifactKey: Guid(a0ce8bb936cbd9e4e964762d9649841f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_335.asset using Guid(a0ce8bb936cbd9e4e964762d9649841f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dae0118aff6d4847d7c772d092cc652') in 0.011240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_341.asset
+  artifactKey: Guid(d4d3a40b008f056428d15dc45d79e259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_341.asset using Guid(d4d3a40b008f056428d15dc45d79e259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1a61083864c54bbb520cec4ecaee4f') in 0.006838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_345.asset
+  artifactKey: Guid(e44e94cd83a1538448941b5f3f6e2e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_345.asset using Guid(e44e94cd83a1538448941b5f3f6e2e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3774f13ac301df0e675ae1b1dc2ac07') in 0.014446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.050260 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_349.asset
+  artifactKey: Guid(94eebfdd2c536ad40a3c2b9af705760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_349.asset using Guid(94eebfdd2c536ad40a3c2b9af705760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fea30ff66e60ce0d44eac07030beb94') in 0.012379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_359.asset
+  artifactKey: Guid(78c42b9b523d660439695fad790cc476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_359.asset using Guid(78c42b9b523d660439695fad790cc476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039bb921ae925e18fb1d47b7c13ced91') in 0.009789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_354.asset
+  artifactKey: Guid(0366acc1f59d1df45b746edb4f584b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_354.asset using Guid(0366acc1f59d1df45b746edb4f584b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec60163cb865c9106ad8716e2d9745e1') in 0.005565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.101359 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_363.asset
+  artifactKey: Guid(ed04fb53a7146594b82d5353e728917d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_363.asset using Guid(ed04fb53a7146594b82d5353e728917d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03bed4d5eae7bccf11edce19bdc356a8') in 0.027698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.347454 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_377.asset
+  artifactKey: Guid(c6bc51c467021004887afa05ee8074b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_377.asset using Guid(c6bc51c467021004887afa05ee8074b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c066d23da7943a95c199295f9813026e') in 0.006528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_385.asset
+  artifactKey: Guid(6eb6f28d8e7c7b24ab6be29ac13b5e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_385.asset using Guid(6eb6f28d8e7c7b24ab6be29ac13b5e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9f6173dd3d0e4b977bcd9d06d67f2b') in 0.013469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_389.asset
+  artifactKey: Guid(c2b8edf670c5d70478f97bfda83626d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_389.asset using Guid(c2b8edf670c5d70478f97bfda83626d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552edb3c5becbac288a15a1bf272ef6d') in 0.011135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.055339 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_391.asset
+  artifactKey: Guid(ff3accb9b749d05439d45e4b1ec4d087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_391.asset using Guid(ff3accb9b749d05439d45e4b1ec4d087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a2b0c05bf603246ff9e31e0311d44e') in 0.005453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_398.asset
+  artifactKey: Guid(6edf18bef1931d44eb65207668cf7452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_398.asset using Guid(6edf18bef1931d44eb65207668cf7452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6185fdf54b09a661b0e9f141f3eb5e6') in 0.005597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_395.asset
+  artifactKey: Guid(444366c5e22661d47b2fb101c1d3a1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_395.asset using Guid(444366c5e22661d47b2fb101c1d3a1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f23ca525669b56eb9fca7c2825ab3e') in 0.013846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.364398 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_405.asset
+  artifactKey: Guid(fe14434e879c6244fabfc7f9c425be7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_405.asset using Guid(fe14434e879c6244fabfc7f9c425be7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d7f65eee10e52da704c8a623b3dbbc2') in 0.012164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_411.asset
+  artifactKey: Guid(f420ff9bf33567a4999d440f7c6719bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_411.asset using Guid(f420ff9bf33567a4999d440f7c6719bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f99b3d558594d36dfac8725d51bdc0') in 0.011907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_417.asset
+  artifactKey: Guid(00b999350e84f5045ba1e92efb3d3d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_417.asset using Guid(00b999350e84f5045ba1e92efb3d3d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b98633275778ca63af5444ab42eedf') in 0.009249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003078 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_419.asset
+  artifactKey: Guid(3381dd8fe05a8f5469daa19bc719048c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_419.asset using Guid(3381dd8fe05a8f5469daa19bc719048c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be851941ad9d7246b2fb3fe60b3c35fd') in 0.009316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_431.asset
+  artifactKey: Guid(e063ef56c3619764a9c84abb65555fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_431.asset using Guid(e063ef56c3619764a9c84abb65555fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d70439c9d6b95d4820c397313910e24') in 0.013992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_423.asset
+  artifactKey: Guid(740bab864c2d73345ab86bcc57ce9b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_423.asset using Guid(740bab864c2d73345ab86bcc57ce9b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286ccd234873bc157089efa075a2abf9') in 0.006463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.321743 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_433.asset
+  artifactKey: Guid(d5970a2b70fa9e845908539ad0bf2c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_433.asset using Guid(d5970a2b70fa9e845908539ad0bf2c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1d2ba1907b2b324c92051fdaed50ec') in 0.015723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_440.asset
+  artifactKey: Guid(47dc03fe97b3f504e862244f85c49394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_440.asset using Guid(47dc03fe97b3f504e862244f85c49394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b87aa534f542c0a36c724c6e6282083') in 0.006865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_444.asset
+  artifactKey: Guid(e6448348d9e1f574f97670690507e196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_444.asset using Guid(e6448348d9e1f574f97670690507e196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e30f408f994cc01de1761c4bef25fe') in 0.012277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006809 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_447.asset
+  artifactKey: Guid(f646d6429a9eacc4e9c250aa765c2fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_447.asset using Guid(f646d6429a9eacc4e9c250aa765c2fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d81ecaf43f362853478ee9ff79c6cc') in 0.007119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_453.asset
+  artifactKey: Guid(76604d4bdf2d8c94f97af377ff831707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_453.asset using Guid(76604d4bdf2d8c94f97af377ff831707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93b584ed9811bc0bd5af85e7652891a') in 0.011121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_452.asset
+  artifactKey: Guid(8f731f515c3b7c54c88c66d099568726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_452.asset using Guid(8f731f515c3b7c54c88c66d099568726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931f643e4d6a57c73c35c1e01c3f56da') in 0.010075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_470.asset
+  artifactKey: Guid(0f43d1e653ee02444be69b0cac5e6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_470.asset using Guid(0f43d1e653ee02444be69b0cac5e6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0e19899d3a86e5e2fb5bb23fcf43bf') in 0.056159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_475.asset
+  artifactKey: Guid(94e06754bcd158a4c885351bbc835280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_475.asset using Guid(94e06754bcd158a4c885351bbc835280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1408aa39570da645f6bcd4be867d947e') in 0.013958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_494.asset
+  artifactKey: Guid(2022d3d7900504e459a086b30f7ff465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_494.asset using Guid(2022d3d7900504e459a086b30f7ff465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a86a2e9c340a3b6914389ca01139f3') in 0.013010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_497.asset
+  artifactKey: Guid(764090fb6d917684693879f947660410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_497.asset using Guid(764090fb6d917684693879f947660410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79cdacbf7144252465aeb7efd158a9ec') in 0.008282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_489.asset
+  artifactKey: Guid(a70cfe32ccce23f49a78c0d43a60bed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_489.asset using Guid(a70cfe32ccce23f49a78c0d43a60bed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0c49d5c90d8434ca25cfe5faac0b02') in 0.014083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_496.asset
+  artifactKey: Guid(b545348373182c74899b9bf52165eb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_496.asset using Guid(b545348373182c74899b9bf52165eb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01f4dc588f1e89c496e4553262e8f39') in 0.014107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_511.asset
+  artifactKey: Guid(1106f88dcb5e65f4ea3f8493116723a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_511.asset using Guid(1106f88dcb5e65f4ea3f8493116723a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3302880872455c5d44d767a91ae494e8') in 0.009543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_506.asset
+  artifactKey: Guid(7454e9a76bc86f44a90ba372838ac153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_506.asset using Guid(7454e9a76bc86f44a90ba372838ac153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79abd3240a3510c5c872124796a97cc') in 0.008105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_504.asset
+  artifactKey: Guid(2287dd2cfbdb9314a82a3a571212bde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_504.asset using Guid(2287dd2cfbdb9314a82a3a571212bde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b142fc550b7728ea62c1796b2520850') in 0.064834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.441574 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_517.asset
+  artifactKey: Guid(f2258e8ff29c73d45bacf7d2c44e86f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_517.asset using Guid(f2258e8ff29c73d45bacf7d2c44e86f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3e1bf1a292d8a94828fdcaf6fd6534') in 0.004853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_527.asset
+  artifactKey: Guid(e54c1b7b59a4ddf44b214c6fa7b2d534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_527.asset using Guid(e54c1b7b59a4ddf44b214c6fa7b2d534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890cbf0d7961db4dab80cacfe45b6ea7') in 0.011052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_522.asset
+  artifactKey: Guid(2908833872c1fa34e947f2ee6ca509d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_522.asset using Guid(2908833872c1fa34e947f2ee6ca509d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d937aaa5e34b228dc1ee394e50e022') in 0.009751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017895 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_531.asset
+  artifactKey: Guid(1dd1fc7ffd45e7f4ba58ddf967056769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_531.asset using Guid(1dd1fc7ffd45e7f4ba58ddf967056769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ef45e1d0d199b1a39e1e5db12dd502') in 0.005057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_542.asset
+  artifactKey: Guid(bdb9b94ad701912449637271b27fc708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_542.asset using Guid(bdb9b94ad701912449637271b27fc708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e7eacb83cc317d831f2e1f1e271532') in 0.004739 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_539.asset
+  artifactKey: Guid(45409e49d6c90c343978e187aad991f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_539.asset using Guid(45409e49d6c90c343978e187aad991f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e481f714cf8a9115942cede4a9af8070') in 0.004416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_535.asset
+  artifactKey: Guid(e7417cef996462e4a9f0359dfc1b5362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_535.asset using Guid(e7417cef996462e4a9f0359dfc1b5362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be8a415de0b482e8c256be394f08c6f') in 0.004777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001252 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_545.asset
+  artifactKey: Guid(e175173a3ae744f46aae82c44830b2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_545.asset using Guid(e175173a3ae744f46aae82c44830b2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2052a95e4fda177e9cf7fc6dd1e503') in 0.010220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_555.asset
+  artifactKey: Guid(79fcd0c8f1b021940a60efa95b49365b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_555.asset using Guid(79fcd0c8f1b021940a60efa95b49365b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ffd77e61fb6bb0a56771f898f82451') in 0.004652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_553.asset
+  artifactKey: Guid(db948553a55cb55448f842c27520f30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_553.asset using Guid(db948553a55cb55448f842c27520f30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe43a4529438b5964f64403021e4d30') in 0.005792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.018672 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_559.asset
+  artifactKey: Guid(ed307f378db0fe24c9dd5b1f3ac439e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_559.asset using Guid(ed307f378db0fe24c9dd5b1f3ac439e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdd388f376ae311a9f3512d0b44fda1') in 0.010564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Lost Game Scene/Sprites/env_sprites_565.asset
+  artifactKey: Guid(6b63dfa2404176240949755e55357f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Lost Game Scene/Sprites/env_sprites_565.asset using Guid(6b63dfa2404176240949755e55357f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3feae98e0e5519c4df9b302fdcda078d') in 0.010001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.880 seconds
+Refreshing native plugins compatible for Editor in 17.85 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.232 seconds
+Domain Reload Profiling: 2110ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (608ms)
+		LoadAssemblies (322ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (368ms)
+			TypeCache.Refresh (363ms)
+				TypeCache.ScanAssembly (347ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1232ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (791ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (58ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (360ms)
+			ProcessInitializeOnLoadMethodAttributes (267ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 8.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2406 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (51.8 KB). Loaded Objects now: 2875.
+Memory consumption went from 107.4 MB to 107.4 MB.
+Total: 7.978700 ms (FindLiveObjects: 0.366800 ms CreateObjectMapping: 0.087100 ms MarkObjects: 7.439300 ms  DeleteObjects: 0.083400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.853 seconds
+Refreshing native plugins compatible for Editor in 12.84 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.413 seconds
+Domain Reload Profiling: 2265ms
+	BeginReloadAssembly (194ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (546ms)
+		LoadAssemblies (317ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (321ms)
+			TypeCache.Refresh (317ms)
+				TypeCache.ScanAssembly (301ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1414ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (877ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (59ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (381ms)
+			ProcessInitializeOnLoadMethodAttributes (326ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 10.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2407 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (51.9 KB). Loaded Objects now: 2878.
+Memory consumption went from 107.7 MB to 107.7 MB.
+Total: 9.155100 ms (FindLiveObjects: 0.423600 ms CreateObjectMapping: 0.133300 ms MarkObjects: 8.507500 ms  DeleteObjects: 0.089600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
