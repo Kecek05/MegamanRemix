@@ -15,6 +15,7 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] private LayerMask jumpableGround;
+ 
 
     private float dirX = 0f;
 
@@ -71,6 +72,7 @@ public class PlayerMain : MonoBehaviour
 
         }
         //UpdateAnimation();
+     
     }
 
 
