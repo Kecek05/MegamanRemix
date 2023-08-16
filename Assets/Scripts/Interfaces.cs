@@ -10,4 +10,9 @@ public class Interfaces : MonoBehaviour
     {
         void Damage(float damageAmount);
     }
+    
+    public interface Itouchable
+    {
+    void touch();
+    }
 

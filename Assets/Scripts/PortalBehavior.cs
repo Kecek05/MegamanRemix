@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PortalBehavior : MonoBehaviour
+public class PortalBehavior : MonoBehaviour, Itouchable
 {
     private AudioSource TP;
 
@@ -12,18 +13,17 @@ public class PortalBehavior : MonoBehaviour
         TP = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    private void OnTriggerEnter2D(Collider2D collision)
+
+
+    public void touch()
     {
-        if (collision.gameObject.name == "Player")
-        {
-            //finishSound.Play();
-            //CompleteLeve1();
-        }
+        
+            CompleteLeve1();
+
     }
 
     private void CompleteLeve1()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

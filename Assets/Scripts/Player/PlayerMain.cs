@@ -34,13 +34,20 @@ public class PlayerMain : MonoBehaviour
   
     private void OnCollisionEnter2D(Collision2D collision)
     {
+       
         IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
         if (damageable != null)
         {
             damageable.Damage(1);
             
         }
-        print(damageable);
+             Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
+        if (touchable != null)
+        {
+            touchable.touch();
+        }
+        print(collision);
+        print(touchable);
     }
 
     void Update()
