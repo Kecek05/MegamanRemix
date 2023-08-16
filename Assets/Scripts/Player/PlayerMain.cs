@@ -41,11 +41,7 @@ public class PlayerMain : MonoBehaviour
             damageable.Damage(1);
             
         }
-
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
+             Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
         if (touchable != null)
         {
             touchable.touch();
