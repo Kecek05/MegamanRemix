@@ -18,12 +18,12 @@ public class Portalll : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            finishSound.Play();
-            CompleteLeve1();
+            //finishSound.Play();
+            //CompleteLeve1();
         }
     }
 
-    private void CompleteLeve1
+    private void CompleteLeve1()
     {
 
     }
