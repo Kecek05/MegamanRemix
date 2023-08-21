@@ -9,7 +9,6 @@ public class SimpleFollow : MonoBehaviour, IDamageable
     public float speed;
     public float distanceBetween;
 
-    public int lives = 2;
     private float distance;
    
     void Start()
@@ -42,16 +41,5 @@ public class SimpleFollow : MonoBehaviour, IDamageable
     public void Hit()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    private void OnParticleCollision(GameObject other)
-    {
-        lives--;
-     
-
-        if (lives < 1)
-        {
-            Destroy(gameObject, 1f);
-        }
     }
 }
