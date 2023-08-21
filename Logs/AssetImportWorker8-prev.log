@@ -15,7 +15,7 @@ C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
 -logFile
 Logs/AssetImportWorker8.log
 -srvPort
-64397
+55435
 Successfully changed project path to: C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
 C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1420] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 2978250692 [EditorId] 2978250692 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [52036] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 1146394379 [EditorId] 1146394379 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1420] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 2978250692 [EditorId] 2978250692 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [52036] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 1146394379 [EditorId] 1146394379 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 25.94 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 26.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014748 seconds.
-- Loaded All Assemblies, in  0.465 seconds
+Registered in 0.016613 seconds.
+- Loaded All Assemblies, in  0.460 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.307 seconds
-Domain Reload Profiling: 768ms
-	BeginReloadAssembly (116ms)
+- Finished resetting the current domain, in  0.324 seconds
+Domain Reload Profiling: 781ms
+	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (201ms)
-		LoadAssemblies (112ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (118ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (192ms)
-			TypeCache.Refresh (191ms)
-				TypeCache.ScanAssembly (177ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (308ms)
+		AnalyzeDomain (177ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (161ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (324ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (240ms)
+		SetupLoadedEditorAssemblies (257ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (162ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,52 +117,52 @@ Domain Reload Profiling: 768ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.900 seconds
-Refreshing native plugins compatible for Editor in 17.97 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.985 seconds
+Refreshing native plugins compatible for Editor in 17.33 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.773 seconds
-Domain Reload Profiling: 1655ms
-	BeginReloadAssembly (159ms)
+- Finished resetting the current domain, in  0.754 seconds
+Domain Reload Profiling: 1730ms
+	BeginReloadAssembly (195ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (603ms)
-		LoadAssemblies (376ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (629ms)
+		LoadAssemblies (394ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (296ms)
-			TypeCache.Refresh (273ms)
-				TypeCache.ScanAssembly (256ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
+		AnalyzeDomain (321ms)
+			TypeCache.Refresh (295ms)
+				TypeCache.ScanAssembly (276ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (774ms)
+	FinalizeReload (755ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (580ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
+			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (92ms)
-			ProcessInitializeOnLoadAttributes (273ms)
-			ProcessInitializeOnLoadMethodAttributes (189ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (186ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 15.47 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 18.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2423 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (80.1 KB). Loaded Objects now: 2870.
-Memory consumption went from 103.5 MB to 103.4 MB.
-Total: 7.127000 ms (FindLiveObjects: 0.396500 ms CreateObjectMapping: 0.093100 ms MarkObjects: 6.436800 ms  DeleteObjects: 0.199300 ms)
+Unloading 77 unused Assets / (79.7 KB). Loaded Objects now: 2870.
+Memory consumption went from 106.2 MB to 106.2 MB.
+Total: 9.009500 ms (FindLiveObjects: 0.405200 ms CreateObjectMapping: 0.080900 ms MarkObjects: 8.300200 ms  DeleteObjects: 0.220900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -177,83 +177,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 976046.961749 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced
-  artifactKey: Guid(985eb2e4805a8bd4d8bb15fbd05f28bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced using Guid(985eb2e4805a8bd4d8bb15fbd05f28bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669955c109f3f37a5e2d60e6399cfc7a') in 0.002578 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.103694 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/anim_light1.png
-  artifactKey: Guid(341b226fa20286643a16a3fe05a3286b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/anim_light1.png using Guid(341b226fa20286643a16a3fe05a3286b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1b65589c416c23c0d55540fbd2b8bb') in 0.096622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/env_objects.png
-  artifactKey: Guid(40f539b353576a2448588d9417312eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/env_objects.png using Guid(40f539b353576a2448588d9417312eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714d37aa0515556a573880daa2511004') in 1.366229 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 545
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/walls_far.png
-  artifactKey: Guid(6f9abc8f092972e4596a62b9d031f99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/walls_far.png using Guid(6f9abc8f092972e4596a62b9d031f99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8c6735fadfd6267abbf50671cbbabb') in 1.153481 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 559
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/wood_env.png
-  artifactKey: Guid(9f1888ec7aff5a94a887e3106cbddd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/wood_env.png using Guid(9f1888ec7aff5a94a887e3106cbddd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f736eb4fb00a552d73753eb897496abb') in 0.459048 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 207
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/walls_side_top_far.png
-  artifactKey: Guid(60b932daca781074791abdc304b7a06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/walls_side_top_far.png using Guid(60b932daca781074791abdc304b7a06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5684da6250948905f573a2ed1c13722f') in 0.958576 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 376
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/anim_light3.png
-  artifactKey: Guid(27df11ebd9f54314a9f96ea8a85a4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/anim_light3.png using Guid(27df11ebd9f54314a9f96ea8a85a4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86e2c8f9ab90ef6d023aa4368c5332a') in 0.034985 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Sliced/anim_lights.png
-  artifactKey: Guid(8af458c9a36be6d46a70eb4946a555a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Sliced/anim_lights.png using Guid(8af458c9a36be6d46a70eb4946a555a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e3786766196d84c037ecd2efc908cf') in 0.075429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 375.271150 seconds.
-  path: Assets/Pixel2DCastleTileset/Sprites/Castle 1.asset
-  artifactKey: Guid(58904b611cd4e3547bdc183204e58dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel2DCastleTileset/Sprites/Castle 1.asset using Guid(58904b611cd4e3547bdc183204e58dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29c6af25f6f1f4e4cdf0b51070ac8f4') in 0.042080 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 43.926106 seconds.
-  path: Assets/Castle
-  artifactKey: Guid(6d118a74063278d4eabbc8c271790783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Castle using Guid(6d118a74063278d4eabbc8c271790783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5540da057577eeb4030d56659db78190') in 0.000518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
