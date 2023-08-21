@@ -18,6 +18,7 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] private LayerMask jumpableGround;
+ 
 
     private float dirX = 0f;
 
@@ -86,7 +87,7 @@ public class PlayerMain : MonoBehaviour
         
         Cursor.visible = false;
         dirX = Input.GetAxisRaw("Horizontal");
-        if (!isAttacking)
+        if (!isAttacking && morto == false)
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
@@ -95,7 +96,7 @@ public class PlayerMain : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Fire1") && dirX == 0 && isGrounded())
+        if (Input.GetButtonDown("Fire1") && dirX == 0 && isGrounded() && morto == false)
         {
             isAttackPressed = true;
             
@@ -137,11 +138,12 @@ public class PlayerMain : MonoBehaviour
                 Fire();
                 ChangeAnimationState(PLAYER_ATTACK);
             }
-           // attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+            attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
             Invoke("AttackComplete", attackDelay);
             
         }
     }
+
 
     void RestartGame()
     {
