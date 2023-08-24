@@ -15,7 +15,7 @@ C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-61822
+51876
 Successfully changed project path to: C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
 C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/Jorge Santos/Desktop/MEGAMAN/MegamanRemix
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [38304] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 574391642 [EditorId] 574391642 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18984] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 2701028640 [EditorId] 2701028640 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [38304] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 574391642 [EditorId] 574391642 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18984] Host "[IP] 192.168.15.114 [Port] 0 [Flags] 2 [Guid] 2701028640 [EditorId] 2701028640 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7BIHLFE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 32.38 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 72.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015772 seconds.
-- Loaded All Assemblies, in  0.373 seconds
+Registered in 0.020883 seconds.
+- Loaded All Assemblies, in  0.540 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.264 seconds
-Domain Reload Profiling: 634ms
-	BeginReloadAssembly (93ms)
+- Finished resetting the current domain, in  0.306 seconds
+Domain Reload Profiling: 841ms
+	BeginReloadAssembly (126ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (161ms)
-		LoadAssemblies (89ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (98ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (123ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (152ms)
-				TypeCache.ScanAssembly (141ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (265ms)
+		AnalyzeDomain (236ms)
+			TypeCache.Refresh (235ms)
+				TypeCache.ScanAssembly (214ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (306ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (205ms)
+		SetupLoadedEditorAssemblies (224ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (139ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (147ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,52 +117,52 @@ Domain Reload Profiling: 634ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.900 seconds
-Refreshing native plugins compatible for Editor in 16.04 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.954 seconds
+Refreshing native plugins compatible for Editor in 16.49 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.696 seconds
-Domain Reload Profiling: 1591ms
-	BeginReloadAssembly (139ms)
+- Finished resetting the current domain, in  0.775 seconds
+Domain Reload Profiling: 1723ms
+	BeginReloadAssembly (166ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (663ms)
-		LoadAssemblies (368ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (667ms)
+		LoadAssemblies (411ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (358ms)
-			TypeCache.Refresh (335ms)
-				TypeCache.ScanAssembly (316ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (696ms)
+		AnalyzeDomain (329ms)
+			TypeCache.Refresh (305ms)
+				TypeCache.ScanAssembly (287ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (776ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (534ms)
+		SetupLoadedEditorAssemblies (618ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (293ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (330ms)
+			ProcessInitializeOnLoadMethodAttributes (183ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 23.14 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 21.27 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2804 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 84 unused Assets / (80.2 KB). Loaded Objects now: 3253.
-Memory consumption went from 114.2 MB to 114.1 MB.
-Total: 7.460600 ms (FindLiveObjects: 0.329600 ms CreateObjectMapping: 0.094900 ms MarkObjects: 6.884900 ms  DeleteObjects: 0.150200 ms)
+Memory consumption went from 114.0 MB to 114.0 MB.
+Total: 9.838600 ms (FindLiveObjects: 0.469700 ms CreateObjectMapping: 0.124800 ms MarkObjects: 9.019100 ms  DeleteObjects: 0.223400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -178,66 +178,1943 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.986 seconds
-Refreshing native plugins compatible for Editor in 21.73 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.136 seconds
-Domain Reload Profiling: 2112ms
-	BeginReloadAssembly (190ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (680ms)
-		LoadAssemblies (436ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (310ms)
-			TypeCache.Refresh (305ms)
-				TypeCache.ScanAssembly (280ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1136ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (640ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (82ms)
-			ProcessInitializeOnLoadAttributes (332ms)
-			ProcessInitializeOnLoadMethodAttributes (196ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 37.57 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2797 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 67 unused Assets / (52.5 KB). Loaded Objects now: 3256.
-Memory consumption went from 113.0 MB to 112.9 MB.
-Total: 9.445800 ms (FindLiveObjects: 0.319900 ms CreateObjectMapping: 0.073000 ms MarkObjects: 8.822200 ms  DeleteObjects: 0.229500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+Received Import Request.
+  Time since last request: 27629.230100 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_60.asset
+  artifactKey: Guid(899d1ab5a56b99a498693018ebab0c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_60.asset using Guid(899d1ab5a56b99a498693018ebab0c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2389b8c04f11ad7668dee099e0422b0') in 0.079165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_80.asset
+  artifactKey: Guid(e8c89abde36992a49af100e65c57d3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_80.asset using Guid(e8c89abde36992a49af100e65c57d3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd73c16169c5014759ebd0879412ae61') in 0.007531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_82.asset
+  artifactKey: Guid(bd6f640d978962540b7f2d8cd07b2675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_82.asset using Guid(bd6f640d978962540b7f2d8cd07b2675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a0059c2b3f8f20b1ca19b0521e6e19') in 0.005603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.385455 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_92.asset
+  artifactKey: Guid(c9db35f4bc62c5c45a903c78c103d862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_92.asset using Guid(c9db35f4bc62c5c45a903c78c103d862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ecee52ac393c233eb5fda8d3c543f6') in 0.011194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_97.asset
+  artifactKey: Guid(f84c410d8e64e0e48b31942e649365b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_97.asset using Guid(f84c410d8e64e0e48b31942e649365b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4827218b7594cc73432b1b7d16a1c98') in 0.005972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.700112 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_108.asset
+  artifactKey: Guid(8a0f7e499dfbe704b90be6cb8fa7b7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_108.asset using Guid(8a0f7e499dfbe704b90be6cb8fa7b7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9386c27088a2b0c8417a47fbfd7c9b11') in 0.008979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_117.asset
+  artifactKey: Guid(bb572f091223ad947bb9a82daa5b2ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_117.asset using Guid(bb572f091223ad947bb9a82daa5b2ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529796e2e6b69bb481d2f26f53b0f958') in 0.005545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_120.asset
+  artifactKey: Guid(f9a95d2370b03c74e8cc39ad65027dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_120.asset using Guid(f9a95d2370b03c74e8cc39ad65027dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47f8e8529b2a1731f2c725a88f734e2') in 0.017010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028692 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_124.asset
+  artifactKey: Guid(e58fd01da0081be4dae56de488d9f6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_124.asset using Guid(e58fd01da0081be4dae56de488d9f6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee53f794a42d93bee6bb99b14cc6ee9f') in 0.005639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_133.asset
+  artifactKey: Guid(95768c872c53bfb458167f2f58f45c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_133.asset using Guid(95768c872c53bfb458167f2f58f45c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241a2acd9c165e35e55a46f26c72f0b3') in 0.007895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.023966 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_140.asset
+  artifactKey: Guid(3ee48a316b317f94fa60ed27909ef826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_140.asset using Guid(3ee48a316b317f94fa60ed27909ef826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7f001bcdf1e1be5266d5b80e91e6a9') in 0.005842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_151.asset
+  artifactKey: Guid(70a8ee9a5f57eab43a64158a23c07e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_151.asset using Guid(70a8ee9a5f57eab43a64158a23c07e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2d81c84f0872164d573363898faba4') in 0.007157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_143.asset
+  artifactKey: Guid(3f30f29e5113dbc449b5ab48ba9ec63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_143.asset using Guid(3f30f29e5113dbc449b5ab48ba9ec63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de48f87e5ba926bdd4c298bd512690a') in 0.016102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.685088 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_156.asset
+  artifactKey: Guid(0dc5963f4e28a5347a1e2974e0abce89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_156.asset using Guid(0dc5963f4e28a5347a1e2974e0abce89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfda5944064043c5f072c37d28b7dab') in 0.014308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_166.asset
+  artifactKey: Guid(b9a5aee5c4988584290a6fda2f407946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_166.asset using Guid(b9a5aee5c4988584290a6fda2f407946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96bb703a8a07c7f810abb32f73b79f0d') in 0.018768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_171.asset
+  artifactKey: Guid(1a975cc5c808a954ba98736fe266f502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_171.asset using Guid(1a975cc5c808a954ba98736fe266f502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2440b93779acf82016a33bc4395c20c') in 0.006764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_175.asset
+  artifactKey: Guid(1c15d4097c82b044c932459a0abc837f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_175.asset using Guid(1c15d4097c82b044c932459a0abc837f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7dd558b8725e9e48dbe51c8cda39c98') in 0.006148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_178.asset
+  artifactKey: Guid(808c18add728767449a663c78f18e617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_178.asset using Guid(808c18add728767449a663c78f18e617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8daee0ae3b78784df2aeafd76829cd25') in 0.021792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_192.asset
+  artifactKey: Guid(beaf9ee0e64c6df40b6684d918f82696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_192.asset using Guid(beaf9ee0e64c6df40b6684d918f82696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a396e3c45cb7075bd9012eb6a13e49d5') in 0.006392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_199.asset
+  artifactKey: Guid(ae02a76a361971347b6f9a79a49577e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_199.asset using Guid(ae02a76a361971347b6f9a79a49577e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365ab6731c7b9561878f8dda0acf4ddd') in 0.005883 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_185.asset
+  artifactKey: Guid(71f41f7ebc8da8d448babcebbb27f0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_185.asset using Guid(71f41f7ebc8da8d448babcebbb27f0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a9eb27c6f3823d30605e655fc2a02e') in 0.005933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.380118 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_204.asset
+  artifactKey: Guid(ca242059986b5414f8a54d50491fb3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_204.asset using Guid(ca242059986b5414f8a54d50491fb3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc92754aabd6a6e0c18bc1542b1ba7fa') in 0.006346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_210.asset
+  artifactKey: Guid(6036085b64cd9df449df35b788a0898c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_210.asset using Guid(6036085b64cd9df449df35b788a0898c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2e7eb91613f5c50f42e6f7043580ba') in 0.006123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.050110 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_220.asset
+  artifactKey: Guid(70a21e2bc3cd2cc449fc5c19c2911656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_220.asset using Guid(70a21e2bc3cd2cc449fc5c19c2911656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8656d33269aba7157e1e421a40ae49') in 0.005999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_226.asset
+  artifactKey: Guid(68d86518459efed4cbd3e6dd7f7d3a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_226.asset using Guid(68d86518459efed4cbd3e6dd7f7d3a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2ad48b1747cf8ab7e3c124009c595a') in 0.006807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_231.asset
+  artifactKey: Guid(8f302f16582a74249a5b7a83501f9b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_231.asset using Guid(8f302f16582a74249a5b7a83501f9b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c71a5a2f833fdb3872d7f397dcb5408') in 0.004677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.386603 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_236.asset
+  artifactKey: Guid(12e0fa0e1c97d454db793927d21fd6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_236.asset using Guid(12e0fa0e1c97d454db793927d21fd6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61ed814635d038b98553275d103b2392') in 0.020518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_245.asset
+  artifactKey: Guid(f0c62431c090fb644b9a53ed901b32fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_245.asset using Guid(f0c62431c090fb644b9a53ed901b32fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14839ded503661d0dcd2e139f1d8b5b4') in 0.005818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_247.asset
+  artifactKey: Guid(303eb811d0c1593499833f009cb353a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_247.asset using Guid(303eb811d0c1593499833f009cb353a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99941881e6c0a4b11e5dcb73cd20f2ee') in 0.005943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_253.asset
+  artifactKey: Guid(be6e17b7dc7cc96489de7040d22b5472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_253.asset using Guid(be6e17b7dc7cc96489de7040d22b5472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150fe878355c512002293f89a7c58a0d') in 0.007506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_260.asset
+  artifactKey: Guid(a7bceb62d49e3154eb4eee3ade557e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_260.asset using Guid(a7bceb62d49e3154eb4eee3ade557e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e392e716557d07ae157f4b98bc0e7db') in 0.008265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.024367 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_268.asset
+  artifactKey: Guid(56a46d06087c6374a8ba1f1f0a43684c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_268.asset using Guid(56a46d06087c6374a8ba1f1f0a43684c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4bc42e6c72ccfec6ebcf05e486d64a') in 0.006157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_279.asset
+  artifactKey: Guid(377fd5c9515db2740b588a5e9008ef27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_279.asset using Guid(377fd5c9515db2740b588a5e9008ef27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '412a7353aa8f0fb0540d6a2173ab8640') in 0.007336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_276.asset
+  artifactKey: Guid(c9e4f0f5575d2ad44a66f10d2640831f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_276.asset using Guid(c9e4f0f5575d2ad44a66f10d2640831f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc07c14cf1c0af9be0f28c3adc4552e') in 0.017512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.259898 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_284.asset
+  artifactKey: Guid(5b8349ba97d086645ba339ee471b4b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_284.asset using Guid(5b8349ba97d086645ba339ee471b4b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec264330b87d54ce9691b2c161e6f025') in 0.012767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_294.asset
+  artifactKey: Guid(7e60e0e884aca6e4e93bec50d4fbd1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_294.asset using Guid(7e60e0e884aca6e4e93bec50d4fbd1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57da9aa8a3b932a04db2784f6152d6dc') in 0.007075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.018068 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_300.asset
+  artifactKey: Guid(3d1b039978ec12c45b61efc092c74c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_300.asset using Guid(3d1b039978ec12c45b61efc092c74c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1078b285882df1a587517b2c1af76757') in 0.051575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_317.asset
+  artifactKey: Guid(91c91599d207f284ebd35de98fad224d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_317.asset using Guid(91c91599d207f284ebd35de98fad224d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460805c46201dae6219eabef02d8506a') in 0.006728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_319.asset
+  artifactKey: Guid(da7016c568bfa8947b39c1f6a4642a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_319.asset using Guid(da7016c568bfa8947b39c1f6a4642a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7811df221267f43b2b1a1876c35848a2') in 0.006094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_318.asset
+  artifactKey: Guid(daba7af8e8ac5204b807c08c9107068f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_318.asset using Guid(daba7af8e8ac5204b807c08c9107068f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89cd7be3c8e53370a4f20f3d7019847') in 0.005606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_309.asset
+  artifactKey: Guid(41b780e95fb6e274ab4eda308e5f48d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_309.asset using Guid(41b780e95fb6e274ab4eda308e5f48d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4b8e668ae50883e1864eb210132871') in 0.006199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/environment_322.asset
+  artifactKey: Guid(9ceb707f14a31c6459bc1338f14b294c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/environment_322.asset using Guid(9ceb707f14a31c6459bc1338f14b294c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c147a5234a4f2cdbd3dd2a2dcb0bd6a2') in 0.005278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.955129 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_89.asset
+  artifactKey: Guid(aeb4b27bf8df11249aad3c6c4cfe8b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_89.asset using Guid(aeb4b27bf8df11249aad3c6c4cfe8b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a83c76a0907d38ec056138e08efcf2') in 0.014583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.026523 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_95.asset
+  artifactKey: Guid(2eb32baada6d7cf49bdf73f2dfc57fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_95.asset using Guid(2eb32baada6d7cf49bdf73f2dfc57fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb666bc1b92ed093b35c19d7e3b9584') in 0.008180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_106.asset
+  artifactKey: Guid(baf36b17bf3eb4a4fa982ac4c9fcbf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_106.asset using Guid(baf36b17bf3eb4a4fa982ac4c9fcbf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8976019aeddfcf2de4b0b068f5e2306') in 0.009185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_105.asset
+  artifactKey: Guid(0e06d158b489f6942a2e2677bcd11cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_105.asset using Guid(0e06d158b489f6942a2e2677bcd11cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26b16eb64456dfe2aa62f76853ecd43') in 0.019052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 32.566390 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_111.asset
+  artifactKey: Guid(9c7dfc6b72368894a8eac6ec7d2695cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_111.asset using Guid(9c7dfc6b72368894a8eac6ec7d2695cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d25e5089d770cab8d73393c7e7c432') in 0.008962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_123.asset
+  artifactKey: Guid(6048df50cb2804d48b1f3e3c17056b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_123.asset using Guid(6048df50cb2804d48b1f3e3c17056b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a5c0c977f809040ca748853b6786ba') in 0.009586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_120.asset
+  artifactKey: Guid(fa01e87810f933c4dafb3f8718ec94b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_120.asset using Guid(fa01e87810f933c4dafb3f8718ec94b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80694c9f804129f159d4afd2dbcd6ed1') in 0.008659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006465 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_127.asset
+  artifactKey: Guid(7fd57b132c4219a4ba4753647e68aef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_127.asset using Guid(7fd57b132c4219a4ba4753647e68aef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35967bd9c582171954dd0e214189417') in 0.008407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_133.asset
+  artifactKey: Guid(c7fa6371a6e63e7439e1cf23d3eb1f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_133.asset using Guid(c7fa6371a6e63e7439e1cf23d3eb1f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07eea6acd69f3a3799ec671b961dae07') in 0.010304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_131.asset
+  artifactKey: Guid(e7d2d622ccb3a3044976bc58cc8adb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_131.asset using Guid(e7d2d622ccb3a3044976bc58cc8adb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbe89fd7796115e6507cfc994e7d322') in 0.007917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001174 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_144.asset
+  artifactKey: Guid(7d8deb3f04b418c4bb545b70ba327bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_144.asset using Guid(7d8deb3f04b418c4bb545b70ba327bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43a92b764ae3aa41bf727f295720dbb') in 0.008738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_146.asset
+  artifactKey: Guid(da2eecf135e087f4890b8349c75d921a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_146.asset using Guid(da2eecf135e087f4890b8349c75d921a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c23395dccc954cf60c07f43fd1c7cc') in 0.008195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_152.asset
+  artifactKey: Guid(13333185c7b7ce24ebeb6aa75f9cefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_152.asset using Guid(13333185c7b7ce24ebeb6aa75f9cefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8635ab4f2cb9970f70766b2f23df1718') in 0.007555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_160.asset
+  artifactKey: Guid(4404efeb6400fdb4182338d32de35e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_160.asset using Guid(4404efeb6400fdb4182338d32de35e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104dea7e32860470ed45c5bfb2c03b67') in 0.007840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_168.asset
+  artifactKey: Guid(11664a4e0495d8845b21ec5099e06ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_168.asset using Guid(11664a4e0495d8845b21ec5099e06ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a1b96febc2be988fb1d7e3f49ac47c') in 0.009582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_170.asset
+  artifactKey: Guid(777504578a3f81a4392b79189aae9950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_170.asset using Guid(777504578a3f81a4392b79189aae9950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62724ea533cf7a921bb9d23b5bf6f220') in 0.008967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.233628 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_175.asset
+  artifactKey: Guid(e18da634c3502a6409f618e9ec981efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_175.asset using Guid(e18da634c3502a6409f618e9ec981efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cda47c3ccb2c9a25615eb2f752a926f') in 0.009978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_186.asset
+  artifactKey: Guid(1ca36e58d438b0944adcdba39a1f5b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_186.asset using Guid(1ca36e58d438b0944adcdba39a1f5b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abbcae014bb198cc93c3532850298a79') in 0.007579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_185.asset
+  artifactKey: Guid(5dbfb64d85d1ade4b97207a4ceb31d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_185.asset using Guid(5dbfb64d85d1ade4b97207a4ceb31d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3660107fb38de11110c64fcf06f6ca17') in 0.008962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010552 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_191.asset
+  artifactKey: Guid(5977e30d7f2658046ba10a77d1c060ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_191.asset using Guid(5977e30d7f2658046ba10a77d1c060ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e03fe08e0f640dc0930de1694affdd3') in 0.009695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_201.asset
+  artifactKey: Guid(ecf827852c437cd4ca47ca97f763a594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_201.asset using Guid(ecf827852c437cd4ca47ca97f763a594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1df0dd0d15c278c9f934e21a182e156') in 0.010399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.283324 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_207.asset
+  artifactKey: Guid(65e3c2a40d51a334abd840544b59d1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_207.asset using Guid(65e3c2a40d51a334abd840544b59d1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7cb5d1e93d9bfbeff538bec0d69563') in 0.009555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_219.asset
+  artifactKey: Guid(a0dd740b304da2345bd9f071246e85f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_219.asset using Guid(a0dd740b304da2345bd9f071246e85f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928daeed2c92b16173f92c1e2f901c25') in 0.009638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_215.asset
+  artifactKey: Guid(a16f0e6ba270c9043b4970f20a4ab441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_215.asset using Guid(a16f0e6ba270c9043b4970f20a4ab441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7a224c3efd8addc579f06583dd6fd3') in 0.008133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.047671 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_223.asset
+  artifactKey: Guid(29e7fa80448c87d4fa35786d2cfdf0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_223.asset using Guid(29e7fa80448c87d4fa35786d2cfdf0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903960c29ba47344eedbfc45575d0ebd') in 0.009169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_230.asset
+  artifactKey: Guid(5f49e98e9e470784f9e9209e80e7fa25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_230.asset using Guid(5f49e98e9e470784f9e9209e80e7fa25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f04120f119d293bc02553aed10cf36c') in 0.009023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.229265 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_239.asset
+  artifactKey: Guid(1755ecc1bf2efd74ba5b2373331b5d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_239.asset using Guid(1755ecc1bf2efd74ba5b2373331b5d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcab8eaa91d1e3148e1d538940cc74db') in 0.008949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_243.asset
+  artifactKey: Guid(34f0c5a313993434f880500b4bb86639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_243.asset using Guid(34f0c5a313993434f880500b4bb86639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8fbfe29e25b4fd4c9674a8bab1e0c6d') in 0.009076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_249.asset
+  artifactKey: Guid(bd6f7761277136c459119c730f491229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_249.asset using Guid(bd6f7761277136c459119c730f491229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3598c19a7756eae78d79e58a4399b4') in 0.007907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.014276 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_255.asset
+  artifactKey: Guid(2680f575acc08894384644890c3d1846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_255.asset using Guid(2680f575acc08894384644890c3d1846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a104ba88ede17a79c6d3efbd9e91d37b') in 0.009066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_267.asset
+  artifactKey: Guid(009fd3bad13cc8d4584928327aac913f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_267.asset using Guid(009fd3bad13cc8d4584928327aac913f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd2ede867a0d4c42d976fc0bacfde09b') in 0.010301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_259.asset
+  artifactKey: Guid(7b979615bf7037643841167eae884e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_259.asset using Guid(7b979615bf7037643841167eae884e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5467fa761c283962c66d1503566e604') in 0.008017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000840 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_272.asset
+  artifactKey: Guid(ae13d58bbc7dc424da7abdc251f85d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_272.asset using Guid(ae13d58bbc7dc424da7abdc251f85d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255375f3dc8344ad9729abc9ec2e3ab3') in 0.010358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_275.asset
+  artifactKey: Guid(bb436e77d7e11e341b4a1a4c46f606bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_275.asset using Guid(bb436e77d7e11e341b4a1a4c46f606bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebab439bc7c25d75856ed77e87efb6e5') in 0.014581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.196278 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_287.asset
+  artifactKey: Guid(905e862312c2e2740b2f01917053d1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_287.asset using Guid(905e862312c2e2740b2f01917053d1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2fd4f407e0bd32ce13517a0b327525') in 0.008405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_292.asset
+  artifactKey: Guid(b2f0176b497df8843bad16c12696e873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_292.asset using Guid(b2f0176b497df8843bad16c12696e873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a52d4c9e5066e2b91e5a49436dc49f2') in 0.009595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_291.asset
+  artifactKey: Guid(4ee1fc75b87e2a44f99cf4c268f6ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_291.asset using Guid(4ee1fc75b87e2a44f99cf4c268f6ca17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45904c9467a24d1d4a86de8da5232383') in 0.008917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_304.asset
+  artifactKey: Guid(fdc21b2b6061f934fbd999b068963c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_304.asset using Guid(fdc21b2b6061f934fbd999b068963c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f8aa1445f00ce527b307e61a656579') in 0.008127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_310.asset
+  artifactKey: Guid(6b330d3f17f7d0d41b15c88f3be1d030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_310.asset using Guid(6b330d3f17f7d0d41b15c88f3be1d030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c82b091765bb2381968dd6b58b28cf0') in 0.009275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005285 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_317.asset
+  artifactKey: Guid(84b00051be7725a4c9d600c242312790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_317.asset using Guid(84b00051be7725a4c9d600c242312790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e77021c59f2d11214cd50384a1626bc') in 0.009740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_342.asset
+  artifactKey: Guid(b3b129464e3138045b285f547f38313b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_342.asset using Guid(b3b129464e3138045b285f547f38313b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d3b70cfaedf43363931eb1e3616dc0') in 0.007653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_338.asset
+  artifactKey: Guid(3b6650eb3a484da4f9ef54e6c278c880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_338.asset using Guid(3b6650eb3a484da4f9ef54e6c278c880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'affee3c3c595a652fbb13eb710007fc0') in 0.008871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_330.asset
+  artifactKey: Guid(d35d840ec6ec72b43aa674d77ffb3164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_330.asset using Guid(d35d840ec6ec72b43aa674d77ffb3164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1046b74258212d5301e6a2ba6b53a3ae') in 0.009228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_324.asset
+  artifactKey: Guid(4dddce733f546ac43a08d52eb1d1f2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_324.asset using Guid(4dddce733f546ac43a08d52eb1d1f2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f5b09bba9bda8059cb0a1f767cb3eb') in 0.009100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_336.asset
+  artifactKey: Guid(363fe9e29d931884cbc2c867641cf282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_336.asset using Guid(363fe9e29d931884cbc2c867641cf282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b764328bd440b57584260a233db5772d') in 0.007492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003921 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_351.asset
+  artifactKey: Guid(d6feb7d59cd107e4f9048245966771e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_351.asset using Guid(d6feb7d59cd107e4f9048245966771e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a6696999ad66e04d181a0dfa30aa0e') in 0.008768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_356.asset
+  artifactKey: Guid(ff4a025c95ffe3f468fb9d03484f6347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_356.asset using Guid(ff4a025c95ffe3f468fb9d03484f6347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dadc9bc3c742598e90b33f2605458e43') in 0.009003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.142377 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_367.asset
+  artifactKey: Guid(da87f46579a5e8b448e4b242f1c54f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_367.asset using Guid(da87f46579a5e8b448e4b242f1c54f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79ff2c661c5740adc50279ed54ff66a') in 0.008102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_372.asset
+  artifactKey: Guid(7bd8c44532472b048bf89f0b930cfe00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_372.asset using Guid(7bd8c44532472b048bf89f0b930cfe00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c6ea2f1e4316e50597d8255d5ea8a0') in 0.008895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_379.asset
+  artifactKey: Guid(d028bd59341f3984abc3d976fbc1d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_379.asset using Guid(d028bd59341f3984abc3d976fbc1d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cff74eaa60d4e9642b1f7a618d930b0') in 0.008665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.014095 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_383.asset
+  artifactKey: Guid(112a982ce3dd2eb4180359c9bff9274c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_383.asset using Guid(112a982ce3dd2eb4180359c9bff9274c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982036eb21a2ad98e502c36a1ffe4459') in 0.008190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_386.asset
+  artifactKey: Guid(dde89f8c0337dea4b8906288e46f4f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_386.asset using Guid(dde89f8c0337dea4b8906288e46f4f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e1277c52f2d2ada73d780ed8490d05') in 0.011625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.008879 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_399.asset
+  artifactKey: Guid(921bc156e83f60f4aa716965fa40cf49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_399.asset using Guid(921bc156e83f60f4aa716965fa40cf49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e2032bf3da1a2ec67591ed72c03d04') in 0.010147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_410.asset
+  artifactKey: Guid(356a9b7b74f78fe49a3e47f98258a999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_410.asset using Guid(356a9b7b74f78fe49a3e47f98258a999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e04e0f0c5e73674d80ea813a6304c9') in 0.008615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.188461 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_415.asset
+  artifactKey: Guid(4ee275b2c782dfb469eb9aeeeb04c2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_415.asset using Guid(4ee275b2c782dfb469eb9aeeeb04c2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6d4b92add5daf245acf015a973cfb7') in 0.009812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_426.asset
+  artifactKey: Guid(e5fe82c435f4d564ea4a76fb1a3e71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_426.asset using Guid(e5fe82c435f4d564ea4a76fb1a3e71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2905615bf2918f6499ae8d56cc5c59cf') in 0.008293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_420.asset
+  artifactKey: Guid(46f2a538555f92d45b2169c3dd088dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_420.asset using Guid(46f2a538555f92d45b2169c3dd088dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82c7405ef57de5d7460beb2765cda17') in 0.007375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.257591 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_431.asset
+  artifactKey: Guid(c1c706529ed359c4588a243a2a5c88b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_431.asset using Guid(c1c706529ed359c4588a243a2a5c88b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee15f4221e870deab916758ef30f4aa') in 0.008311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_435.asset
+  artifactKey: Guid(2a6c37c0a885e95439de2c91fa425b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_435.asset using Guid(2a6c37c0a885e95439de2c91fa425b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e3b6fef26517a5a032ffc04b853705') in 0.011490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.009379 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_447.asset
+  artifactKey: Guid(0e62c9d68299ed149aac779c5965d95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_447.asset using Guid(0e62c9d68299ed149aac779c5965d95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c74684f1e11a8681cd94ed31ea04bb') in 0.008213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_459.asset
+  artifactKey: Guid(babb763459a93de47b2d5e709d3be6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_459.asset using Guid(babb763459a93de47b2d5e709d3be6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9adaee68c674882c22d78d01fddd8ce6') in 0.008917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_450.asset
+  artifactKey: Guid(1c8d609ff8c21bc488f6d207b73ee327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_450.asset using Guid(1c8d609ff8c21bc488f6d207b73ee327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750bc2b62a0558bb4c589f7d3a4e968d') in 0.008486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001411 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_464.asset
+  artifactKey: Guid(5d59174f4e43e3e4b99ecab0e5adfdbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_464.asset using Guid(5d59174f4e43e3e4b99ecab0e5adfdbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '914204fbb87b51d075af64002b70d626') in 0.008357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_476.asset
+  artifactKey: Guid(4a4e1d8a8e4a16649af69fa9005d40c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_476.asset using Guid(4a4e1d8a8e4a16649af69fa9005d40c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c752465f4377d58696ab4720ea0959c9') in 0.007683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_472.asset
+  artifactKey: Guid(935c2c3770bbe3e489c3b477e53a3600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_472.asset using Guid(935c2c3770bbe3e489c3b477e53a3600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2523efd7cdae6f31f938748009171b27') in 0.009395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_478.asset
+  artifactKey: Guid(382e3cfe717dd824c98e6eeadd8668f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_478.asset using Guid(382e3cfe717dd824c98e6eeadd8668f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b260328d0396c3f86993033668d8cfe') in 0.008056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_468.asset
+  artifactKey: Guid(012b6b3b15b848e4fad48e942ee50e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_468.asset using Guid(012b6b3b15b848e4fad48e942ee50e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c41d809b255c2312e9cf724e1e53b7') in 0.009172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_467.asset
+  artifactKey: Guid(fadec50e39d9e08468de6e0555bad168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_467.asset using Guid(fadec50e39d9e08468de6e0555bad168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb928cb559ccb4625ca55ab038670d76') in 0.007521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.150823 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_495.asset
+  artifactKey: Guid(68bf5af3c5e8d824dacc36b4fb76ee96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_495.asset using Guid(68bf5af3c5e8d824dacc36b4fb76ee96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b0286e8628e8ed959ce1a833334bb7') in 0.009670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_504.asset
+  artifactKey: Guid(49030aa9815172145ac09141605900f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_504.asset using Guid(49030aa9815172145ac09141605900f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3485465811661b25b5056db40a5f767') in 0.010256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_505.asset
+  artifactKey: Guid(75560cb11d506934f8cc9337147678d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_505.asset using Guid(75560cb11d506934f8cc9337147678d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e375d04a3118434ba8d08bffc5991b') in 0.007313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000723 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_511.asset
+  artifactKey: Guid(a03df504a417cbd4d933d888e2a9fdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_511.asset using Guid(a03df504a417cbd4d933d888e2a9fdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b964577557f9503fa9df882516464e') in 0.007392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_523.asset
+  artifactKey: Guid(7397f7d4d1ed15f4e9ac3ccb77b0eabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_523.asset using Guid(7397f7d4d1ed15f4e9ac3ccb77b0eabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88b8b682e6daf3c2929c035c8605615') in 0.009183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_514.asset
+  artifactKey: Guid(4f1bcc842a84e1048a4453135d210db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_514.asset using Guid(4f1bcc842a84e1048a4453135d210db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb902ee66ac8e1861736912aa9ace1c1') in 0.007362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004220 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_527.asset
+  artifactKey: Guid(ab86299f4d8b353499bc623bab84adb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_527.asset using Guid(ab86299f4d8b353499bc623bab84adb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159198df738bfea9dd69405fd74348c9') in 0.008221 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_535.asset
+  artifactKey: Guid(9378c4a773e8cd84d92bcf78040b9f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_535.asset using Guid(9378c4a773e8cd84d92bcf78040b9f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c48067bee197f780a59ab204be7c454') in 0.008178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_539.asset
+  artifactKey: Guid(5483bc7b3295bc345adc94a51a52e2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_539.asset using Guid(5483bc7b3295bc345adc94a51a52e2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bc5c03202ed1444bc85cd4b1516d2b') in 0.007926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002609 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_543.asset
+  artifactKey: Guid(38af27920d5c3c54c8064affc5ff3edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_543.asset using Guid(38af27920d5c3c54c8064affc5ff3edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ac5c9b93a2e13d3c496d7fc598f44d') in 0.007842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_549.asset
+  artifactKey: Guid(4657600773f5b994bba0612225612a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_549.asset using Guid(4657600773f5b994bba0612225612a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7720e2762b68cb5783def6c7db0cc882') in 0.008598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_553.asset
+  artifactKey: Guid(57d73219829d7ad488c3d2b010446990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_553.asset using Guid(57d73219829d7ad488c3d2b010446990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d6deb3cca1b8f0a075488bdc94de89') in 0.008368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.176611 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_2.asset
+  artifactKey: Guid(be0b02c3b2362e349bfa68841782e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_2.asset using Guid(be0b02c3b2362e349bfa68841782e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86da5d64c969bfffbf89d8de8090df41') in 0.012814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_11.asset
+  artifactKey: Guid(5994b334407bdbc41a7835c9d1a128f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_11.asset using Guid(5994b334407bdbc41a7835c9d1a128f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1d87357270c5289193db7134905be6') in 0.008093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_12.asset
+  artifactKey: Guid(ea0ac226b5d98fd40a138bf5db295447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_12.asset using Guid(ea0ac226b5d98fd40a138bf5db295447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73dc008c5b55ed0461703a2194d189e3') in 0.008105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_27.asset
+  artifactKey: Guid(256dcda9000bd0242a624317561d4668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_27.asset using Guid(256dcda9000bd0242a624317561d4668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba334a87554e4dd0e9b5433d178a967') in 0.009818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_25.asset
+  artifactKey: Guid(b7eb1c27e382f0646a0d204865d66c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_25.asset using Guid(b7eb1c27e382f0646a0d204865d66c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29874696696b5e700527a994f50534f2') in 0.008565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_23.asset
+  artifactKey: Guid(3bff451d0c3d28a4bafa7239f9a84da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_23.asset using Guid(3bff451d0c3d28a4bafa7239f9a84da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0742fa5356637079291663245d4cc4ed') in 0.007058 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_36.asset
+  artifactKey: Guid(5662402d7e65344478d4eefcca044962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_36.asset using Guid(5662402d7e65344478d4eefcca044962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19bf7a00ccb518182bfc59f235fc4589') in 0.007574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_38.asset
+  artifactKey: Guid(06be4a5e5ad2ea641badb8338dbd35e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_38.asset using Guid(06be4a5e5ad2ea641badb8338dbd35e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752b9936584685f0813416461bdfd8c8') in 0.008916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.008818 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_49.asset
+  artifactKey: Guid(9e5c562966dc67a469581bef4bbfbba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_49.asset using Guid(9e5c562966dc67a469581bef4bbfbba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac20035aef18e1a9b2422945ca590d47') in 0.008984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_55.asset
+  artifactKey: Guid(0dfda79aa1b100b47a7d35ba44ff00b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_55.asset using Guid(0dfda79aa1b100b47a7d35ba44ff00b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dab9bc44bc4d7e13a5dd90f257f12e6') in 0.009792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_56.asset
+  artifactKey: Guid(cf2e5c7d1393adf4aa46399de4d46ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_56.asset using Guid(cf2e5c7d1393adf4aa46399de4d46ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b418c691214cd563a8c12515906756ef') in 0.008150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.121621 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_65.asset
+  artifactKey: Guid(d3a921130ceef444daf96a0ed496a0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_65.asset using Guid(d3a921130ceef444daf96a0ed496a0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c5130e305a32a29e2a40b26bbb3fb96') in 0.009026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_74.asset
+  artifactKey: Guid(cd9d8579a8bbff646b86542ff198da2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_74.asset using Guid(cd9d8579a8bbff646b86542ff198da2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555e2d4620ed17057bde40bbac378dbc') in 0.010978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.023417 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_81.asset
+  artifactKey: Guid(931f1c6967874284fafe4e9768ecc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_81.asset using Guid(931f1c6967874284fafe4e9768ecc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a6b5782cbf09f1422c4a01e6cbc64c') in 0.008170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_86.asset
+  artifactKey: Guid(5fa8bc78fef4ed2428cc077805a21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_86.asset using Guid(5fa8bc78fef4ed2428cc077805a21b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a0b108e2dc1251c9020951a5384653') in 0.008698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_107.asset
+  artifactKey: Guid(3e5a3d9316aa037479e949f7812e3cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_107.asset using Guid(3e5a3d9316aa037479e949f7812e3cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4506456c84233f48e6c5b98bd8b6ff99') in 0.009256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_100.asset
+  artifactKey: Guid(de7cfb816f7d8ee49a11b0d4f9a2fe7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_100.asset using Guid(de7cfb816f7d8ee49a11b0d4f9a2fe7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcc1a7419ca1cc9149990a8184b5442') in 0.009558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_85.asset
+  artifactKey: Guid(6dee141342e76524a87b7d40dae47f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_85.asset using Guid(6dee141342e76524a87b7d40dae47f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c580489a6a53876b9f61a32b96dd6a74') in 0.009643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.160084 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_113.asset
+  artifactKey: Guid(6bf94d49f42f9304da8327f8ffd52c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_113.asset using Guid(6bf94d49f42f9304da8327f8ffd52c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc978f4557b5cbc6acca36793f77364') in 0.009066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_119.asset
+  artifactKey: Guid(a14bafa0f3ede8046972c058b2a9784c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_119.asset using Guid(a14bafa0f3ede8046972c058b2a9784c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f207e2dbb16310f546e5f68b78ddb16') in 0.008160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_117.asset
+  artifactKey: Guid(8c242fd2d042d0540a13aeba00269505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_117.asset using Guid(8c242fd2d042d0540a13aeba00269505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ee5ac32527f1f1f48b47f116b4ef4e') in 0.008240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.013704 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_129.asset
+  artifactKey: Guid(26f5475feb8808142bc287477594d8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_129.asset using Guid(26f5475feb8808142bc287477594d8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec3e8f3d17173c3807e6127261be69c') in 0.010430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_132.asset
+  artifactKey: Guid(a41b75da9daef2d44b51f56de525a0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_132.asset using Guid(a41b75da9daef2d44b51f56de525a0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c596d113b55908fcfe610d49b7ec6f') in 0.011021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007413 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_142.asset
+  artifactKey: Guid(38d5a42049a3c684d8ce19522f66958c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_142.asset using Guid(38d5a42049a3c684d8ce19522f66958c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ca4a4a95b561344d1316ab52d94446') in 0.008454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_152.asset
+  artifactKey: Guid(61187cefc5147a847a64165367b34b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_152.asset using Guid(61187cefc5147a847a64165367b34b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e76e85c6cdbf5f327229c4261880b2f') in 0.009527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_156.asset
+  artifactKey: Guid(bb24f450665be834ba48dce6b7f9b294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_156.asset using Guid(bb24f450665be834ba48dce6b7f9b294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56266c2a4a99497456457eb7dcf3a460') in 0.008526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017762 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_161.asset
+  artifactKey: Guid(7a8f7b43f6fa6644e8c8f645b5b2d3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_161.asset using Guid(7a8f7b43f6fa6644e8c8f645b5b2d3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8880c900160bb84407f5f09f95bdf305') in 0.008401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_169.asset
+  artifactKey: Guid(aa7d267114a00d04bb516d6fea372ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_169.asset using Guid(aa7d267114a00d04bb516d6fea372ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b003e061f27bd5f079adf03ca4399f89') in 0.008462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_172.asset
+  artifactKey: Guid(591c1e3e2baa6fd4982c7ffe8b47aa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_172.asset using Guid(591c1e3e2baa6fd4982c7ffe8b47aa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b719c48c7a13f730c41fe348ec798c9c') in 0.008368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.232350 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_177.asset
+  artifactKey: Guid(53fc9713e3aab3941af4b7bcf98f005c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_177.asset using Guid(53fc9713e3aab3941af4b7bcf98f005c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06663197755c2ac10712af71e58edbc') in 0.009824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_184.asset
+  artifactKey: Guid(4299b018167086b4cadc58df349fecff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_184.asset using Guid(4299b018167086b4cadc58df349fecff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b018f6afb561c9a78ca760ea7b91f8') in 0.010921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_188.asset
+  artifactKey: Guid(603f4af4b49ab004497f20079f2ee687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_188.asset using Guid(603f4af4b49ab004497f20079f2ee687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764f50d9cf6694c3b82dbc5602abb9ef') in 0.010002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.012429 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_193.asset
+  artifactKey: Guid(db6ee8815a3ede24fbf67fca3d4fe19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_193.asset using Guid(db6ee8815a3ede24fbf67fca3d4fe19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40ac403626f90728316a19639472154') in 0.008362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_200.asset
+  artifactKey: Guid(22885a6fa9e422f41b3a65fc48d128c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_200.asset using Guid(22885a6fa9e422f41b3a65fc48d128c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d054ab65ad02b460c7bdd0243cc52f') in 0.009897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_199.asset
+  artifactKey: Guid(ebe1769b8260a124ca015de4f9216251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_199.asset using Guid(ebe1769b8260a124ca015de4f9216251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ff0c396b93444e5b6772fc5a13c0c6') in 0.008767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_214.asset
+  artifactKey: Guid(7e00bdfe81646ea4fa957c8b0448fafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_214.asset using Guid(7e00bdfe81646ea4fa957c8b0448fafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd007fcf18061cb8dff56e58a7335f2') in 0.010403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_229.asset
+  artifactKey: Guid(086bee724f935ab48aec590008e7e9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_229.asset using Guid(086bee724f935ab48aec590008e7e9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e831802e025e8f98c03b8e700eceb023') in 0.011097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_204.asset
+  artifactKey: Guid(7b38449699917d843b5ab6ebe3db7b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_204.asset using Guid(7b38449699917d843b5ab6ebe3db7b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b84f4a18c29c68bf3f8f485f00feaee') in 0.010549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_227.asset
+  artifactKey: Guid(cab61152dd659f546aa43bf3f6a6f564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_227.asset using Guid(cab61152dd659f546aa43bf3f6a6f564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a58baff916df2c5d288d43f93e2949c') in 0.009112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_246.asset
+  artifactKey: Guid(897cec80a9661e446b4501ccae947381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_246.asset using Guid(897cec80a9661e446b4501ccae947381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '158ef5ef942f7f2374944f26568ee392') in 0.010533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_238.asset
+  artifactKey: Guid(d9a97c0b69a6a034db0e116ec75e87ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_238.asset using Guid(d9a97c0b69a6a034db0e116ec75e87ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca39472a09a841d0afe3a54279b187a') in 0.008298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_251.asset
+  artifactKey: Guid(1e61af9d4d6b6c04186083656c4dda64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_251.asset using Guid(1e61af9d4d6b6c04186083656c4dda64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992307935cf722f9d8882ba1d4a7c2f1') in 0.011354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.148137 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_257.asset
+  artifactKey: Guid(be2a09d9efa3e9244b5c77cd943e1a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_257.asset using Guid(be2a09d9efa3e9244b5c77cd943e1a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885db9437110fc8aeb1c55b3e033f575') in 0.010882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_268.asset
+  artifactKey: Guid(4bf1ddcb7a9db864f8f24e20421529dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_268.asset using Guid(4bf1ddcb7a9db864f8f24e20421529dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9f70c60f1090f91f7f03a3518f4617') in 0.009616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_263.asset
+  artifactKey: Guid(417f2f0d494e46b4a8a98055cbff3c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_263.asset using Guid(417f2f0d494e46b4a8a98055cbff3c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61806cae3fd2eca7231e55a9293486f4') in 0.010180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_277.asset
+  artifactKey: Guid(8c799ca3a211b0245a08c35134fc4bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_277.asset using Guid(8c799ca3a211b0245a08c35134fc4bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b305d6425fb82aaa01b36f6a2947fa') in 0.010239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_281.asset
+  artifactKey: Guid(fa8fd9b0d10bfc8449b1e2d266f651cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_281.asset using Guid(fa8fd9b0d10bfc8449b1e2d266f651cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55af7a12e157105e24ede2464dd31c5') in 0.008688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_285.asset
+  artifactKey: Guid(2df60a08124eca447bae2a36c250fd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_285.asset using Guid(2df60a08124eca447bae2a36c250fd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c270d2e94140e8b1c10cd1fb88aff7d2') in 0.010815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_294.asset
+  artifactKey: Guid(e90acba65cb4a204a8dcdbaca4aed919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_294.asset using Guid(e90acba65cb4a204a8dcdbaca4aed919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2341f5c54216fce03305fead6653ed46') in 0.011164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_299.asset
+  artifactKey: Guid(013cc916f84811041bc77a057dbd2db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_299.asset using Guid(013cc916f84811041bc77a057dbd2db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924c3d1f5618ed2db48b5a25c8974767') in 0.012307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.158188 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_305.asset
+  artifactKey: Guid(666d3189071a39343adeb6c5b3396506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_305.asset using Guid(666d3189071a39343adeb6c5b3396506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e250f07249dab6589e0dd5c31f6d031') in 0.008212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_312.asset
+  artifactKey: Guid(c89138d929a6e2d468452fff2b6657d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_312.asset using Guid(c89138d929a6e2d468452fff2b6657d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4905b0baf20d8702c8c0c0b406980fd') in 0.009517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_309.asset
+  artifactKey: Guid(c85716c8259e0b345a01f647abe5c680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_309.asset using Guid(c85716c8259e0b345a01f647abe5c680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5b226564941022c85bbf04d95c0c90') in 0.006818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_319.asset
+  artifactKey: Guid(fc9d125c3f51c9e409c7631c84eed1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_319.asset using Guid(fc9d125c3f51c9e409c7631c84eed1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14cebaf9c515f196dd62de452b364fd8') in 0.007894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_329.asset
+  artifactKey: Guid(22596e9cfca710748a8f000a384b8586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_329.asset using Guid(22596e9cfca710748a8f000a384b8586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cba424f387ea59a0055e262006d9f0') in 0.008491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_333.asset
+  artifactKey: Guid(0030eebe004c83e4e99d5818162e1652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_333.asset using Guid(0030eebe004c83e4e99d5818162e1652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4360d95850a5af8bf14e5aefabc81861') in 0.008496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002203 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_337.asset
+  artifactKey: Guid(26e06e3b910f26f4787ee79507f619c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_337.asset using Guid(26e06e3b910f26f4787ee79507f619c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b12cdb0d442d56491e64b92c7c84fe') in 0.007586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_343.asset
+  artifactKey: Guid(ed0395db7604e85429d72331db449837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_343.asset using Guid(ed0395db7604e85429d72331db449837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b017d9f29ad509ca872cc60e28aff66') in 0.013262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007518 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_353.asset
+  artifactKey: Guid(0bdf27efac79c2a44a5957e7b01bd0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_353.asset using Guid(0bdf27efac79c2a44a5957e7b01bd0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c062223500f8310ded07df17b63a5062') in 0.010537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_359.asset
+  artifactKey: Guid(0d8cee5319806ff4590d8e70c5680ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_359.asset using Guid(0d8cee5319806ff4590d8e70c5680ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef84f8632d88f1786c63d673f9c5afd') in 0.009004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.146338 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_369.asset
+  artifactKey: Guid(0e719b678bf59ea4b971868120d86a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_369.asset using Guid(0e719b678bf59ea4b971868120d86a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692608dad4e1591acf4b712b9c073a71') in 0.009400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_378.asset
+  artifactKey: Guid(2544c612993c0ae4ca10c70bf19cb23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_378.asset using Guid(2544c612993c0ae4ca10c70bf19cb23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca32003c1c4ad08525c380406c817474') in 0.009009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006770 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_382.asset
+  artifactKey: Guid(fe0edcbfdf8861d4893107b490911376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_382.asset using Guid(fe0edcbfdf8861d4893107b490911376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f268a8bbd40909f1ded42bce54f6dfe') in 0.007986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_393.asset
+  artifactKey: Guid(c750966593277914ab2bc6d02b3028a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_393.asset using Guid(c750966593277914ab2bc6d02b3028a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7741fc49197067200d2623f5dce9034c') in 0.009802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_392.asset
+  artifactKey: Guid(ac7431a8d5ded90488e93fe37a8db501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_392.asset using Guid(ac7431a8d5ded90488e93fe37a8db501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be75029278e75dcd43bf4a6ad78a4b4') in 0.008387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.016748 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_401.asset
+  artifactKey: Guid(0d8774bf16988234c9972f2bd2535723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_401.asset using Guid(0d8774bf16988234c9972f2bd2535723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e4c76d0f315ce17535f847a5695f41') in 0.008645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_409.asset
+  artifactKey: Guid(cefeff3a83249f94d87b5a1ab497c2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_409.asset using Guid(cefeff3a83249f94d87b5a1ab497c2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd473a69d9daafe0248de64db7519daff') in 0.009565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_422.asset
+  artifactKey: Guid(9cc8231210fb2014cb6b86fecc59c2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_422.asset using Guid(9cc8231210fb2014cb6b86fecc59c2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53535f968ec6d913417fced26cfec1da') in 0.008486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_418.asset
+  artifactKey: Guid(c41f8d2ccefdb6a4dbbdc6c7ba55ce1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_418.asset using Guid(c41f8d2ccefdb6a4dbbdc6c7ba55ce1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083e38fe9466a9f1324278489f688bde') in 0.008665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_429.asset
+  artifactKey: Guid(dead187b1f24ba742b5865766864ce7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_429.asset using Guid(dead187b1f24ba742b5865766864ce7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c80fa6de6f152786419816100819389b') in 0.009071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_421.asset
+  artifactKey: Guid(78f886333d50c3e46a9091826f6066d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_421.asset using Guid(78f886333d50c3e46a9091826f6066d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf6fefda760c366d82b3bf2e636c96d') in 0.007984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.151480 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_433.asset
+  artifactKey: Guid(7b3a31a48074c16458385969b8c490d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_433.asset using Guid(7b3a31a48074c16458385969b8c490d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1033e846ca1112e241e835b3d7df7114') in 0.008969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_445.asset
+  artifactKey: Guid(cb5d84ad6901e3745b04bc47fdfa2c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_445.asset using Guid(cb5d84ad6901e3745b04bc47fdfa2c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562974da4fac8e8fad6b3be518ac1d22') in 0.007876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_438.asset
+  artifactKey: Guid(8eb626c928c256a48908bc2590581302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_438.asset using Guid(8eb626c928c256a48908bc2590581302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bfff1e9a1575158900aa85a1c3c6fe') in 0.008095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001639 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_449.asset
+  artifactKey: Guid(3924a559e425aec44ae09ba91e64dce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_449.asset using Guid(3924a559e425aec44ae09ba91e64dce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b6ea7ebadf1a2842f71c5e1ea0b16c') in 0.008400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_453.asset
+  artifactKey: Guid(cbff072f619c2864989fe30ce3079f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_453.asset using Guid(cbff072f619c2864989fe30ce3079f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bdf7af57afacd401e707b2fc308d487') in 0.010606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_452.asset
+  artifactKey: Guid(39a83a5b70c312a448101e154168efe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_452.asset using Guid(39a83a5b70c312a448101e154168efe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b35599d9f5416c1bd0638a5b198c56') in 0.008082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_466.asset
+  artifactKey: Guid(1b9fc82691b852946aa3463582c0d9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_466.asset using Guid(1b9fc82691b852946aa3463582c0d9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbdce71aeacab7b0bf0fada16dc1ff94') in 0.008390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_472.asset
+  artifactKey: Guid(912c3aee21876ad4aa74559cd8563d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_472.asset using Guid(912c3aee21876ad4aa74559cd8563d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0148ffc9284e2d03601e17f303588529') in 0.009161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_476.asset
+  artifactKey: Guid(7ad418345655e6b4ca6a4181a3dcb6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_476.asset using Guid(7ad418345655e6b4ca6a4181a3dcb6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3d283b38fd75622f721bea296f283c') in 0.008132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_481.asset
+  artifactKey: Guid(2e1968fdb77d43546af5dc324f9cedb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_481.asset using Guid(2e1968fdb77d43546af5dc324f9cedb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70d265f0c13bf03f6ad888731fa1581') in 0.008983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_486.asset
+  artifactKey: Guid(9bfa3fa9ca1a9374ba383b46abe81e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_486.asset using Guid(9bfa3fa9ca1a9374ba383b46abe81e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f025db8cf97753ab05ee75de18e29c') in 0.011114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_495.asset
+  artifactKey: Guid(62ec82eea98226c46957b33a0a8853d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_495.asset using Guid(62ec82eea98226c46957b33a0a8853d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1d9218cb6bb228e17d07af91bfabf8') in 0.009851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_488.asset
+  artifactKey: Guid(f2aaab47479591349b968b8d05ac06f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_488.asset using Guid(f2aaab47479591349b968b8d05ac06f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b9c18d2599b1e95fb364d6207e7ccf') in 0.012913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_492.asset
+  artifactKey: Guid(1295951d580b0954a9eb616ada953103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_492.asset using Guid(1295951d580b0954a9eb616ada953103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ab024177a1d2be598a653189096d93') in 0.009386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.132403 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_513.asset
+  artifactKey: Guid(2a37ca90a068f8f4daeb49cf72f46ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_513.asset using Guid(2a37ca90a068f8f4daeb49cf72f46ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5401dc2c77c82e5683acd421204a010a') in 0.010392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_516.asset
+  artifactKey: Guid(50fdeba204cae8c4589d5b731792d242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_516.asset using Guid(50fdeba204cae8c4589d5b731792d242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ba5f02c2e251fc35f2d4d162f8dafa') in 0.007976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_518.asset
+  artifactKey: Guid(56606210b59a987498a06868fa45da78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_518.asset using Guid(56606210b59a987498a06868fa45da78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d3d7b0dd36dab4f235649e54b02efc') in 0.009613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000788 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_529.asset
+  artifactKey: Guid(31b888225ea5b6344b35f479c9e5bb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_529.asset using Guid(31b888225ea5b6344b35f479c9e5bb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ad0e911a81e920e39d7f6b0d4d4cdc') in 0.010439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_537.asset
+  artifactKey: Guid(2da7a1a474949fc44bd8bc272e388d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_537.asset using Guid(2da7a1a474949fc44bd8bc272e388d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813d375a2aa899c6bedf2c78af6e5be4') in 0.012684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_533.asset
+  artifactKey: Guid(6e31382c287160748870eb068bdaa2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_533.asset using Guid(6e31382c287160748870eb068bdaa2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fc3c06cee585bfe7141b491701c883') in 0.011641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_550.asset
+  artifactKey: Guid(705dd7a96e7313b4ea21ad331ed5c0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_550.asset using Guid(705dd7a96e7313b4ea21ad331ed5c0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37156bd680b933b92966b6ffca04a7ec') in 0.011304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_9.asset
+  artifactKey: Guid(c4e40e11e4a480a4fb8188c16b052c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_9.asset using Guid(c4e40e11e4a480a4fb8188c16b052c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f204619ac7d6b477e849eeaa8d03752a') in 0.009128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_544.asset
+  artifactKey: Guid(c06240df67843044dbdd184d40c00909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_544.asset using Guid(c06240df67843044dbdd184d40c00909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f478e71c01717ae3a33295783aebbe7b') in 0.009967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_far_548.asset
+  artifactKey: Guid(0342861f15cbd0c42b817dc49a5db93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_far_548.asset using Guid(0342861f15cbd0c42b817dc49a5db93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc8e8a36f80ae07777c7be6ff9969de') in 0.011450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top.png
+  artifactKey: Guid(841b0af3aff6b1e41ac0b4e231ca426e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top.png using Guid(841b0af3aff6b1e41ac0b4e231ca426e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f65612c09b95bf0d17f3923e9e73bd') in 0.902957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 376
+========================================================================
+Received Import Request.
+  Time since last request: 0.061397 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_227.asset
+  artifactKey: Guid(2628e92f339c9ab4a86dd23f05d57461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_227.asset using Guid(2628e92f339c9ab4a86dd23f05d57461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcaea5ed12538df789a9e899987c21f3') in 0.009087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_235.asset
+  artifactKey: Guid(3836d1da2d47b414184b1ac97083c33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_235.asset using Guid(3836d1da2d47b414184b1ac97083c33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ceb532eb38b99e8d0038d5dd8b99e0') in 0.008932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.022799 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_243.asset
+  artifactKey: Guid(794f1d1d2b8652c4abaf67ab6f696ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_243.asset using Guid(794f1d1d2b8652c4abaf67ab6f696ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063d9bb0151d7e3243d407ff205fb573') in 0.007849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_250.asset
+  artifactKey: Guid(05ad1dfe43364364d8b6e7f07309ea6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_250.asset using Guid(05ad1dfe43364364d8b6e7f07309ea6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba682f83710221b14ff8b423a191886') in 0.008404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_256.asset
+  artifactKey: Guid(902f4a6856d102f42867fe9652989edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_256.asset using Guid(902f4a6856d102f42867fe9652989edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96396a32ac16f753b67091ecb2118857') in 0.009920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_264.asset
+  artifactKey: Guid(0caa0d71ae50ffa4a908c00e5d3d9c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_264.asset using Guid(0caa0d71ae50ffa4a908c00e5d3d9c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561b3a95610c162f63673932e5823058') in 0.008271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_274.asset
+  artifactKey: Guid(7ffa2a68dc9cb4940bdad5bc5d59d428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_274.asset using Guid(7ffa2a68dc9cb4940bdad5bc5d59d428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9405f37324725285c102a8efccf90351') in 0.008292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_275.asset
+  artifactKey: Guid(472fa419542b70445abb3f779e7c7df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_275.asset using Guid(472fa419542b70445abb3f779e7c7df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115ffeefa9b1ab4e02709cdf66563c2b') in 0.008134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_278.asset
+  artifactKey: Guid(6a37b413f8a4bf645974a1a7e66cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_278.asset using Guid(6a37b413f8a4bf645974a1a7e66cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0723230ab6407c531bc26ecbba974bf') in 0.008563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_257.asset
+  artifactKey: Guid(ac98e5a08dd832845b2f40339a717987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_257.asset using Guid(ac98e5a08dd832845b2f40339a717987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ea132307ea53c4dae8470085c5d149') in 0.008707 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_293.asset
+  artifactKey: Guid(8c5799cbe02c0e34483e39bee6ca5711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_293.asset using Guid(8c5799cbe02c0e34483e39bee6ca5711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4f6bad7994a51a1a5d1901468ebece') in 0.008358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_288.asset
+  artifactKey: Guid(e3c86120cffc70e4a83880170332c010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_288.asset using Guid(e3c86120cffc70e4a83880170332c010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b46f43b0845876c043a51e8fb0964906') in 0.008788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_292.asset
+  artifactKey: Guid(a1657db5da1f50d44a89ef4be0421d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_292.asset using Guid(a1657db5da1f50d44a89ef4be0421d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2224e9b1dddca7ea9ac60726dcb5515f') in 0.009309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.572334 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_307.asset
+  artifactKey: Guid(ac00ca3e6fde418489c284b8917ec18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_307.asset using Guid(ac00ca3e6fde418489c284b8917ec18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929594fe6eb2ad7028881bddf644a53a') in 0.008955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_316.asset
+  artifactKey: Guid(e6825c8b459b4654895bb16377a3b0ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_316.asset using Guid(e6825c8b459b4654895bb16377a3b0ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118a16fcb912acb8cf479343851826fb') in 0.008577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.177168 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_323.asset
+  artifactKey: Guid(b363f06c11e59a0478780e2ad7513e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_323.asset using Guid(b363f06c11e59a0478780e2ad7513e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00815612aa3a018b71415096c23a8014') in 0.009254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_330.asset
+  artifactKey: Guid(30d7ad8025f4448428ab91532f9ff94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_330.asset using Guid(30d7ad8025f4448428ab91532f9ff94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d290aad6697e74c680e99507fbe1cb') in 0.010158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_331.asset
+  artifactKey: Guid(50506c5c12db50848b53304c9f0de6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_331.asset using Guid(50506c5c12db50848b53304c9f0de6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '418be0ea49dc68b6f21b2658e04eb9cf') in 0.008901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.012267 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_339.asset
+  artifactKey: Guid(35e5ba835e2305647b4a14011ff0e10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_339.asset using Guid(35e5ba835e2305647b4a14011ff0e10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6718af1851ed95813647e5e1b0639013') in 0.008298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_358.asset
+  artifactKey: Guid(d748025292c2cc84db875dacc2e38819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_358.asset using Guid(d748025292c2cc84db875dacc2e38819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b553d858d0e42f9405d5df77dc07f151') in 0.009999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_364.asset
+  artifactKey: Guid(9819d22bff6b17c47812ee10b6242481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_364.asset using Guid(9819d22bff6b17c47812ee10b6242481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c616e690a38294abcb2a3cfbb29fc72f') in 0.009368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_365.asset
+  artifactKey: Guid(1f17e6b5128bbbd4cb616342a4d10847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_365.asset using Guid(1f17e6b5128bbbd4cb616342a4d10847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4959514a4950ae21fbc3be1f91efa83') in 0.008795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_370.asset
+  artifactKey: Guid(ff8143ab8866fc74a801299e65261bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_370.asset using Guid(ff8143ab8866fc74a801299e65261bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c83ffb5c2bec1b693d9271bb9c905f1') in 0.008001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel2DCastleTileset/Sprites/walls_side_top_348.asset
+  artifactKey: Guid(e526e2657d727e440bfe3c53a712df56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel2DCastleTileset/Sprites/walls_side_top_348.asset using Guid(e526e2657d727e440bfe3c53a712df56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda5b81b2450b5240ea6e5624e9a71ef') in 0.009676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
