@@ -12,7 +12,10 @@ public class PlayerMain : MonoBehaviour
     private SpriteRenderer rd;
     private Animator anim;
 
-
+    //Audio
+    //public GameObject audioManagerPrefab;
+    //private AudioManager audioManager;
+    
 
 
     [SerializeField] float moveSpeed;
@@ -51,6 +54,11 @@ public class PlayerMain : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         rd = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        if (audioManager != null)
+        {
+            audioManager.PlayBackgroundMusic();
+        }
     }
     void ChangeAnimationState(string newState)
     {
@@ -68,6 +76,8 @@ public class PlayerMain : MonoBehaviour
         IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
         if (damageable != null)
         {
+            
+            
             //damageable.Damage(1);
             morto = true;
             ChangeAnimationState(PLAYER_DEATH);
@@ -194,6 +204,6 @@ public class PlayerMain : MonoBehaviour
         }
     }
 
-   
+
 }
 
