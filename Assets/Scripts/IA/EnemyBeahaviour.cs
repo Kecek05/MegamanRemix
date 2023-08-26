@@ -28,8 +28,9 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
 
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource attackSound;
-  
 
+    //Retirar colisao com o player quando o inimigo morre
+    public string layerToIgnore = "player";
 
     void ChangeAnimationState(string newState)
     {
@@ -58,6 +59,7 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("portal"));
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("grave"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("graveJUMP"));
     }
 
 
@@ -155,8 +157,9 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
         lives--;
 
         hitSound.Play();
-        if (lives == 0)
+        if (lives <= 0)
         {
+            
             morreu = true;
 
             ChangeAnimationState(MINOTAURO_DEATH);
@@ -171,7 +174,8 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     void Morreu ()
     {
 
-
+        //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
+        this.GetComponent<PolygonCollider2D>().enabled = false;
         Destroy(gameObject,1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);
         
