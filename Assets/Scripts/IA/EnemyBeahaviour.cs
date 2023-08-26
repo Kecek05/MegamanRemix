@@ -176,6 +176,7 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
 
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
         this.GetComponent<PolygonCollider2D>().enabled = false;
+        rb2d.isKinematic = true;
         Destroy(gameObject,1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);
         
