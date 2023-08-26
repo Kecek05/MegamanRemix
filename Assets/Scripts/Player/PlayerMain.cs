@@ -22,8 +22,8 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private LayerMask graveLayer;
- 
-
+    [SerializeField] private LayerMask graveJumpLayer;
+    [SerializeField] private float graveJumpMultplier;
     private float dirX = 0f;
 
 
@@ -109,7 +109,7 @@ public class PlayerMain : MonoBehaviour
         
         Cursor.visible = false;
         dirX = Input.GetAxisRaw("Horizontal");
-        if (!isAttacking && morto == false)
+        if ( morto == false)
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
@@ -136,12 +136,18 @@ public class PlayerMain : MonoBehaviour
     public void FixedUpdate()
     {
 
-        if (isJumpPressed && morto == false)
+        if (isJumpPressed && isGrounded() && morto == false)
         {
+            if (isGraveJump())
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce * graveJumpMultplier);
+            } else
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
             
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
             isJumpPressed = false;
-            if (isGrounded())
                 ChangeAnimationState(PLAYER_JUMP);
 
         }
@@ -192,7 +198,7 @@ public class PlayerMain : MonoBehaviour
     private bool isGrounded()
     {
 
-        if (isChao() || isGrave())
+        if (isChao() || isGrave() || isGraveJump())
         {
             return true;
         } else
@@ -203,6 +209,10 @@ public class PlayerMain : MonoBehaviour
 
     }
 
+    private bool isGraveJump()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveJumpLayer);
+    }
    private bool isChao()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
