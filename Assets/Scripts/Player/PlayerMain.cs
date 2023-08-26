@@ -118,25 +118,31 @@ public class PlayerMain : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Fire1") && dirX == 0 && isGrounded() && morto == false)
+        if (Input.GetButtonDown("Fire1") && dirX == 0 && morto == false)
         {
             isAttackPressed = true;
             
         }
+        if (Input.GetButtonDown("Fire1") && !isGrounded() && morto == false)
+        {
+            isAttackPressed = true;
 
-       
+        }
+
+
         UpdateAnimation();
     }
 
     public void FixedUpdate()
     {
 
-        if (isJumpPressed && isGrounded() && morto == false)
+        if (isJumpPressed && morto == false)
         {
             
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isJumpPressed = false;
-            ChangeAnimationState(PLAYER_JUMP);
+            if (isGrounded())
+                ChangeAnimationState(PLAYER_JUMP);
 
         }
 
@@ -151,7 +157,7 @@ public class PlayerMain : MonoBehaviour
                 ChangeAnimationState(PLAYER_IDLE);
             }
         }
-        if (isAttackPressed && isGrounded())
+        if (isAttackPressed)
         {
             isAttackPressed = false;
             if (!isAttacking)
