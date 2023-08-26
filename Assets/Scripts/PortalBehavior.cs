@@ -20,7 +20,7 @@ public class PortalBehavior : MonoBehaviour, Itouchable
     public void touch()
     {
         portal.Play();
-        Invoke("CompleteLeve1", 2f);
+        CompleteLeve1();
         
 
     }
