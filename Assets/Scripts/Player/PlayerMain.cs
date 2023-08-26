@@ -50,7 +50,7 @@ public class PlayerMain : MonoBehaviour
     private bool isAttackPressed = false;
     private bool isAttacking = false;
     private bool morto = false;
-    [SerializeField] private float attackDelay = 0.3f;
+    [SerializeField] private float attackDelay = 1.5f;
 
 
     void Start()
@@ -159,9 +159,10 @@ public class PlayerMain : MonoBehaviour
                 isAttacking = true;
                 Fire();
                 ChangeAnimationState(PLAYER_ATTACK);
+                Invoke("AttackComplete", attackDelay);
             }
-            attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
-            Invoke("AttackComplete", attackDelay);
+            //attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+            
             
         }
     }
