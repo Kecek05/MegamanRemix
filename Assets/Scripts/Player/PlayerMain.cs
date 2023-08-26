@@ -12,21 +12,30 @@ public class PlayerMain : MonoBehaviour
     private SpriteRenderer rd;
     private Animator anim;
 
-
+    //Audio
+    //public GameObject audioManagerPrefab;
+    //private AudioManager audioManager;
+    
 
 
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] private LayerMask jumpableGround;
- 
-
+    [SerializeField] private LayerMask graveLayer;
+    [SerializeField] private LayerMask graveJumpLayer;
+    [SerializeField] private float graveJumpMultplier;
     private float dirX = 0f;
+
 
 
 
     public ParticleSystem fire;
 
 
+
+    //SFX
+    [SerializeField] private AudioSource deathSound;
+    [SerializeField] private AudioSource shootSound;
 
     //Animation States
     const string PLAYER_IDLE = "Player_Idle";
@@ -41,7 +50,7 @@ public class PlayerMain : MonoBehaviour
     private bool isAttackPressed = false;
     private bool isAttacking = false;
     private bool morto = false;
-    [SerializeField] private float attackDelay = 0.3f;
+    [SerializeField] private float attackDelay = 1.5f;
 
 
     void Start()
@@ -51,6 +60,11 @@ public class PlayerMain : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         rd = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        if (audioManager != null)
+        {
+            audioManager.PlayBackgroundMusic();
+        }
     }
     void ChangeAnimationState(string newState)
     {
@@ -68,18 +82,26 @@ public class PlayerMain : MonoBehaviour
         IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
         if (damageable != null)
         {
+
+            
             //damageable.Damage(1);
             morto = true;
             ChangeAnimationState(PLAYER_DEATH);
+            if (!deathSound.isPlaying)
+            {
+                deathSound.Play();
+            }
+            
             Invoke("RestartGame", 2f);
+            
         }
              Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
         if (touchable != null)
         {
             touchable.touch();
         }
-        print(collision);
-        print(touchable);
+       // print(collision);
+        //print(touchable);
     }
 
     void Update()
@@ -87,7 +109,7 @@ public class PlayerMain : MonoBehaviour
         
         Cursor.visible = false;
         dirX = Input.GetAxisRaw("Horizontal");
-        if (!isAttacking && morto == false)
+        if ( morto == false)
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
@@ -96,13 +118,18 @@ public class PlayerMain : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Fire1") && dirX == 0 && isGrounded() && morto == false)
+        if (Input.GetButtonDown("Fire1") && dirX == 0 && morto == false)
         {
             isAttackPressed = true;
             
         }
+        if (Input.GetButtonDown("Fire1") && !isGrounded() && morto == false)
+        {
+            isAttackPressed = true;
 
-       
+        }
+
+
         UpdateAnimation();
     }
 
@@ -111,10 +138,17 @@ public class PlayerMain : MonoBehaviour
 
         if (isJumpPressed && isGrounded() && morto == false)
         {
+            if (isGraveJump())
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce * graveJumpMultplier);
+            } else
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
             
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
             isJumpPressed = false;
-            ChangeAnimationState(PLAYER_JUMP);
+                ChangeAnimationState(PLAYER_JUMP);
 
         }
 
@@ -129,7 +163,7 @@ public class PlayerMain : MonoBehaviour
                 ChangeAnimationState(PLAYER_IDLE);
             }
         }
-        if (isAttackPressed && isGrounded())
+        if (isAttackPressed)
         {
             isAttackPressed = false;
             if (!isAttacking)
@@ -137,9 +171,10 @@ public class PlayerMain : MonoBehaviour
                 isAttacking = true;
                 Fire();
                 ChangeAnimationState(PLAYER_ATTACK);
+                Invoke("AttackComplete", attackDelay);
             }
-            attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
-            Invoke("AttackComplete", attackDelay);
+            //attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+            
             
         }
     }
@@ -147,6 +182,7 @@ public class PlayerMain : MonoBehaviour
 
     void RestartGame()
     {
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void AttackComplete()
@@ -156,16 +192,35 @@ public class PlayerMain : MonoBehaviour
     private void Fire()
     {
         fire.Emit(1);
+        shootSound.Play();
     }
 
     private bool isGrounded()
     {
 
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        if (isChao() || isGrave() || isGraveJump())
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+       
 
     }
 
-   
+    private bool isGraveJump()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveJumpLayer);
+    }
+   private bool isChao()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+    private bool isGrave()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveLayer);
+    }
 
     private void UpdateAnimation()
     {
@@ -194,6 +249,6 @@ public class PlayerMain : MonoBehaviour
         }
     }
 
-   
+
 }
 

@@ -26,8 +26,11 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     [SerializeField] GameObject DeathPlat;
     Rigidbody2D rb2d;
 
+    [SerializeField] private AudioSource hitSound;
+    [SerializeField] private AudioSource attackSound;
 
-  
+    //Retirar colisao com o player quando o inimigo morre
+    public string layerToIgnore = "player";
 
     void ChangeAnimationState(string newState)
     {
@@ -50,9 +53,13 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
+        
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("portal"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("grave"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("graveJUMP"));
     }
 
 
@@ -66,7 +73,7 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
             if (distToPlayer <= attackRange)
             {
                 //distance to attack is true
-                isAttacking = true;
+                
                 AttackPlayer();
 
             }
@@ -83,7 +90,7 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
        
         } else
         {
-            //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("player"));
+            
 
         }
         
@@ -91,27 +98,31 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
 
      void ChasePlayer()
     {
-        if (transform.position.x < player.position.x)
-        {
-            //enemy is to the left side of the player, so move right
+        
+            if (transform.position.x < player.position.x &&  isAttacking == false)
+            {
+                //enemy is to the left side of the player, so move right
 
-            rb2d.velocity = new Vector2(moveSpeed, 0);
-            transform.localScale = new Vector2(1, 1);
-        } else if(transform.position.x > player.position.x)
-        {
-            // move left, right side
+                rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+                transform.localScale = new Vector2(1, 1);
+            }
+            else if (transform.position.x > player.position.x && isAttacking == false)
+            {
+                // move left, right side
 
-            rb2d.velocity = new Vector2(-moveSpeed, 0);
-            transform.localScale = new Vector2(-1, 1);
-        }
-        if(lives >0)
+                rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
+                transform.localScale = new Vector2(-1, 1);
+            }
+       
+        
+        if(lives >0 && isAttacking == false)
             ChangeAnimationState(MINOTAURO_WALK);
     }
 
     void StopChasing()
     {
-        rb2d.velocity = Vector2.zero; // new Vector2(0, 0);
-        if (!isAttacking && lives >0)
+        //new Vector2(0, 0); bug na gravidade
+        if (lives >0)
             ChangeAnimationState(MINOTAURO_IDLE);
     }
 
@@ -125,8 +136,19 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
             transform.localScale = new Vector2(-1, 1);
         }
         if (lives > 0)
-            ChangeAnimationState(MINOTAURO_ATTACK);
-        Invoke("AttackComplete", attackDelay);
+        {
+            if(!isAttacking)
+            {
+                isAttacking = true;
+                ChangeAnimationState(MINOTAURO_ATTACK);
+                attackSound.Play();
+                Invoke("AttackComplete", attackDelay);
+            }
+            
+            
+        }
+            
+       
 
     }
 
@@ -134,24 +156,30 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     {
         lives--;
 
-
-        if (lives == 0)
+        hitSound.Play();
+        if (lives <= 0)
         {
+            
             morreu = true;
+
             ChangeAnimationState(MINOTAURO_DEATH);
             Morreu();
             
             
         }
+
+        
     }
 
     void Morreu ()
     {
-        if (morreu)
-        {
-            Destroy(gameObject, 1f);
-            Instantiate(DeathPlat, transform.position, Quaternion.identity);
-        }
+
+        //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
+        this.GetComponent<PolygonCollider2D>().enabled = false;
+        rb2d.isKinematic = true;
+        Destroy(gameObject,1f);
+        Instantiate(DeathPlat, transform.position, Quaternion.identity);
+        
     }
 
   
