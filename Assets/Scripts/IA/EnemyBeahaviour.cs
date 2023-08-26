@@ -26,7 +26,6 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     [SerializeField] GameObject DeathPlat;
     Rigidbody2D rb2d;
 
-    [SerializeField] private AudioSource deathSound;
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource attackSound;
   
@@ -172,8 +171,8 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     void Morreu ()
     {
 
-        deathSound.Play();
-        Destroy(gameObject, 2f);
+
+        Destroy(gameObject,1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);
         
     }
