@@ -21,15 +21,21 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private LayerMask graveLayer;
  
 
     private float dirX = 0f;
 
 
 
+
     public ParticleSystem fire;
 
 
+
+    //SFX
+    [SerializeField] private AudioSource deathSound;
+    [SerializeField] private AudioSource shootSound;
 
     //Animation States
     const string PLAYER_IDLE = "Player_Idle";
@@ -76,20 +82,26 @@ public class PlayerMain : MonoBehaviour
         IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            
+
             
             //damageable.Damage(1);
             morto = true;
             ChangeAnimationState(PLAYER_DEATH);
+            if (!deathSound.isPlaying)
+            {
+                deathSound.Play();
+            }
+            
             Invoke("RestartGame", 2f);
+            
         }
              Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
         if (touchable != null)
         {
             touchable.touch();
         }
-        print(collision);
-        print(touchable);
+       // print(collision);
+        //print(touchable);
     }
 
     void Update()
@@ -157,6 +169,7 @@ public class PlayerMain : MonoBehaviour
 
     void RestartGame()
     {
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void AttackComplete()
@@ -166,16 +179,31 @@ public class PlayerMain : MonoBehaviour
     private void Fire()
     {
         fire.Emit(1);
+        shootSound.Play();
     }
 
     private bool isGrounded()
     {
 
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        if (isChao() || isGrave())
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+       
 
     }
 
-   
+   private bool isChao()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+    private bool isGrave()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveLayer);
+    }
 
     private void UpdateAnimation()
     {

@@ -43,7 +43,6 @@ public class CameraFollow : MonoBehaviour
             transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
         }
         
-        print(maxY);
     }
     private void LateUpdate()
     {

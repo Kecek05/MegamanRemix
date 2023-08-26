@@ -7,6 +7,8 @@ public class PortalBehavior : MonoBehaviour, Itouchable
 {
     private AudioSource TP;
 
+    [SerializeField] private AudioSource portal;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -17,8 +19,9 @@ public class PortalBehavior : MonoBehaviour, Itouchable
 
     public void touch()
     {
+        portal.Play();
+        Invoke("CompleteLeve1", 2f);
         
-            CompleteLeve1();
 
     }
 
