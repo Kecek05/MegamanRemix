@@ -5,12 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SpikeBehaviour : MonoBehaviour, IDamageable
 {
-    private CircleCollider2D crcoll2D;
-    private Rigidbody2D rgdb2D;
-    private BoxCollider2D boxColl;
+
     private SpriteRenderer spriteRenderer;
-    private bool objetoTocado;
-    private bool estadoInv;
+
 
     public float transparencia;
     public float duracaoPiscada = 0.2f;
@@ -18,19 +15,13 @@ public class SpikeBehaviour : MonoBehaviour, IDamageable
     public GameObject[] objectsToIgnore;
     void Start()
     {
-        objetoTocado = false;
-        estadoInv = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
-        boxColl = GetComponent<BoxCollider2D>();
-        rgdb2D = GetComponent<Rigidbody2D>();
-        crcoll2D = GetComponent<CircleCollider2D>();
+
 
     }
 
-    void Update()
-    {
-
-    }
+ 
 
 
 
