@@ -36,7 +36,7 @@ public class CameraFollow : MonoBehaviour
             Ytot = maxY;
             Vector3 newPos = new Vector3(Xtot, maxY, -10f);
             transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
-            print("maximo");
+            
         } else
         {
             Vector3 newPos = new Vector3(Xtot, Ytot, -10f);

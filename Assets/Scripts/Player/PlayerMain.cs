@@ -25,7 +25,7 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] private LayerMask graveJumpLayer;
     [SerializeField] private float graveJumpMultplier;
     private float dirX = 0f;
-
+    public PauseMenu pauseMenu;
 
 
 
@@ -49,10 +49,10 @@ public class PlayerMain : MonoBehaviour
     private bool isJumpPressed = false;
     private bool isAttackPressed = false;
     private bool isAttacking = false;
-    private bool morto = false;
+    public bool morto = false;
     [SerializeField] private float attackDelay = 1.5f;
 
-
+   
     void Start()
     {
         
@@ -83,16 +83,9 @@ public class PlayerMain : MonoBehaviour
         if (damageable != null)
         {
 
-            
+
             //damageable.Damage(1);
-            morto = true;
-            ChangeAnimationState(PLAYER_DEATH);
-            if (!deathSound.isPlaying)
-            {
-                deathSound.Play();
-            }
-            
-            Invoke("RestartGame", 2f);
+            Morri();
             
         }
              Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
@@ -104,10 +97,28 @@ public class PlayerMain : MonoBehaviour
         //print(touchable);
     }
 
+    public void Morri()
+    {
+        morto = true;
+        ChangeAnimationState(PLAYER_DEATH);
+        if (!deathSound.isPlaying)
+        {
+            deathSound.Play();
+        }
+
+        Invoke("RestartGame", 2f);
+    }
     void Update()
     {
         
-        Cursor.visible = false;
+        if (pauseMenu.GameIsPause)
+        {
+            Cursor.visible = true;
+        } else
+        {
+            Cursor.visible = false;
+        }
+        
         dirX = Input.GetAxisRaw("Horizontal");
         if ( morto == false)
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
@@ -174,9 +185,8 @@ public class PlayerMain : MonoBehaviour
                 Invoke("AttackComplete", attackDelay);
             }
             //attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
-            
-            
         }
+        
     }
 
 
@@ -246,6 +256,7 @@ public class PlayerMain : MonoBehaviour
             {
                 ChangeAnimationState(PLAYER_FALL);
             }
+        
         }
     }
 

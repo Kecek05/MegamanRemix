@@ -10,10 +10,10 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     //Animacao
     private Animator anim;
     private string currentState;
-    const string MINOTAURO_IDLE = "Minotauro_Idle";
-    const string MINOTAURO_WALK = "Minotauro_Walk";
+    const string MINOTAURO_IDLE = "EsqueletoIdle";
+    const string MINOTAURO_WALK = "EsqueletoWalk";
     const string MINOTAURO_ATTACK = "Minotauro_Att";
-    const string MINOTAURO_DEATH = "Minotauro_Death";
+    const string MINOTAURO_DEATH = "EsqueletoDeath";
     private bool isAttacking = false;
     [SerializeField] private float attackDelay = 0.3f;
 
@@ -104,14 +104,14 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
                 //enemy is to the left side of the player, so move right
 
                 rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
-                transform.localScale = new Vector2(1, 1);
+                transform.localScale = new Vector2(-1, 1);
             }
             else if (transform.position.x > player.position.x && isAttacking == false)
             {
                 // move left, right side
 
                 rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
-                transform.localScale = new Vector2(-1, 1);
+                transform.localScale = new Vector2(1, 1);
             }
        
         
@@ -130,17 +130,17 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     {
         if (transform.position.x < player.position.x)
         {
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(-1, 1);
         } else
         {
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(1, 1);
         }
         if (lives > 0)
         {
             if(!isAttacking)
             {
                 isAttacking = true;
-                ChangeAnimationState(MINOTAURO_ATTACK);
+               // ChangeAnimationState(MINOTAURO_ATTACK);
                 attackSound.Play();
                 Invoke("AttackComplete", attackDelay);
             }
