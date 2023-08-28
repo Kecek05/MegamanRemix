@@ -181,9 +181,8 @@ public class PlayerMain : MonoBehaviour
                 Invoke("AttackComplete", attackDelay);
             }
             //attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
-            
-            
         }
+        
     }
 
 
@@ -253,6 +252,7 @@ public class PlayerMain : MonoBehaviour
             {
                 ChangeAnimationState(PLAYER_FALL);
             }
+            print(rb.velocity.y);
         }
     }
 
