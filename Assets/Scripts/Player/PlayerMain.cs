@@ -166,10 +166,6 @@ public class PlayerMain : MonoBehaviour
             {
                 ChangeAnimationState(PLAYER_WALK);
             }
-            else if (attackWalk)
-            {
-                ChangeAnimationState(PLAYER_ATTACKWALK);
-            }
             else
             {
                 ChangeAnimationState(PLAYER_IDLE);
@@ -182,7 +178,11 @@ public class PlayerMain : MonoBehaviour
             {
                 isAttacking = true;
                 Fire();
-                ChangeAnimationState(PLAYER_ATTACK);
+                if(dirX == 0)
+                    ChangeAnimationState(PLAYER_ATTACK);
+                else 
+                    ChangeAnimationState(PLAYER_ATTACKWALK);
+
                 Invoke("AttackComplete", attackDelay);
             }
             //attackDelay = anim.GetCurrentAnimatorStateInfo(0).length;
@@ -239,8 +239,7 @@ public class PlayerMain : MonoBehaviour
         if (!morto)
         {
             // MovementState state;
-            if (!isAttacking)
-            {
+            
                 if (dirX > 0f)
                 {
                     transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -249,7 +248,7 @@ public class PlayerMain : MonoBehaviour
                 {
                     transform.rotation = Quaternion.Euler(0, 180, 0);
                 }
-            }
+            
             if (rb.velocity.y > .1f)
             {
                 ChangeAnimationState(PLAYER_JUMP);
