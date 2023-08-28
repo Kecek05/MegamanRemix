@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2657230872410705017}
   m_Layer: 13
   m_Name: DeathPlatform
-  m_TagString: ground
+  m_TagString: graves
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6518187996132675351}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.8893, y: -2.4438, z: 0}
-  m_LocalScale: {x: 1.1015, y: 1.1015, z: 1.1015}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.1015}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6518187996132675344
 SpriteRenderer:
@@ -105,12 +105,6 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -125,29 +119,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.043091804, y: -0.7568909}
+  m_Offset: {x: 0.043091774, y: -0.7716994}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4893405, y: 1.2434406}
@@ -158,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.769372, y: 0.85248065}
+  m_Size: {x: 1.769372, y: 0.8228636}
   m_EdgeRadius: 0
 --- !u!114 &-513050784196484873
 MonoBehaviour:
@@ -172,6 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1605a4cb1c1f24184c07bcf5ba3e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spikeScript: {fileID: 735760687118753823, guid: 85af8f82812bbad4194dbacf9a0a8dcc,
+    type: 3}
 --- !u!82 &-2657230872410705017
 AudioSource:
   m_ObjectHideFlags: 0

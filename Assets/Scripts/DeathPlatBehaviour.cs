@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class DeathPlatBehaviour : MonoBehaviour
 {
+
+    [SerializeField] public SpikeBehaviour spikeScript;
     // Start is called before the first frame update
     void Start()
     {
-        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
+        spikeScript.scamGraves();
+        print("scam");
+        //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
+        //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
+
     }
+
 }
