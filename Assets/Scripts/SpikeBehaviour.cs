@@ -12,7 +12,8 @@ public class SpikeBehaviour : MonoBehaviour, IDamageable
     private bool objetoTocado;
     private bool estadoInv;
 
-    [SerializeField] private float transparencia;
+    public float transparencia;
+    public float duracaoPiscada = 0.2f;
 
     public GameObject[] objectsToIgnore;
     void Start()
@@ -29,76 +30,23 @@ public class SpikeBehaviour : MonoBehaviour, IDamageable
     void Update()
     {
 
-        //if (estadoInv)
-        //{
-
-        //    // Tornar o objeto invisível
-        //    SwitchInv();
-        //}
-        //else
-        //{
-        //    // Tornar o objeto visível
-        //    Invoke("SwitchInv", 1f);
-
-        //}
     }
 
 
-    void SwitchInv()
-    {
-        if (estadoInv)
-        {
-            // Tornar o objeto invisível
-            spriteRenderer.enabled = false;
 
-            //boxColl.enabled = false;
-        }
-        else
-        {
-            //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("graves"), false);
-            spriteRenderer.enabled = true;
-            //boxColl.enabled = true;
-            Invoke("Saiu", 1f);
-        }
 
-    }
-
-    void StateInv()
-    {
-        if (objetoTocado && !estadoInv)
-        {
-            estadoInv = true;
-
-            print("entro");
-        }
-        else if (estadoInv == false)
-        {
-            estadoInv = false;
-            print("saiu");
-        }
-    }
-
-    //void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("graves"))
-    //    {
-    //        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("grave"));
-    //        // O inimigo tocou no objeto
-    //        objetoTocado = true;
-    //        spriteRenderer.enabled = false;
-
-    //    }
-    //}
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("graves"))
         {
             scamGraves();
             // grave tocou no objeto
-            spriteRenderer.enabled = false;
+            //spriteRenderer.enabled = false;
             //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("grave"));
             //Physics.IgnoreCollision(GetComponent<Collider2D>(), objectCollider);
-            
+
+            StartCoroutine(Piscar());
+
             if (objectsToIgnore.Length > 0)
             {
                 foreach (GameObject objectToIgnore in objectsToIgnore)
@@ -143,23 +91,18 @@ public class SpikeBehaviour : MonoBehaviour, IDamageable
 
     }
 
-    void Saiu()
+    private IEnumerator Piscar()
     {
-        //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("grave"), false);
+        // Reduz a transparência
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, transparencia);
+
+        // Aguarda a duração do piscar
+        yield return new WaitForSeconds(duracaoPiscada);
+
+        // Restaura a transparência original do jogador
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
     }
 
-    //void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("graves"))
-    //    {
-
-    //        // O inimigo parou de tocar no objeto
-    //        estadoInv = false;
-    //        StateInv();
-
-
-    //    }
-    //}
 
 
     public void Damage(float damageAmount)
