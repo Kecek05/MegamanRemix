@@ -44,8 +44,10 @@ public class PlayerMain : MonoBehaviour
     const string PLAYER_ATTACK = "Player_Shoot";
     const string PLAYER_DEATH = "Player_Death";
     const string PLAYER_FALL = "Player_Fall";
+    const string PLAYER_ATTACKWALK = "Player_AttackWalk";
     private string currentState;
 
+    private bool attackWalk = false;
     private bool isJumpPressed = false;
     private bool isAttackPressed = false;
     private bool isAttacking = false;
@@ -128,16 +130,11 @@ public class PlayerMain : MonoBehaviour
             isJumpPressed = true;
         }
 
-
-        if (Input.GetButtonDown("Fire1") && dirX == 0 && morto == false)
+        if (Input.GetButtonDown("Fire1") && !morto)
         {
             isAttackPressed = true;
-            
-        }
-        if (Input.GetButtonDown("Fire1") && !isGrounded() && morto == false)
-        {
-            isAttackPressed = true;
-
+            if (dirX != 0)
+                attackWalk = true;
         }
 
 
@@ -165,9 +162,13 @@ public class PlayerMain : MonoBehaviour
 
         if (isGrounded() && !isAttacking && morto == false)
         {
-            if (dirX != 0)
+            if (dirX != 0 && !attackWalk)
             {
                 ChangeAnimationState(PLAYER_WALK);
+            }
+            else if (attackWalk)
+            {
+                ChangeAnimationState(PLAYER_ATTACKWALK);
             }
             else
             {
@@ -198,6 +199,7 @@ public class PlayerMain : MonoBehaviour
     void AttackComplete()
     {
         isAttacking = false;
+        attackWalk = false;
     }
     private void Fire()
     {
