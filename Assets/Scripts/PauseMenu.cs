@@ -7,6 +7,10 @@ public class PauseMenu : MonoBehaviour
 {
     public bool GameIsPause = false;
 
+
+    [SerializeField] public PlayerMain pmain;
+
+
     [SerializeField] public GameObject pauseMenuUI;
 
   
@@ -46,6 +50,13 @@ public class PauseMenu : MonoBehaviour
     }
     public void Restart()
     {
-        return;
+        pmain.Morri();
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 2f;
+        GameIsPause = false;
+
+        print("morre");
+        print(pmain.morto);
     }
+
 }

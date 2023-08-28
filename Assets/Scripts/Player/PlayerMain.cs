@@ -49,7 +49,7 @@ public class PlayerMain : MonoBehaviour
     private bool isJumpPressed = false;
     private bool isAttackPressed = false;
     private bool isAttacking = false;
-    private bool morto = false;
+    public bool morto = false;
     [SerializeField] private float attackDelay = 1.5f;
 
    
@@ -83,16 +83,9 @@ public class PlayerMain : MonoBehaviour
         if (damageable != null)
         {
 
-            
+
             //damageable.Damage(1);
-            morto = true;
-            ChangeAnimationState(PLAYER_DEATH);
-            if (!deathSound.isPlaying)
-            {
-                deathSound.Play();
-            }
-            
-            Invoke("RestartGame", 2f);
+            Morri();
             
         }
              Itouchable touchable = collision.gameObject.GetComponent<Itouchable>();
@@ -104,6 +97,17 @@ public class PlayerMain : MonoBehaviour
         //print(touchable);
     }
 
+    public void Morri()
+    {
+        morto = true;
+        ChangeAnimationState(PLAYER_DEATH);
+        if (!deathSound.isPlaying)
+        {
+            deathSound.Play();
+        }
+
+        Invoke("RestartGame", 2f);
+    }
     void Update()
     {
         
@@ -252,7 +256,7 @@ public class PlayerMain : MonoBehaviour
             {
                 ChangeAnimationState(PLAYER_FALL);
             }
-            print(rb.velocity.y);
+        
         }
     }
 
