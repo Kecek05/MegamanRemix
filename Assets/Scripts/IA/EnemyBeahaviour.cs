@@ -30,6 +30,10 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource attackSound;
 
+    //Tiro
+    [SerializeField] public GameObject EsqueletoTiroPrefab;
+    [SerializeField] public Transform EsqueletoTiroSpawn;
+    public float bulletSpeed;
     //Retirar colisao com o player quando o inimigo morre
     public string layerToIgnore = "player";
 
@@ -148,6 +152,8 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
                 {
                     attackSound.Play();
                 }
+                var bulletEsqueleto = Instantiate(EsqueletoTiroPrefab, EsqueletoTiroSpawn.position, EsqueletoTiroSpawn.rotation);
+                bulletEsqueleto.GetComponent<Rigidbody2D>().velocity = EsqueletoTiroSpawn.up * bulletSpeed;
                 Invoke("AttackComplete", attackDelay);
             }
             
