@@ -113,15 +113,20 @@ public class PlayerMain : MonoBehaviour
     }
     void Update()
     {
-        
-        if (pauseMenu.GameIsPause)
+
+        string nomeDaCena = SceneManager.GetActiveScene().name;
+        if (nomeDaCena == "GameOver" || nomeDaCena == "Menu")
         {
             Cursor.visible = true;
-        } else
-        {
-            Cursor.visible = false;
+        } else { 
+            if (pauseMenu.GameIsPause)
+            {
+                Cursor.visible = true;
+            } else
+            {
+                Cursor.visible = false;
+            }
         }
-        
         dirX = Input.GetAxisRaw("Horizontal");
         if ( morto == false)
         {
