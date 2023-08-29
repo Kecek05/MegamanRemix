@@ -301,3 +301,124 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006806 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.263 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1264ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1003ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (557ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (293ms)
+				ProcessInitializeOnLoadMethodAttributes (152ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2714 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (27.1 KB). Loaded Objects now: 3203.
+Memory consumption went from 104.7 MB to 104.6 MB.
+Total: 7.290800 ms (FindLiveObjects: 0.363100 ms CreateObjectMapping: 0.113100 ms MarkObjects: 6.777400 ms  DeleteObjects: 0.036300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2288.469747 seconds.
+  path: Assets/Sound/Dark, Scary, Horror NO COPYRIGHT Cinematic Background Music - Fear by Soundridemusic (320 kbps).mp3
+  artifactKey: Guid(adf14f9d6b18633489d3696104284989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Dark, Scary, Horror NO COPYRIGHT Cinematic Background Music - Fear by Soundridemusic (320 kbps).mp3 using Guid(adf14f9d6b18633489d3696104284989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d83a3fe2ced4fe00eaf161684e1bcd') in 0.226833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sound/off.mp3
+  artifactKey: Guid(7aec24835cc2749479e8ecf6f5b9959f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/off.mp3 using Guid(7aec24835cc2749479e8ecf6f5b9959f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9b072015e51377132b73194e579d15') in 0.044176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Sound/Eg8ZacYXsAMzg1U.jpg
+  artifactKey: Guid(5f35d5411f37289408f3ecf3a7de50fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Eg8ZacYXsAMzg1U.jpg using Guid(5f35d5411f37289408f3ecf3a7de50fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86de2fc6d451243d97f4ee16ace63b4') in 0.142746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Sound/MinotaurAtt 1.mp3
+  artifactKey: Guid(adaf73f4e1e495f45bcc2363653164ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/MinotaurAtt 1.mp3 using Guid(adaf73f4e1e495f45bcc2363653164ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17ba49daa6729f8a99f92935b148d4f') in 0.019591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sound/foto.png
+  artifactKey: Guid(0cb8829858eac7e4d8cebe610b9cfbfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/foto.png using Guid(0cb8829858eac7e4d8cebe610b9cfbfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f9bb5a25562393dc0213e1e765e304') in 0.377209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sound/minotaurHit.mp3
+  artifactKey: Guid(dbcca4b43124195469b3dfaebbcb7c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/minotaurHit.mp3 using Guid(dbcca4b43124195469b3dfaebbcb7c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9171aafe8c73f48b21d8fd8bacae1db4') in 0.017661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Sound/Suspense and Tension Copyright Background Music - Suspense Rises by  Soundridemusic (320 kbps).mp3
+  artifactKey: Guid(cce4d08a3e615c042b5cf8cd5ff0d007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Suspense and Tension Copyright Background Music - Suspense Rises by  Soundridemusic (320 kbps).mp3 using Guid(cce4d08a3e615c042b5cf8cd5ff0d007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf6b755e83772ab895d554dc6645ad8') in 0.016865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sound/merda.mp3
+  artifactKey: Guid(c9bb1d6a51e727140b500744f9f82714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/merda.mp3 using Guid(c9bb1d6a51e727140b500744f9f82714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6434a10533993bed1d9df590c07306f6') in 0.017429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sound/skeleton.mp3
+  artifactKey: Guid(83fc30430d4225340bc1af5c4bbfd83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/skeleton.mp3 using Guid(83fc30430d4225340bc1af5c4bbfd83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f791e0898e360f6b9473bd4bad1f8e10') in 0.020796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sound/SaveTube.io - Minecraft dying sound effect (HD) (128 kbps).mp3
+  artifactKey: Guid(6d9c96ad1e5798e43ba9faab5e621b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/SaveTube.io - Minecraft dying sound effect (HD) (128 kbps).mp3 using Guid(6d9c96ad1e5798e43ba9faab5e621b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81066eca826470f90d0b5ae19b3e4eb') in 0.026803 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
