@@ -102,6 +102,7 @@ public class PlayerMain : MonoBehaviour
     public void Morri()
     {
         morto = true;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
         ChangeAnimationState(PLAYER_DEATH);
         if (!deathSound.isPlaying)
         {
@@ -125,7 +126,7 @@ public class PlayerMain : MonoBehaviour
         if ( morto == false)
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded())
         {
             isJumpPressed = true;
         }

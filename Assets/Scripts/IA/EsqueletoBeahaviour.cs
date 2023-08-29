@@ -5,7 +5,7 @@ using UnityEngine;
 public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
 {
 
-    public int lives = 4;
+    public int lives = 3;
     private bool morreu = false;
     //Animacao
     private Animator anim;
@@ -18,7 +18,8 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
     [SerializeField] private float attackDelay = 0.3f;
 
     [SerializeField] Transform player;
-    [SerializeField] float agroRange;
+    [SerializeField] float agroRangeX;
+    [SerializeField] float agroRangeY;
     [SerializeField] float attackRange;
 
     [SerializeField] float moveSpeed;
@@ -66,18 +67,20 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
     void Update()
     {
 
-        if (!morreu) { 
+        if (!morreu) {
             //distance to player
-            float distToPlayer = Vector2.Distance(transform.position, player.position);
+            //float distToPlayer = Vector2.Distance(transform.position, player.position);
+            float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
+            float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
 
-            if (distToPlayer <= attackRange)
+            if (distToPlayerX <= attackRange && distToPlayerY <= attackRange)
             {
                 //distance to attack is true
-                
+
                 AttackPlayer();
 
             }
-            else if (distToPlayer < agroRange)
+            else if (distToPlayerX < agroRangeX && distToPlayerY < agroRangeY)
             {
                 //chase player
                 ChasePlayer();
@@ -176,7 +179,7 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
 
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
         this.GetComponent<PolygonCollider2D>().enabled = false;
-        rb2d.isKinematic = true;
+        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
         Destroy(gameObject,1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);
         
