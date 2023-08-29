@@ -143,8 +143,11 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
             if(!isAttacking)
             {
                 isAttacking = true;
-               // ChangeAnimationState(MINOTAURO_ATTACK);
-                attackSound.Play();
+                // ChangeAnimationState(MINOTAURO_ATTACK);
+                if (!attackSound.isPlaying)
+                {
+                    attackSound.Play();
+                }
                 Invoke("AttackComplete", attackDelay);
             }
             
@@ -158,8 +161,11 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     private void OnParticleCollision(GameObject other)
     {
         lives--;
-
-        hitSound.Play();
+        if (!hitSound.isPlaying)
+        {
+            hitSound.Play();
+        }
+        
         if (lives <= 0)
         {
             

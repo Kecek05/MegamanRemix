@@ -109,7 +109,7 @@ public class PlayerMain : MonoBehaviour
             deathSound.Play();
         }
 
-        Invoke("RestartGame", 2f);
+        Invoke("RestartGame", 2.5f);
     }
     void Update()
     {
@@ -124,7 +124,11 @@ public class PlayerMain : MonoBehaviour
         
         dirX = Input.GetAxisRaw("Horizontal");
         if ( morto == false)
+        {
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+            
+        }
+            
 
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
@@ -166,6 +170,7 @@ public class PlayerMain : MonoBehaviour
             if (dirX != 0 && !attackWalk)
             {
                 ChangeAnimationState(PLAYER_WALK);
+               
             }
             else
             {
@@ -181,8 +186,12 @@ public class PlayerMain : MonoBehaviour
                 Fire();
                 if(dirX == 0)
                     ChangeAnimationState(PLAYER_ATTACK);
-                else 
+                else
+                {
                     ChangeAnimationState(PLAYER_ATTACKWALK);
+                    
+                }
+                    
 
                 Invoke("AttackComplete", attackDelay);
             }

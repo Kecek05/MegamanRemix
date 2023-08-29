@@ -144,7 +144,10 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
             {
                 isAttacking = true;
                 ChangeAnimationState(MINOTAURO_ATTACK);
-                attackSound.Play();
+                if (!attackSound.isPlaying)
+                {
+                    attackSound.Play();
+                }
                 Invoke("AttackComplete", attackDelay);
             }
             
@@ -159,7 +162,10 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
     {
         lives--;
 
-        hitSound.Play();
+        if (!hitSound.isPlaying)
+        {
+            hitSound.Play();
+        }
         if (lives <= 0)
         {
             

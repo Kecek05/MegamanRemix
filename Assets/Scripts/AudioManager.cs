@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager: MonoBehaviour
 {
@@ -11,6 +12,20 @@ public class AudioManager: MonoBehaviour
     {
             DontDestroyOnLoad(this.gameObject);
         
+    }
+    private void Update()
+    {
+
+        string nomeDaCena = SceneManager.GetActiveScene().name;
+        if (nomeDaCena == "GameOver" || nomeDaCena == "Menu")
+        {
+            PauseBackgroundMusic();
+        }
+        else
+        {
+            ResumeBackgroundMusic();
+        }
+
     }
 
     // Chame este método para iniciar a música de fundo.
