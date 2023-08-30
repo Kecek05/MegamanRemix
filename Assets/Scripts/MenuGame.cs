@@ -22,4 +22,8 @@ public class MenuGame : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
     }
+    public void ControlesMenu()
+    {
+        SceneManager.LoadScene("Controles");
+    }
 }
