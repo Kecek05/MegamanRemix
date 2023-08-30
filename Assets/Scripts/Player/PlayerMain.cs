@@ -46,6 +46,7 @@ public class PlayerMain : MonoBehaviour
     const string PLAYER_FALL = "Player_Fall";
     const string PLAYER_ATTACKWALK = "Player_AttackWalk";
     const string PLAYER_GRAB = "Player_Grab";
+    const string PLAYER_GRABWALK = "Player_GrabWalk";
     private string currentState;
 
     private bool attackWalk = false;
@@ -150,8 +151,7 @@ public class PlayerMain : MonoBehaviour
 
 
         UpdateAnimation();
-        if (grabControll.grabing)
-            ChangeAnimationState(PLAYER_GRAB);
+       
     }
     //FIxedUpdate chamada a cada 0.04 segundos, usada com a fisica que tambem é sincronizada com o relogio
     public void FixedUpdate()
@@ -174,16 +174,34 @@ public class PlayerMain : MonoBehaviour
 
         }
 
-        if (isGrounded() && !isAttacking && morto == false && grabControll.grabing == false)
+        if (isGrounded() && !isAttacking && morto == false)
         {
-            if (dirX != 0 && !attackWalk)
+            if (dirX != 0 && !attackWalk && !grabControll.grabing)
             {
                 ChangeAnimationState(PLAYER_WALK);
                
+            } else if (dirX != 0 && !attackWalk && grabControll.grabing == true )
+            {
+                ChangeAnimationState(PLAYER_GRABWALK);
+            } else if(grabControll.grabing == true)
+            {
+                ChangeAnimationState(PLAYER_GRAB);
             }
             else
             {
                 ChangeAnimationState(PLAYER_IDLE);
+            }
+        }
+        if (!isAttacking && morto == false)
+        {
+ 
+             if (dirX != 0 && !attackWalk && grabControll.grabing == true)
+            {
+                ChangeAnimationState(PLAYER_GRABWALK);
+            }
+            else if (grabControll.grabing == true)
+            {
+                ChangeAnimationState(PLAYER_GRAB);
             }
         }
         if (isAttackPressed)
