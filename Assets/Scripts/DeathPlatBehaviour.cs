@@ -10,7 +10,7 @@ public class DeathPlatBehaviour : MonoBehaviour
     void Start()
     {
         spikeScript.scamGraves();
-        print("scam");
+        
         //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
     }
 
