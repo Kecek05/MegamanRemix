@@ -150,7 +150,7 @@ public class PlayerMain : MonoBehaviour
 
         UpdateAnimation();
     }
-
+    //FIxedUpdate chamada a cada 0.04 segundos, usada com a fisica que tambem é sincronizada com o relogio
     public void FixedUpdate()
     {
 
