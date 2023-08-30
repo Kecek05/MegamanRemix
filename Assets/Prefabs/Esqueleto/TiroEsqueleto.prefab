@@ -118,7 +118,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -136,7 +136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1478b2247e9eeb14ca2bb31eed1e3b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpeed: 5
+  TiroEsqueletoPrefab: {fileID: 2933135805946576615}
+  EsqueletoTiroSpawn: {fileID: 8095406432235680880, guid: 415532e3270f89c4c838ac9bd9947fee,
+    type: 3}
+  fireForce: 10
+  angle: 45
+  fireRate: 2
 --- !u!50 &2933135805946576611
 Rigidbody2D:
   serializedVersion: 4
@@ -152,9 +157,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4

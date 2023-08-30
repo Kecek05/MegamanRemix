@@ -397,7 +397,7 @@ MonoBehaviour:
   lives: 2
   attackDelay: 2
   player: {fileID: 0}
-  agroRangeX: 12
+  agroRangeX: 10
   agroRangeY: 5
   attackRange: 5
   moveSpeed: 5
@@ -405,4 +405,8 @@ MonoBehaviour:
     type: 3}
   hitSound: {fileID: 8714676538357413764}
   attackSound: {fileID: 4120827886045888080}
+  EsqueletoTiroPrefab: {fileID: 2933135805946576615, guid: 032da4779a4766e40aba27966edb6785,
+    type: 3}
+  EsqueletoTiroSpawn: {fileID: 0}
+  bulletSpeed: 0
   layerToIgnore: player
