@@ -22,12 +22,12 @@ public class GrabController : MonoBehaviour
             {
                 grabCheck.collider.gameObject.transform.parent = Holder;
                 grabCheck.collider.gameObject.transform.position = Holder.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabing = true;
             } else
             {
                 grabCheck.collider.gameObject.transform.parent = null;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 grabing = false;
             }
             
