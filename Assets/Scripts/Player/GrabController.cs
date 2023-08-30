@@ -8,6 +8,7 @@ public class GrabController : MonoBehaviour
     public Transform grabDetect;
     public Transform Holder;
     public float rayDist;
+    public bool grabing;
 
 
     
@@ -22,11 +23,14 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = Holder;
                 grabCheck.collider.gameObject.transform.position = Holder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                grabing = true;
             } else
             {
                 grabCheck.collider.gameObject.transform.parent = null;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                grabing = false;
             }
+            
         }
     }
 }

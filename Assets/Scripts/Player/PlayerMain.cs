@@ -31,7 +31,7 @@ public class PlayerMain : MonoBehaviour
 
     public ParticleSystem fire;
 
-
+    public GrabController grabControll;
 
     //SFX
     [SerializeField] private AudioSource deathSound;
@@ -45,6 +45,7 @@ public class PlayerMain : MonoBehaviour
     const string PLAYER_DEATH = "Player_Death";
     const string PLAYER_FALL = "Player_Fall";
     const string PLAYER_ATTACKWALK = "Player_AttackWalk";
+    const string PLAYER_GRAB = "Player_Grab";
     private string currentState;
 
     private bool attackWalk = false;
@@ -140,7 +141,7 @@ public class PlayerMain : MonoBehaviour
             isJumpPressed = true;
         }
 
-        if (Input.GetButtonDown("Fire1") && !morto)
+        if (Input.GetButtonDown("Fire1") && !morto && !grabControll.grabing)
         {
             isAttackPressed = true;
             if (dirX != 0)
@@ -149,6 +150,8 @@ public class PlayerMain : MonoBehaviour
 
 
         UpdateAnimation();
+        if (grabControll.grabing)
+            ChangeAnimationState(PLAYER_GRAB);
     }
     //FIxedUpdate chamada a cada 0.04 segundos, usada com a fisica que tambem é sincronizada com o relogio
     public void FixedUpdate()
@@ -166,11 +169,12 @@ public class PlayerMain : MonoBehaviour
             
             
             isJumpPressed = false;
+            if (grabControll.grabing == false)
                 ChangeAnimationState(PLAYER_JUMP);
 
         }
 
-        if (isGrounded() && !isAttacking && morto == false)
+        if (isGrounded() && !isAttacking && morto == false && grabControll.grabing == false)
         {
             if (dirX != 0 && !attackWalk)
             {
@@ -264,11 +268,11 @@ public class PlayerMain : MonoBehaviour
                     transform.rotation = Quaternion.Euler(0, 180, 0);
                 }
             
-            if (rb.velocity.y > .1f)
+            if (rb.velocity.y > .1f  && grabControll.grabing == false)
             {
                 ChangeAnimationState(PLAYER_JUMP);
             }
-            else if (rb.velocity.y < -.1f)
+            else if (rb.velocity.y < -.1f && grabControll.grabing == false)
             {
                 ChangeAnimationState(PLAYER_FALL);
             }
