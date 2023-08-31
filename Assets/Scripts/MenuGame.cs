@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuGame : MonoBehaviour
 {
-  
 
+    private void Update()
+    {
+        Cursor.visible = true;
+    }
     public void QuitGame()
     {
         Application.Quit();
@@ -17,6 +20,10 @@ public class MenuGame : MonoBehaviour
     }
     public void BackToMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+        SceneManager.LoadScene("Menu");
+    }
+    public void ControlesMenu()
+    {
+        SceneManager.LoadScene("Controles");
     }
 }
