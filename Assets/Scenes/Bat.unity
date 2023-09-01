@@ -2594,6 +2594,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2087688110, guid: e9e1d633dbae29748a65c5e805165d00, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2009794723}
     - target: {fileID: 4847711901400062225, guid: e9e1d633dbae29748a65c5e805165d00,
         type: 3}
       propertyPath: m_RootOrder
@@ -2602,7 +2606,7 @@ PrefabInstance:
     - target: {fileID: 4847711901400062225, guid: e9e1d633dbae29748a65c5e805165d00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8560424
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 4847711901400062225, guid: e9e1d633dbae29748a65c5e805165d00,
         type: 3}
@@ -2653,11 +2657,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4847711901400062239, guid: e9e1d633dbae29748a65c5e805165d00,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9e1d633dbae29748a65c5e805165d00, type: 3}
@@ -16034,49 +16033,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &2087688101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4847711901400062236, guid: e9e1d633dbae29748a65c5e805165d00,
-    type: 3}
-  m_PrefabInstance: {fileID: 810181596}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2087688103 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4847711901400062226, guid: e9e1d633dbae29748a65c5e805165d00,
-    type: 3}
-  m_PrefabInstance: {fileID: 810181596}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2087688104 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4847711901400062227, guid: e9e1d633dbae29748a65c5e805165d00,
-    type: 3}
-  m_PrefabInstance: {fileID: 810181596}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2087688110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087688101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb3a236cb348ed41bdda7e4a381d190, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: 3
-  attackDelay: 2
-  player: {fileID: 2009794723}
-  agroRangeX: 17
-  agroRangeY: 10
-  attackRange: 4
-  moveSpeed: 2
-  DeathPlat: {fileID: 8513480448011334462, guid: 955d0f15087f5684fbe1b0143c3f66df,
-    type: 3}
-  hitSound: {fileID: 2087688103}
-  attackSound: {fileID: 2087688104}
-  layerToIgnore: player
-  velocidadeQueda: 5
 --- !u!1001 &2096114071
 PrefabInstance:
   m_ObjectHideFlags: 0

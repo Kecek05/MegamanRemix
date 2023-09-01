@@ -24,6 +24,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
     [SerializeField] float attackRangeY;
 
     [SerializeField] float moveSpeed;
+    [SerializeField] float velocidadeQueda;
 
     [SerializeField] GameObject DeathPlat;
     Rigidbody2D rb2d;
@@ -35,7 +36,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
     public string layerToIgnore = "player";
 
 
-    public float velocidadeQueda = 5.0f;
+
 
     void ChangeAnimationState(string newState)
     {
@@ -55,6 +56,13 @@ public class BatBehaviour : MonoBehaviour, IDamageable
     {
         isAttacking = false;
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ground")
+        {
+            Morreu();
+        }
+    }
 
     void Start()
     {
@@ -73,8 +81,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
 
         if (!morreu)
         {
-            //distance to player
-            //float distToPlayer = Vector2.Distance(transform.position, player.position);
+            
             float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
             float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
 
@@ -111,14 +118,14 @@ public class BatBehaviour : MonoBehaviour, IDamageable
 
         if (transform.position.x < player.position.x && isAttacking == false)
         {
-            //enemy is to the left side of the player, so move right
+
 
             rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
             transform.localScale = new Vector2(1, 1);
         }
         else if (transform.position.x > player.position.x && isAttacking == false)
         {
-            // move left, right side
+
 
             rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
             transform.localScale = new Vector2(-1, 1);
@@ -139,7 +146,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
 
     void StopChasing()
     {
-        //new Vector2(0, 0); bug na gravidade
+
         if (lives > 0)
             ChangeAnimationState(MINOTAURO_IDLE);
     }
@@ -152,7 +159,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
             {
                 isAttacking = true;
                 ChangeAnimationState(MINOTAURO_ATTACK);
-                transform.Translate(Vector3.down * velocidadeQueda * Time.deltaTime);
+                rb2d.velocity = new Vector2( 0, -velocidadeQueda);
                 if (!attackSound.isPlaying)
                 {
                     attackSound.Play();
@@ -160,31 +167,9 @@ public class BatBehaviour : MonoBehaviour, IDamageable
                 Invoke("AttackComplete", attackDelay);
             }
 
-            print("atacando");
+            
 
-            //if (transform.position.x < player.position.x)
-            //{
-            //    transform.localScale = new Vector2(1, 1);
-            //}
-            //else
-            //{
-            //    transform.localScale = new Vector2(-1, 1);
-            //}
-            //if (lives > 0)
-            //{
-            //    if (!isAttacking)
-            //    {
-            //        isAttacking = true;
-            //        ChangeAnimationState(MINOTAURO_ATTACK);
-            //        if (!attackSound.isPlaying)
-            //        {
-            //            attackSound.Play();
-            //        }
-            //        Invoke("AttackComplete", attackDelay);
-            //    }
-
-
-            //}
+           
         }
 
 
@@ -203,7 +188,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
 
             morreu = true;
 
-            ChangeAnimationState(MINOTAURO_DEATH);
+           
             Morreu();
 
 
@@ -214,7 +199,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
 
     void Morreu()
     {
-
+        ChangeAnimationState(MINOTAURO_DEATH);
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
         this.GetComponent<PolygonCollider2D>().enabled = false;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;

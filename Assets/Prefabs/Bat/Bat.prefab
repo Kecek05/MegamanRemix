@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4847711901400062227}
   - component: {fileID: 4847711901400062226}
   - component: {fileID: 4847711901400062228}
+  - component: {fileID: 2087688110}
   m_Layer: 9
   m_Name: Bat
   m_TagString: Enemy
@@ -104,7 +105,7 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -356,3 +357,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2087688110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4847711901400062236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb3a236cb348ed41bdda7e4a381d190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 1
+  attackDelay: 2
+  player: {fileID: 0}
+  agroRangeX: 17
+  agroRangeY: 10
+  attackRangeX: 0.5
+  attackRangeY: 4
+  moveSpeed: 4
+  velocidadeQueda: 6
+  DeathPlat: {fileID: 8513480448011334462, guid: 955d0f15087f5684fbe1b0143c3f66df,
+    type: 3}
+  hitSound: {fileID: 4847711901400062226}
+  attackSound: {fileID: 4847711901400062227}
+  layerToIgnore: player

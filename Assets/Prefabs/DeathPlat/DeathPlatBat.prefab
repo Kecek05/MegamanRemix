@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8513480448011334457}
   - component: {fileID: 8513480448011334456}
   - component: {fileID: 8513480448011334463}
+  - component: {fileID: 1055853112}
   m_Layer: 13
   m_Name: DeathPlatBat
   m_TagString: graves
@@ -245,3 +246,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spikeScript: {fileID: 735760687118753823, guid: 85af8f82812bbad4194dbacf9a0a8dcc,
     type: 3}
+--- !u!70 &1055853112
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513480448011334462}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.70424855}
+  m_Size: {x: 0.78125, y: 1.6786479}
+  m_Direction: 0
