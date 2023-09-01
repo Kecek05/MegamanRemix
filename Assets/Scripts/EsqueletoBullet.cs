@@ -2,83 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class EsqueletoBullet: MonoBehaviour
-
+public class EsqueletoBullet : MonoBehaviour
 {
+    public GameObject player;  // Arraste o GameObject do jogador aqui
+    public GameObject TiroEsqueletoPrefab;
+    public float shotSpeed = 5f;
+    public float shotInterval = 2f;
 
-    public GameObject TiroEsqueletoPrefab; // Prefab do projétil
-
-    public Transform EsqueletoTiroSpawn;         // Ponto de onde o projétil será disparado
-
-    public float fireForce = 10f;       // Força do disparo
-
-    public float angle = 45f;           // Ângulo de lançamento
-
-    public float fireRate = 2f;         // Taxa de disparo em segundos
-
-
-
-    private float nextFireTime;
-
-
-
-    void Start()
-
+    private void Start()
     {
-
-        nextFireTime = Time.time + fireRate;
-
+        StartCoroutine(Shoot());
     }
 
-
-
-    void Update()
-
+    private IEnumerator Shoot()
     {
-
-        if (Time.time >= nextFireTime)
-
+        while (true)
         {
-
-            FireProjectile();
-
-            nextFireTime = Time.time + fireRate;
-
+            yield return new WaitForSeconds(shotInterval);
+            Fire();
         }
-
     }
 
-
-
-    void FireProjectile()
-
+    private void Fire()
     {
-
-        GameObject newProjectile = Instantiate(TiroEsqueletoPrefab, EsqueletoTiroSpawn.position, Quaternion.identity);
-
-        Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
-
-
-
-        // Converter ângulo para radianos
-
-        float angleRad = angle * Mathf.Deg2Rad;
-
-
-
-        // Calcular componentes x e y da velocidade inicial
-
-        float initialVelocityX = fireForce * Mathf.Cos(angleRad);
-
-        float initialVelocityY = fireForce * Mathf.Sin(angleRad);
-
-
-
-        // Definir a velocidade inicial do projétil
-
-        rb.velocity = new Vector2(initialVelocityX, initialVelocityY);
-
+        Vector3 shootDirection = (player.transform.position - transform.position).normalized;
+        GameObject TiroEsqueleto = Instantiate(TiroEsqueletoPrefab, transform.position, Quaternion.identity);
+        TiroEsqueleto.GetComponent<Rigidbody2D>().velocity = shootDirection * shotSpeed;
     }
-
 }

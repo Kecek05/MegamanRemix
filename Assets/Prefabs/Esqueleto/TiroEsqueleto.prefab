@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2933135805946576611}
   m_Layer: 0
   m_Name: TiroEsqueleto
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,12 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1478b2247e9eeb14ca2bb31eed1e3b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 4155093504969424118, guid: 16e10d432542f19429bfb4607c3a4dee, type: 3}
   TiroEsqueletoPrefab: {fileID: 2933135805946576615}
-  EsqueletoTiroSpawn: {fileID: 8095406432235680880, guid: 415532e3270f89c4c838ac9bd9947fee,
-    type: 3}
-  fireForce: 10
-  angle: 45
-  fireRate: 2
+  shotSpeed: 2
+  shotInterval: 1
 --- !u!50 &2933135805946576611
 Rigidbody2D:
   serializedVersion: 4
@@ -157,9 +155,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 0.05
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
+  m_CollisionDetection: 0
+  m_Constraints: 0
