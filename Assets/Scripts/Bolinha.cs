@@ -9,6 +9,8 @@ public class Bolinha : MonoBehaviour, IDamageable
     public float speed = 20f;
     public Rigidbody2D rb;
     private Transform player;
+
+    [SerializeField] private AudioSource hitSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,24 +33,32 @@ public class Bolinha : MonoBehaviour, IDamageable
         }
     }
 
-
+    private void Awake()
+    {
+        if (!hitSound.isPlaying)
+        {
+            hitSound.Play();
+        }
+    }
     void FireBullet(Vector2 direction)
     {
         rb.velocity = direction.normalized * speed;
    
     }
-    private void OnTriggerEnter2D(Collider2D hitInfo)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
     }
 
-     public void Damage(float damageAmount)
+    public void Damage(float damageAmount)
     {
          Hit();
-        print("morra!");
+        
     }
     private void Hit()
     {
+
         Destroy(gameObject);
     }
 }
