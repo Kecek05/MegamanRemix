@@ -10,8 +10,7 @@ public class Bolinha : MonoBehaviour, IDamageable
     public Rigidbody2D rb;
     private Transform player;
 
-    [SerializeField] private AudioSource hitSound;
-    // Start is called before the first frame update
+
     void Start()
     {
 
@@ -33,13 +32,7 @@ public class Bolinha : MonoBehaviour, IDamageable
         }
     }
 
-    private void Awake()
-    {
-        if (!hitSound.isPlaying)
-        {
-            hitSound.Play();
-        }
-    }
+
     void FireBullet(Vector2 direction)
     {
         rb.velocity = direction.normalized * speed;
