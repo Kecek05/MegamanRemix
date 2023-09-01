@@ -30,7 +30,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
     Rigidbody2D rb2d;
 
     [SerializeField] private AudioSource hitSound;
-    [SerializeField] private AudioSource attackSound;
+
 
     //Retirar colisao com o player quando o inimigo morre
     public string layerToIgnore = "player";
@@ -160,10 +160,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
                 isAttacking = true;
                 ChangeAnimationState(MINOTAURO_ATTACK);
                 rb2d.velocity = new Vector2( 0, -velocidadeQueda);
-                if (!attackSound.isPlaying)
-                {
-                    attackSound.Play();
-                }
+
                 Invoke("AttackComplete", attackDelay);
             }
 
@@ -200,6 +197,10 @@ public class BatBehaviour : MonoBehaviour, IDamageable
     void Morreu()
     {
         ChangeAnimationState(MINOTAURO_DEATH);
+        if (!hitSound.isPlaying)
+        {
+            hitSound.Play();
+        }
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
         this.GetComponent<PolygonCollider2D>().enabled = false;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
