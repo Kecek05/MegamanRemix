@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4847711901400062224}
   - component: {fileID: 4847711901400062239}
   - component: {fileID: 4847711901400062238}
-  - component: {fileID: 4847711901400062237}
   - component: {fileID: 4847711901400062227}
   - component: {fileID: 4847711901400062226}
   - component: {fileID: 4847711901400062228}
@@ -145,30 +144,6 @@ PolygonCollider2D:
       - {x: -0.078125, y: -0.28125}
       - {x: 0.109375, y: -0.34375}
       - {x: 0.421875, y: -0.34375}
---- !u!114 &4847711901400062237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4847711901400062236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6155dffd1a1ae4ebadf0cc9141bf54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: 3
-  attackDelay: 2
-  player: {fileID: 0}
-  agroRangeX: 17
-  agroRangeY: 5
-  attackRange: 2
-  moveSpeed: 3
-  DeathPlat: {fileID: 6518187996132675351, guid: 160dd2135b6850e47b6d79bb3045ae38,
-    type: 3}
-  hitSound: {fileID: 4847711901400062226}
-  attackSound: {fileID: 4847711901400062227}
-  layerToIgnore: player
 --- !u!82 &4847711901400062227
 AudioSource:
   m_ObjectHideFlags: 0
