@@ -34,6 +34,8 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     [SerializeField] public GameObject EsqueletoTiroPrefab;
     [SerializeField] public Transform EsqueletoTiroSpawn;
     public float bulletSpeed;
+
+
     //Retirar colisao com o player quando o inimigo morre
     public string layerToIgnore = "player";
 
@@ -137,30 +139,37 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     {
         if (transform.position.x < player.position.x)
         {
-            transform.localScale = new Vector2(-1, 1);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         } else
         {
-            transform.localScale = new Vector2(1, 1);
+            //transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         if (lives > 0)
         {
             if(!isAttacking)
             {
                 isAttacking = true;
-                // ChangeAnimationState(MINOTAURO_ATTACK);
+                
                 if (!attackSound.isPlaying)
                 {
                     attackSound.Play();
                 }
-                var bulletEsqueleto = Instantiate(EsqueletoTiroPrefab, EsqueletoTiroSpawn.position, EsqueletoTiroSpawn.rotation);
-                bulletEsqueleto.GetComponent<Rigidbody2D>().velocity = EsqueletoTiroSpawn.up * bulletSpeed;
-                Invoke("AttackComplete", attackDelay);
+                Shoot();
+                
             }
             
             
         }
             
        
+
+    }
+
+    public void Shoot()
+    {
+        Instantiate(EsqueletoTiroPrefab, EsqueletoTiroSpawn.position, EsqueletoTiroSpawn.rotation);
+        Invoke("AttackComplete", attackDelay);
+
 
     }
 

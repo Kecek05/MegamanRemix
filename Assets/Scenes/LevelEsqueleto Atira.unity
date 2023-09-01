@@ -3745,37 +3745,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1409819752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1409819753}
-  m_Layer: 0
-  m_Name: EsqueletoTiroSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1409819753
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409819752}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.39094377, y: 1.2373784, z: -0.5079414}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1842643858}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1422459861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13027,6 +12996,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1409819753, guid: 415532e3270f89c4c838ac9bd9947fee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409819753, guid: 415532e3270f89c4c838ac9bd9947fee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.372
+      objectReference: {fileID: 0}
     - target: {fileID: 7142226899786470350, guid: 415532e3270f89c4c838ac9bd9947fee,
         type: 3}
       propertyPath: m_Name
@@ -13037,32 +13014,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4939247307214813897}
-    - target: {fileID: 7405840429576424105, guid: 415532e3270f89c4c838ac9bd9947fee,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7405840429576424105, guid: 415532e3270f89c4c838ac9bd9947fee,
-        type: 3}
-      propertyPath: attackRange
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7405840429576424105, guid: 415532e3270f89c4c838ac9bd9947fee,
-        type: 3}
-      propertyPath: bulletSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7405840429576424105, guid: 415532e3270f89c4c838ac9bd9947fee,
-        type: 3}
-      propertyPath: EsqueletoTiroSpawn
-      value: 
-      objectReference: {fileID: 1409819753}
-    - target: {fileID: 7405840429576424105, guid: 415532e3270f89c4c838ac9bd9947fee,
-        type: 3}
-      propertyPath: EsqueletoTiroPrefab
-      value: 
-      objectReference: {fileID: 2933135805946576615, guid: 032da4779a4766e40aba27966edb6785,
-        type: 3}
     - target: {fileID: 8095406432235680880, guid: 415532e3270f89c4c838ac9bd9947fee,
         type: 3}
       propertyPath: m_RootOrder
@@ -13120,12 +13071,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 415532e3270f89c4c838ac9bd9947fee, type: 3}
---- !u!4 &1842643858 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8095406432235680880, guid: 415532e3270f89c4c838ac9bd9947fee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1842643857}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909474289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16183,12 +16128,12 @@ PrefabInstance:
     - target: {fileID: 7568365344756265190, guid: 16e10d432542f19429bfb4607c3a4dee,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.08
+      value: 8.14
       objectReference: {fileID: 0}
     - target: {fileID: 7568365344756265190, guid: 16e10d432542f19429bfb4607c3a4dee,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7
+      value: -2.97
       objectReference: {fileID: 0}
     - target: {fileID: 7568365344756265190, guid: 16e10d432542f19429bfb4607c3a4dee,
         type: 3}
