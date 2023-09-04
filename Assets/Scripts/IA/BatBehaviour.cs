@@ -133,7 +133,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
 
         if (transform.position.x == player.position.x && !isAttacking)
         {
-            print(" é para atacar");
+           
             AttackPlayer();
             return;
         }
@@ -141,7 +141,7 @@ public class BatBehaviour : MonoBehaviour, IDamageable
         if (lives > 0 && isAttacking == false)
             ChangeAnimationState(MINOTAURO_WALK);
 
-        print("andando");
+       
     }
 
     void StopChasing()

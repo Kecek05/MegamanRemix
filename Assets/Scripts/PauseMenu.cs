@@ -7,12 +7,11 @@ public class PauseMenu : MonoBehaviour
 {
     public bool GameIsPause = false;
 
-
     [SerializeField] public PlayerMain pmain;
 
 
     [SerializeField] public GameObject pauseMenuUI;
-
+    [SerializeField] public GameObject controlMenuUI;
   
     // Update is called once per frame
     void Update()
@@ -59,4 +58,15 @@ public class PauseMenu : MonoBehaviour
         print(pmain.morto);
     }
 
+    public void ControlesLigar()
+    {
+        controlMenuUI.SetActive(true);
+        pauseMenuUI.SetActive(false);
+    }
+
+    public void SairControles()
+    {
+        pauseMenuUI.SetActive(true);
+        controlMenuUI.SetActive(false);
+    }
 }
