@@ -23,6 +23,7 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private LayerMask graveLayer;
     [SerializeField] private LayerMask graveJumpLayer;
+    [SerializeField] private LayerMask graveBatLayer;
     [SerializeField] private float graveJumpMultplier;
     private float dirX = 0f;
     public PauseMenu pauseMenu;
@@ -247,7 +248,7 @@ public class PlayerMain : MonoBehaviour
     private bool isGrounded()
     {
 
-        if (isChao() || isGrave() || isGraveJump())
+        if (isChao() || isGrave() || isGraveJump() || isGraveBat())
         {
             return true;
         } else
@@ -258,6 +259,10 @@ public class PlayerMain : MonoBehaviour
 
     }
 
+    private bool isGraveBat()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveBatLayer);
+    }
     private bool isGraveJump()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveJumpLayer);
