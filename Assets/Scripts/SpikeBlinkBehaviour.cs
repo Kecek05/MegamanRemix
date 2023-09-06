@@ -5,22 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class SpikeBlinkBehaviour : MonoBehaviour, IDamageable
 {
-    [SerializeField] private int delayBlink;
+    [SerializeField] private int delayBlinkOn;
+    [SerializeField] private int delayBlinkOff;
+    [SerializeField] private int delayStart;
 
-    private void Update()
+
+    public float transparencia;
+    public float duracaoPiscada;
+
+    private SpriteRenderer spriteRenderer;
+    private BoxCollider2D boxColl;
+    
+    private void Start()
     {
-        Invoke("BlinkOn", delayBlink);
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxColl = GetComponent<BoxCollider2D>();
+        Invoke("BlinkOn", delayStart);
     }
 
 
     void BlinkOn()
     {
-        gameObject.SetActive(false);
-        Invoke("BlinkOff", delayBlink);
+        StartCoroutine(Piscar());
+        boxColl.enabled = false;
+ 
+        Invoke("BlinkOff", delayBlinkOff);
     }
     void BlinkOff()
     {
-        gameObject.SetActive(true);
+        boxColl.enabled = true;
+        Invoke("BlinkOn", delayBlinkOn);
     }
     public void Damage(float damageAmount)
     {
@@ -32,6 +46,17 @@ public class SpikeBlinkBehaviour : MonoBehaviour, IDamageable
     public void Hit()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    private IEnumerator Piscar()
+    {
+        // Reduz a transparência
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, transparencia);
+
+        // Aguarda a duração do piscar
+        yield return new WaitForSeconds(duracaoPiscada);
+
+        // Restaura a transparência original do jogador
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
     }
 
 }
