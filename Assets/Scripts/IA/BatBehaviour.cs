@@ -148,7 +148,12 @@ public class BatBehaviour : MonoBehaviour, IDamageable
     {
 
         if (lives > 0)
+        {
+            rb2d.velocity = new Vector2(0, 0);
             ChangeAnimationState(MINOTAURO_IDLE);
+
+        }
+            
     }
 
     void AttackPlayer()
