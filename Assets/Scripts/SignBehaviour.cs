@@ -6,13 +6,13 @@ public class SignBehaviour : MonoBehaviour
 {
     public GameObject textoPlaca;
 
-    private bool jogadorPerto = false;
+    //private bool jogadorPerto = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            jogadorPerto = true;
+            //jogadorPerto = true;
             textoPlaca.SetActive(true);
         }
     }
@@ -21,7 +21,7 @@ public class SignBehaviour : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            jogadorPerto = false;
+            //jogadorPerto = false;
             textoPlaca.SetActive(false);
         }
     }

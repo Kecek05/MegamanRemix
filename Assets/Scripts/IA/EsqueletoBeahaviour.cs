@@ -33,6 +33,11 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
     //Retirar colisao com o player quando o inimigo morre
     public string layerToIgnore = "player";
 
+
+    // Hit Feedback
+    public float duracaoPiscada;
+    private SpriteRenderer spriteRenderer;
+
     void ChangeAnimationState(string newState)
     {
         if (currentState == newState) return;
@@ -54,7 +59,7 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Espinhos"));
@@ -166,6 +171,7 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
         {
             hitSound.Play();
         }
+        StartCoroutine(HitFeedback());
         if (lives <= 0)
         {
             
@@ -190,6 +196,16 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
         Instantiate(DeathPlat, transform.position, Quaternion.identity);
         
     }
+    private IEnumerator HitFeedback()
+    {
+        // Reduz a transparência
+        spriteRenderer.color = new Color(1f, 0.6941177f, 0.6941177f, 1f);
 
-  
+        // Aguarda a duração do piscar
+        yield return new WaitForSeconds(duracaoPiscada);
+
+        // Restaura a transparência original do jogador
+        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+    }
+
 }

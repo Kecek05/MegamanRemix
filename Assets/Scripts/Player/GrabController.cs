@@ -27,7 +27,6 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1f;
                 grabing = true;
-                print("segurando");
             }
             else
             {
