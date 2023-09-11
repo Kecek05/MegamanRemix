@@ -9,7 +9,6 @@ public class PlacaBehaviour : MonoBehaviour
 
     [SerializeField] private string nomeLayerGrave;
 
-    [SerializeField] private AudioSource openPorta;
 
 
 
@@ -18,23 +17,15 @@ public class PlacaBehaviour : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer(nomeLayerGrave))
         {
-            if (!openPorta.isPlaying)
-            {
-                openPorta.Play();
-            }
             porta.SetActive(false);
-    
+            print("Morcego");
         }
-    
+        print("trigger");
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer(nomeLayerGrave))
         {
-            if (!openPorta.isPlaying)
-            {
-                openPorta.Play();
-            }
             porta.SetActive(true);
         }
     }
