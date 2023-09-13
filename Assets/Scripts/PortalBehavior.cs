@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PortalBehavior : MonoBehaviour, Itouchable
 {
     private AudioSource TP;
-
+    public string level;
     [SerializeField] private AudioSource portal;
 
     // Start is called before the first frame update
@@ -27,6 +27,6 @@ public class PortalBehavior : MonoBehaviour, Itouchable
 
     private void CompleteLeve1()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        LoadBehaviour.LoadLevel(level);
     }
 }

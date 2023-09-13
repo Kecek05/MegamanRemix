@@ -11,11 +11,12 @@ public class LoadBehaviour : MonoBehaviour
     static string level;
     void Start()
     {
-        operation = SceneManager.LoadSceneAsync(level);
+        
+        StartCoroutine(LoadDelay());
     }
     private void Update()
     {
-        slider.value = operation.progress;
+        slider.value = Mathf.Lerp(slider.value, operation.progress, Time.deltaTime);
     }
 
     // Statica nao precisa estar na cena e é igual para todos os objetos com o codigo. Se o inimigo tem a variavel vida Static, quando ele receber dano, todos os inimigos recebem dano
@@ -28,11 +29,13 @@ public class LoadBehaviour : MonoBehaviour
     }
 
 
-    //private IEnumerator LoadDelay()
-    //{
+    private IEnumerator LoadDelay()
+    {
+        //yield return new WaitForSeconds(1f);
+        operation = SceneManager.LoadSceneAsync(level);
+        operation.allowSceneActivation = false;
+        yield return new WaitForSeconds(5f);
 
-
-    //    yield return new WaitForSeconds(1f);
-
-    //}
+        operation.allowSceneActivation = true;
+    }
 }
