@@ -95,28 +95,6 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
 
 
 
-    //void ChasePlayer()
-    //{
-
-    //    if (transform.position.x < player.position.x && isAttacking == false)
-    //    {
-    //        //enemy is to the left side of the player, so move right
-
-    //        rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
-    //        transform.localScale = new Vector2(-1, 1);
-    //    }
-    //    else if (transform.position.x > player.position.x && isAttacking == false)
-    //    {
-    //        // move left, right side
-
-    //        rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
-    //        transform.localScale = new Vector2(1, 1);
-    //    }
-
-
-    //    //if (lives > 0 && isAttacking == false)
-    //    //    ChangeAnimationState(MINOTAURO_WALK);
-    //}
 
     void StopChasing()
     {
