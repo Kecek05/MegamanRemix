@@ -42,21 +42,6 @@ public class BarrilBehaviour : MonoBehaviour, IDamageable
         isRolling = true;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // O barril colidiu com o jogador. Reinicie o jogo recarregando a cena.
-            RestartGame();
-        }
-    }
-
-    void RestartGame()
-    {
-        // Recarregue a cena atual (você deve configurar a cena no Unity).
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
     public void Damage(float damageAmount)
     {
         //hit
