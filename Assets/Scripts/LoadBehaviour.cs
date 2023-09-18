@@ -16,6 +16,7 @@ public class LoadBehaviour : MonoBehaviour
     }
     private void Update()
     {
+        Cursor.visible = false;
         slider.value = Mathf.Lerp(slider.value, operation.progress, Time.deltaTime);
     }
 
