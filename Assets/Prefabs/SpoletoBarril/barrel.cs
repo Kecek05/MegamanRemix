@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class barrel : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class barrel : MonoBehaviour
 
             // Aplica uma força para fazer o barril rolar na direção do jogador.
             rb.velocity = direction * moveSpeed;
+
+            // Rotação do barril.
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            rb.rotation = angle;
         }
     }
 
@@ -37,5 +42,18 @@ public class barrel : MonoBehaviour
         isRolling = true;
     }
 
-    // Implemente qualquer lógica de colisão e efeitos desejados aqui.
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+                  // O barril colidiu com o jogador. Reinicie o jogo recarregando a cena.
+            RestartGame();
+        }
+    }
+
+    void RestartGame()
+    {
+        // Recarregue a cena atual (você deve configurar a cena no Unity).
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

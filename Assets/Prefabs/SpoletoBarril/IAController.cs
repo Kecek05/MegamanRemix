@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IAController : MonoBehaviour
+public class IAController : MonoBehaviour , IDamageable
 {
     public GameObject player; // Referência ao jogador.
     public GameObject barrelPrefab; // Prefab do barril a ser lançado.
     public float throwForce = 10.0f; // Força do lançamento do barril.
-    public float movementSpeed = 3.0f; // Velocidade de movimento da IA.
-    public float stoppingDistance = 2.0f; // Distância para parar ao chegar perto do jogador.
+    public float throwingInterval = 3.0f; // Intervalo de tempo entre os lançamentos.                                              
 
     private Transform throwPoint;
     private bool canThrow = true;
@@ -16,36 +15,38 @@ public class IAController : MonoBehaviour
     void Start()
     {
         throwPoint = transform.Find("ThrowPoint"); // Ponto de onde o barril será lançado.
+        StartCoroutine(ThrowBarrelsContinuously());
+    }
+
+    public void Damage(float damageAmount)
+    {
+       // Hit();
+
     }
 
     void Update()
     {
-        if (player == null)
-            return;
+        // A IA não se move mais em direção ao jogador.
+        // O código de movimentação foi removido aqui.
+    }
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-
-        // Movimenta a IA em direção ao jogador apenas se a distância for maior que a distância de parada.
-        if (distanceToPlayer > stoppingDistance)
+    IEnumerator ThrowBarrelsContinuously()
+    {
+        while (true)
         {
-            // Movimenta a IA em direção ao jogador.
-            Vector2 moveDirection = (player.transform.position - transform.position).normalized;
-            transform.Translate(moveDirection * movementSpeed * Time.deltaTime);
-        }
+            if (player == null || barrelPrefab == null || throwPoint == null)
+                yield break;
 
-        // Verifica se o jogador está dentro do alcance de visão da IA.
-        if (distanceToPlayer <= stoppingDistance && canThrow)
-        {
             // Lança o barril na direção do jogador.
             ThrowBarrelAtPlayer();
+
+            // Espera pelo intervalo antes de lançar o próximo barril.
+            yield return new WaitForSeconds(throwingInterval);
         }
     }
 
     void ThrowBarrelAtPlayer()
     {
-        if (barrelPrefab == null || throwPoint == null)
-            return;
-
         GameObject barrel = Instantiate(barrelPrefab, throwPoint.position, Quaternion.identity);
         Rigidbody2D barrelRigidbody = barrel.GetComponent<Rigidbody2D>();
 
@@ -56,17 +57,6 @@ public class IAController : MonoBehaviour
 
             // Aplica a força para lançar o barril na direção do jogador.
             barrelRigidbody.AddForce(direction * throwForce, ForceMode2D.Impulse);
-
-            // Impede que a IA jogue barris continuamente em curtos intervalos.
-            canThrow = false;
-            StartCoroutine(ResetThrowCooldown());
         }
-    }
-
-    IEnumerator ResetThrowCooldown()
-    {
-        // Após 1 segundo, permite que a IA jogue barris novamente.
-        yield return new WaitForSeconds(1.0f);
-        canThrow = true;
     }
 }
