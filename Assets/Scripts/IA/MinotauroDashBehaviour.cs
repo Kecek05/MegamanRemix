@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
 {
-
+    
     public int lives = 3;
     private bool morreu = false;
+
+
     //Animacao
     private Animator anim;
     private string currentState;
@@ -14,13 +16,15 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
     const string MINOTAURO_PREPARING = "Minotauro_Preparing";
     const string MINOTAURO_DASH = "Minotauro_Dash";
     const string MINOTAURO_DEATH = "Minotauro_Death";
+
+    public float dashSpeed;
+    public float duracaoPreparing;
     private bool isAttacking = false;
     [SerializeField] private float attackDelay = 0.3f;
 
     [SerializeField] Transform player;
     [SerializeField] float agroRangeX;
     [SerializeField] float agroRangeY;
-    [SerializeField] float attackRange;
 
     [SerializeField] float moveSpeed;
 
@@ -74,23 +78,16 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
             float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
             float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
 
-            //if (distToPlayerX <= attackRange && distToPlayerY <= attackRange)
-            //{
-            //    //distance to attack is true
-
-            //    AttackPlayer();
-
-            //}
-            //else if (distToPlayerX < agroRangeX && distToPlayerY < agroRangeY)
-            //{
-            //    //chase player
-            //    ChasePlayer();
-            //}
-            //else
-            //{
-            //    //dont chase
-            //    StopChasing();
-            //}
+            if (distToPlayerX < agroRangeX && distToPlayerY < agroRangeY)
+            {
+                //chase player
+                AttackPlayer();
+            }
+            else
+            {
+                //dont chase
+                StopChasing();
+            }
 
         }
 
@@ -98,10 +95,86 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
 
 
 
+    //void ChasePlayer()
+    //{
+
+    //    if (transform.position.x < player.position.x && isAttacking == false)
+    //    {
+    //        //enemy is to the left side of the player, so move right
+
+    //        rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+    //        transform.localScale = new Vector2(-1, 1);
+    //    }
+    //    else if (transform.position.x > player.position.x && isAttacking == false)
+    //    {
+    //        // move left, right side
+
+    //        rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
+    //        transform.localScale = new Vector2(1, 1);
+    //    }
+
+
+    //    //if (lives > 0 && isAttacking == false)
+    //    //    ChangeAnimationState(MINOTAURO_WALK);
+    //}
+
+    void StopChasing()
+    {
+        //new Vector2(0, 0); bug na gravidade
+        if (lives > 0 && !isAttacking)
+            ChangeAnimationState(MINOTAURO_IDLE);
+    }
+
+    void AttackPlayer()
+    {
+        if (transform.position.x < player.position.x)
+        {
+            transform.localScale = new Vector2(1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector2(-1, 1);
+        }
+        if (lives > 0)
+        {
+            Vector2 directionToPlayer = player.transform.position - transform.position;
+            
+            if (!isAttacking)
+            {
+                isAttacking = true;
+
+                if (!attackSound.isPlaying)
+                {
+                    attackSound.Play();
+                }
+                StartCoroutine(Attack(directionToPlayer.normalized));
+
+            }
+
+
+        }
 
 
 
+    }
 
+
+
+    private IEnumerator Attack(Vector2 dashDirection)
+    {
+
+        // preparar ataque
+        ChangeAnimationState(MINOTAURO_PREPARING);
+
+        yield return new WaitForSeconds(duracaoPreparing);
+        // atacar
+        ChangeAnimationState(MINOTAURO_DASH);
+        rb2d.velocity = dashDirection * dashSpeed;
+        //retornar
+        yield return new WaitForSeconds(attackDelay);
+        ChangeAnimationState(MINOTAURO_IDLE);
+        isAttacking = false;
+    }
 
     private void OnParticleCollision(GameObject other)
     {

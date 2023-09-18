@@ -22418,9 +22418,9 @@ GameObject:
   - component: {fileID: 2042041888}
   - component: {fileID: 2042041896}
   - component: {fileID: 2042041897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MinotauroDash
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22634,7 +22634,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6875, y: 2.625}
+    oldSize: {x: 2, y: 2.25}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -22786,6 +22786,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c8a40ce91a9ca4fac12c68312c7c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 3
+  dashSpeed: 5
+  duracaoPreparing: 3
+  attackDelay: 3
+  player: {fileID: 2009794723}
+  agroRangeX: 10
+  agroRangeY: 10
+  moveSpeed: 2
+  DeathPlat: {fileID: 6518187996132675351, guid: 160dd2135b6850e47b6d79bb3045ae38,
+    type: 3}
+  hitSound: {fileID: 2042041889}
+  attackSound: {fileID: 2042041888}
+  layerToIgnore: player
+  duracaoPiscada: 0.3
 --- !u!4 &2056547999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3113647758693765281, guid: 85af8f82812bbad4194dbacf9a0a8dcc,
