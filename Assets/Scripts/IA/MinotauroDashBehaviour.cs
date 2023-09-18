@@ -127,17 +127,10 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
 
     void AttackPlayer()
     {
-        if (transform.position.x < player.position.x)
-        {
-            transform.localScale = new Vector2(1, 1);
-        }
-        else
-        {
-            transform.localScale = new Vector2(-1, 1);
-        }
+        
         if (lives > 0)
         {
-            Vector2 directionToPlayer = player.transform.position - transform.position;
+            
             
             if (!isAttacking)
             {
@@ -147,7 +140,8 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
                 {
                     attackSound.Play();
                 }
-                StartCoroutine(Attack(directionToPlayer.normalized));
+                
+                StartCoroutine(Attack());
 
             }
 
@@ -160,20 +154,30 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
 
 
 
-    private IEnumerator Attack(Vector2 dashDirection)
+    private IEnumerator Attack()
     {
-
+        if (!morreu) { 
         // preparar ataque
         ChangeAnimationState(MINOTAURO_PREPARING);
-
+        Vector2 directionToPlayer = player.transform.position - transform.position;
+        directionToPlayer.y = 0;
+        if (transform.position.x < player.position.x)
+        {
+            transform.localScale = new Vector2(1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector2(-1, 1);
+        }
         yield return new WaitForSeconds(duracaoPreparing);
         // atacar
         ChangeAnimationState(MINOTAURO_DASH);
-        rb2d.velocity = dashDirection * dashSpeed;
+        rb2d.velocity = directionToPlayer.normalized * dashSpeed;
         //retornar
         yield return new WaitForSeconds(attackDelay);
         ChangeAnimationState(MINOTAURO_IDLE);
         isAttacking = false;
+        }
     }
 
     private void OnParticleCollision(GameObject other)
