@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BarrilBehaviour : MonoBehaviour, IDamageable
 {
-    public float rollingSpeed = 5.0f; // Velocidade de rotação do barril.
     public float moveSpeed = 2.0f; // Velocidade de movimento do barril.
     private GameObject player;
     //private bool isRolling = false;
