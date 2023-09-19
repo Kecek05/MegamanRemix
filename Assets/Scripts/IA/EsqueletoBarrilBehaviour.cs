@@ -97,13 +97,24 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
     }
 
     void AttackPlayer()
-    {
-        if (!isAttacking)
+    {if (!morreu)
         {
-            ChangeAnimationState(ESQUELETO_ATTACK);
-            float animDelay = anim.GetCurrentAnimatorStateInfo(0).length - 0.2f;
-            Invoke("ThrowBarrelAtPlayer", animDelay);
-            isAttacking = true;
+
+            if (transform.position.x < player.transform.position.x)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            if (!isAttacking)
+            {
+                ChangeAnimationState(ESQUELETO_ATTACK);
+                float animDelay = anim.GetCurrentAnimatorStateInfo(0).length - 0.2f;
+                Invoke("ThrowBarrelAtPlayer", animDelay);
+                isAttacking = true;
+            }
         }
     }
     void StopChasing()
