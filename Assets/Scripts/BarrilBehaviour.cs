@@ -18,6 +18,7 @@ public class BarrilBehaviour : MonoBehaviour, IDamageable
         {
             Debug.LogError("O barril precisa ter um componente Rigidbody2D para funcionar corretamente.");
         }
+        //Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Enemy"));
     }
 
     void Update()
@@ -35,7 +36,13 @@ public class BarrilBehaviour : MonoBehaviour, IDamageable
             rb.rotation = angle;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "BarrilLimit")
+        {
+            DestroyThis();
+        }
+    }
     public void SetPlayer(GameObject targetPlayer)
     {
         player = targetPlayer;
@@ -45,7 +52,12 @@ public class BarrilBehaviour : MonoBehaviour, IDamageable
     public void Damage(float damageAmount)
     {
         //hit
+        DestroyThis();
 
+    }
 
+    public void DestroyThis()
+    {
+        Destroy(this.gameObject);
     }
 }

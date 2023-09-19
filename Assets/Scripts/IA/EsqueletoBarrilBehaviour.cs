@@ -11,16 +11,18 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
     private string currentState;
     const string ESQUELETO_IDLE = "Esqueleto_Idle";
     const string ESQUELETO_ATTACK = "Esqueleto_Attack";
-    const string ESQUELETO_DEATH = "Esqueleto_Death";
-    const string ESQUELETO_RELOADING = "Esqueleto_Reloading";
+    const string ESQUELETO_DEATH = "EsqueletoDeath";
+    //const string ESQUELETO_RELOADING = "Esqueleto_Reloading";
 
     public GameObject player; // Referência ao jogador.
     public GameObject barrilPrefab; // Prefab do barril a ser lançado.
     public float throwForce = 10.0f; // Força do lançamento do barril.
     public float throwingInterval = 3.0f; // Intervalo de tempo entre os lançamentos.
 
+
     [SerializeField] float agroRangeX;
     [SerializeField] float agroRangeY;
+    private bool isAttacking = false;
 
     [SerializeField] GameObject DeathPlat;
     Rigidbody2D rb2d;
@@ -36,7 +38,7 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
     private Transform throwPoint;
 
     #pragma warning disable CS0414
-    private bool canThrow = false;
+   // private bool canThrow = false;
     #pragma warning restore CS0414
 
 
@@ -45,7 +47,7 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
         if (currentState == newState) return;
 
         anim.Play(newState);
-
+        print(newState);
         currentState = newState;
     }
 
@@ -53,7 +55,7 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
     void Start()
     {
         throwPoint = transform.Find("ThrowPoint"); // Ponto de onde o barril será lançado.
-        StartCoroutine(ThrowBarrelsContinuously());
+    
 
             spriteRenderer = GetComponent<SpriteRenderer>();
             rb2d = GetComponent<Rigidbody2D>();
@@ -74,40 +76,85 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
 
     void Update()
     {
-     ///
+        if (!morreu)
+        {
+
+            // Lança o barril na direção do jogador.
+            float distToPlayerX = Mathf.Abs(transform.position.x - player.transform.position.x);
+            float distToPlayerY = Mathf.Abs(transform.position.y - player.transform.position.y);
+            if (distToPlayerX <= agroRangeX && distToPlayerY <= agroRangeY)
+            {
+                // pode atacar
+                AttackPlayer();
+                
+            } else
+            {
+                StopChasing();
+            }
+
+            
+        }
+
+
+    }
+
+    void AttackPlayer()
+    {
+        if (!isAttacking)
+        {
+            isAttacking = true;
+            // StartCoroutine(ThrowBarrelsContinuously());
+            ThrowBarrelAtPlayer();
+            print("ataca cara");
+
+        }
+        print(isAttacking);
+        
+    }
+    void StopChasing()
+    {
+        //new Vector2(0, 0); bug na gravidade
+        if (lives > 0)
+            ChangeAnimationState(ESQUELETO_IDLE);
     }
 
     IEnumerator ThrowBarrelsContinuously()
     {
-        while (true)
-        {
-            if (player == null || barrilPrefab == null || throwPoint == null)
-                yield break;
 
-            // Lança o barril na direção do jogador.
-            ThrowBarrelAtPlayer();
-            
-              // Calcula a direção para o jogador.
-            Vector2 directionToPlayer = player.transform.position - transform.position;
+        ThrowBarrelAtPlayer();
 
-            // Espera pelo intervalo antes de lançar o próximo barril.
-            yield return new WaitForSeconds(throwingInterval);
-        }
+        // Calcula a direção para o jogador.
+        // Vector2 directionToPlayer = player.transform.position - transform.position;
+
+        // Espera pelo intervalo antes de lançar o próximo barril.
+        //float animDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+        //print(animDelay);
+        //yield return new WaitForSeconds(animDelay);
+        //ChangeAnimationState(ESQUELETO_IDLE);
+        yield return new WaitForSeconds(throwingInterval);
+        isAttacking = false;
+        yield break;
+
+    }
+
+    void AttackComplete()
+    {
+        isAttacking = false;
     }
 
     void ThrowBarrelAtPlayer()
     {
-        GameObject barril = Instantiate(barrilPrefab, throwPoint.position, Quaternion.identity);
-        Rigidbody2D barrilRigidbody = barril.GetComponent<Rigidbody2D>();
+        ChangeAnimationState(ESQUELETO_ATTACK);
+        Rigidbody2D barrilRigidbody = barrilPrefab.GetComponent<Rigidbody2D>();
+        Instantiate(barrilPrefab, throwPoint.position, throwPoint.rotation);
 
-        if (barrilRigidbody!= null)
-        {
             // Calcula a direção para o jogador.
             Vector2 direction = (player.transform.position - throwPoint.position).normalized;
 
             // Aplica a força para lançar o barril na direção do jogador.
             barrilRigidbody.AddForce(direction * throwForce, ForceMode2D.Impulse);
-        }
+        Invoke("AttackComplete", throwingInterval);
+        print(isAttacking);
     }
 
     private void OnParticleCollision(GameObject other)
