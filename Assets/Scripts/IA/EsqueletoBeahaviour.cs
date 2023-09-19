@@ -66,6 +66,7 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("portal"));
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("grave"));
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("graveJUMP"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("graveBat"));
     }
 
 
@@ -96,10 +97,6 @@ public class EsqueletoBeahaviour : MonoBehaviour, IDamageable
                 StopChasing();
             }
        
-        } else
-        {
-            
-
         }
         
     }

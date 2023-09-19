@@ -2,25 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBeahaviour : MonoBehaviour, IDamageable
+public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
 {
-
-    public int lives = 4;
+    
+    public int lives = 3;
     private bool morreu = false;
+
+
     //Animacao
     private Animator anim;
     private string currentState;
-    const string MINOTAURO_IDLE = "EsqueletoIdle";
-    const string MINOTAURO_WALK = "EsqueletoWalk";
-    const string MINOTAURO_ATTACK = "Minotauro_Att";
-    const string MINOTAURO_DEATH = "EsqueletoDeath";
+    const string MINOTAURO_IDLE = "Minotauro_Idle";
+    const string MINOTAURO_PREPARING = "Minotauro_Preparing";
+    const string MINOTAURO_DASH = "Minotauro_Dash";
+    const string MINOTAURO_DEATH = "Minotauro_Death";
+
+    public float dashSpeed;
+    public float duracaoPreparing;
     private bool isAttacking = false;
     [SerializeField] private float attackDelay = 0.3f;
 
     [SerializeField] Transform player;
     [SerializeField] float agroRangeX;
     [SerializeField] float agroRangeY;
-    [SerializeField] float attackRange;
 
     [SerializeField] float moveSpeed;
 
@@ -30,18 +34,13 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource attackSound;
 
-    //Tiro
-    [SerializeField] public GameObject EsqueletoTiroPrefab;
-    [SerializeField] public Transform EsqueletoTiroSpawn;
-    public float bulletSpeed;
+    //Retirar colisao com o player quando o inimigo morre
+    public string layerToIgnore = "player";
 
 
     // Hit Feedback
     public float duracaoPiscada;
     private SpriteRenderer spriteRenderer;
-
-    //Retirar colisao com o player quando o inimigo morre
-    public string layerToIgnore = "player";
 
     void ChangeAnimationState(string newState)
     {
@@ -51,15 +50,10 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
 
         currentState = newState;
     }
+
     public void Damage(float damageAmount)
     {
-       // Hit();
-
-    }
-
-    void AttackComplete()
-    {
-        isAttacking = false;
+        //hit
     }
 
     void Start()
@@ -74,113 +68,100 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("graveBat"));
     }
 
-
     void Update()
     {
 
-        if (!morreu) {
+        if (!morreu)
+        {
             //distance to player
             //float distToPlayer = Vector2.Distance(transform.position, player.position);
             float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
             float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
 
-            if (distToPlayerX <= attackRange && distToPlayerY <= attackRange)
-            {
-                //distance to attack is true
-                
-                AttackPlayer();
-
-            }
-            else if (distToPlayerX < agroRangeX && distToPlayerY < agroRangeY)
+            if (distToPlayerX < agroRangeX && distToPlayerY < agroRangeY)
             {
                 //chase player
-                ChasePlayer();
+                AttackPlayer();
             }
             else
             {
                 //dont chase
                 StopChasing();
             }
-       
-        } else
-        {
-            
 
         }
-        
+
     }
 
-     void ChasePlayer()
-    {
-        
-            if (transform.position.x < player.position.x &&  isAttacking == false)
-            {
-                //enemy is to the left side of the player, so move right
 
-                rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
-                transform.localScale = new Vector2(-1, 1);
-            }
-            else if (transform.position.x > player.position.x && isAttacking == false)
-            {
-                // move left, right side
 
-                rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
-                transform.localScale = new Vector2(1, 1);
-            }
-       
-        
-        if(lives >0 && isAttacking == false)
-            ChangeAnimationState(MINOTAURO_WALK);
-    }
 
     void StopChasing()
     {
         //new Vector2(0, 0); bug na gravidade
-        if (lives >0)
+        if (lives > 0 && !isAttacking)
             ChangeAnimationState(MINOTAURO_IDLE);
     }
 
     void AttackPlayer()
     {
-        if (transform.position.x < player.position.x)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        } else
-        {
-            //transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
+        
         if (lives > 0)
         {
-            if(!isAttacking)
+            
+            
+            if (!isAttacking)
             {
                 isAttacking = true;
-                
+
                 if (!attackSound.isPlaying)
                 {
                     attackSound.Play();
                 }
-                Shoot();
                 
+                StartCoroutine(Attack());
+
             }
-            
-            
+
+
         }
-            
-       
+
+
 
     }
 
-    public void Shoot()
+
+
+    private IEnumerator Attack()
     {
-        Instantiate(EsqueletoTiroPrefab, EsqueletoTiroSpawn.position, EsqueletoTiroSpawn.rotation);
-        Invoke("AttackComplete", attackDelay);
-
-
+        if (!morreu) { 
+        // preparar ataque
+        ChangeAnimationState(MINOTAURO_PREPARING);
+        Vector2 directionToPlayer = player.transform.position - transform.position;
+        directionToPlayer.y = 0;
+        if (transform.position.x < player.position.x)
+        {
+            transform.localScale = new Vector2(1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector2(-1, 1);
+        }
+        yield return new WaitForSeconds(duracaoPreparing);
+        // atacar
+        ChangeAnimationState(MINOTAURO_DASH);
+        rb2d.velocity = directionToPlayer.normalized * dashSpeed;
+        //retornar
+        yield return new WaitForSeconds(attackDelay);
+        ChangeAnimationState(MINOTAURO_IDLE);
+        isAttacking = false;
+        }
     }
 
     private void OnParticleCollision(GameObject other)
     {
         lives--;
+
         if (!hitSound.isPlaying)
         {
             hitSound.Play();
@@ -188,29 +169,28 @@ public class EnemyBeahaviour : MonoBehaviour, IDamageable
         StartCoroutine(HitFeedback());
         if (lives <= 0)
         {
-            
+
             morreu = true;
 
             ChangeAnimationState(MINOTAURO_DEATH);
             Morreu();
-            
-            
+
+
         }
 
-        
+
     }
 
-    void Morreu ()
+    void Morreu()
     {
 
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
         this.GetComponent<PolygonCollider2D>().enabled = false;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-        Destroy(gameObject,1f);
+        Destroy(gameObject, 1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);
-        
-    }
 
+    }
     private IEnumerator HitFeedback()
     {
         // Reduz a transparência

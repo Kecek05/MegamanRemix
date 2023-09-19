@@ -89,7 +89,7 @@ public class PlayerMain : MonoBehaviour
         {
 
 
-            //damageable.Damage(1);
+            damageable.Damage(1);
             Morri();
             
         }
