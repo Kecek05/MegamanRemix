@@ -38,7 +38,7 @@ public class SpikeBlinkBehaviour : MonoBehaviour, IDamageable
     }
     public void Damage(float damageAmount)
     {
-        Hit();
+        //Hit();
 
     }
 

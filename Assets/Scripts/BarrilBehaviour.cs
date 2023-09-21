@@ -33,6 +33,7 @@ public class BarrilBehaviour : MonoBehaviour, IDamageable
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             rb.rotation = angle;
         }
+        Invoke("DestroyThis", 10f);
     }
 
     void Update()

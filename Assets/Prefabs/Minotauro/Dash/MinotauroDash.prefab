@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3890175162706958793}
   - component: {fileID: 3890175162706958792}
   - component: {fileID: 3890175162706958794}
-  - component: {fileID: 3890175162706958797}
   - component: {fileID: 3890175162706958799}
   - component: {fileID: 3890175162706958798}
   - component: {fileID: 3890175162706958790}
   - component: {fileID: 3890175162706958791}
+  - component: {fileID: 3890175164440449008}
   m_Layer: 9
   m_Name: MinotauroDash
   m_TagString: Enemy
@@ -111,55 +111,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &3890175162706958797
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890175162706958832}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8125, y: 2.34375}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.90625, y: -1.125}
-      - {x: 0.875, y: -0.90625}
-      - {x: 0.71875, y: -0.3125}
-      - {x: 0.9375, y: -0.125}
-      - {x: 1, y: -0.0625}
-      - {x: 1, y: 0.28125}
-      - {x: 0.96875, y: 0.4375}
-      - {x: 0.94588184, y: 0.45548534}
-      - {x: 0.8701172, y: 0.6410737}
-      - {x: 0.8563242, y: 0.64526486}
-      - {x: 0.82682323, y: 0.67041194}
-      - {x: 0.3725586, y: 0.7840589}
-      - {x: -0.06945801, y: 0.60698605}
-      - {x: -0.34211063, y: 0.4050231}
-      - {x: -0.34375, y: -0.1875}
-      - {x: -0.625, y: -0.59375}
-      - {x: -0.84375, y: -0.59375}
-      - {x: -1, y: -0.78125}
-      - {x: -1, y: -1.0625}
-      - {x: -0.96875, y: -1.125}
-      - {x: -0.3125, y: -1.125}
-      - {x: -0.21875, y: -1.0625}
-      - {x: 0.125, y: -0.59375}
-      - {x: 0.40625, y: -1.125}
 --- !u!82 &3890175162706958799
 AudioSource:
   m_ObjectHideFlags: 0
@@ -398,3 +349,29 @@ MonoBehaviour:
   DashSound: {fileID: 3890175162706958798}
   layerToIgnore: player
   duracaoPiscada: 0.3
+--- !u!61 &3890175164440449008
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890175162706958832}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.187935, y: -0.07228267}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8125, y: 2.34375}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2438762, y: 2.064257}
+  m_EdgeRadius: 0

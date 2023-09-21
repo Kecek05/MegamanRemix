@@ -69,6 +69,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
+
         healthBar.SetMaxHealth(lives);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
