@@ -39,8 +39,11 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     [SerializeField] GameObject DeathPlat;
     Rigidbody2D rb2d;
 
-   // [SerializeField] private AudioSource hitSound;
-   // [SerializeField] private AudioSource attackSound;
+
+    //AUDIO
+    [SerializeField] private AudioSource FireSound;
+    [SerializeField] private AudioSource DashSound;
+    [SerializeField] private AudioSource DeathSound;
 
     //Retirar colisao com o player quando o inimigo morre
     public string layerToIgnore = "player";
@@ -130,6 +133,9 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
             
 
 
+        } else
+        {
+            ChangeAnimationState(MINOTAURO_DEATH);
         }
 
     }
@@ -139,6 +145,10 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
         print("DashAttack");
         if (!morreu)
         {
+            if (!DashSound.isPlaying)
+            {
+                DashSound.Play();
+            }
             // preparar ataque
             ChangeAnimationState(MINOTAURO_PREPARING);
             Vector2 directionToPlayer = player.transform.position - transform.position;
@@ -175,38 +185,44 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
     private void Walk()
     {
-        print("doWalk");
-        float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
-        float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
+        if(!morreu) { 
+            print("doWalk");
+            float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
+            float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
 
-        if (distToPlayerX < attackRangeX && distToPlayerY < attackRangeY)
-        {
-            doWalk = false;
-            Invoke("DoFire", 1.5f);
-        } else
-        {
-            print("walking");
-            if (transform.position.x < player.position.x)
+            if (distToPlayerX < attackRangeX && distToPlayerY < attackRangeY)
             {
+                doWalk = false;
+                Invoke("DoFire", 1.5f);
+            } else
+            {
+                print("walking");
+                if (transform.position.x < player.position.x)
+                {
               
 
-                rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
-                transform.localScale = new Vector2(1, 1);
-            }
-            else if (transform.position.x > player.position.x )
-            {
+                    rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+                    transform.localScale = new Vector2(1, 1);
+                }
+                else if (transform.position.x > player.position.x )
+                {
 
-                rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
-                transform.localScale = new Vector2(-1, 1);
-            }
+                    rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
+                    transform.localScale = new Vector2(-1, 1);
+                }
 
-            if (lives > 0 && isAttacking == false)
-                ChangeAnimationState(MINOTAURO_WALK);
+                if (lives > 0 && isAttacking == false)
+                    ChangeAnimationState(MINOTAURO_WALK);
+            }
         }
     }
     private IEnumerator FireAttack()
     {
-        if (!morreu) { 
+        if (!morreu) {
+            if (!FireSound.isPlaying)
+            {
+                FireSound.Play();
+            }
             print("FireAttack");
 
             ChangeAnimationState(MINOTAURO_FOGO);
@@ -243,35 +259,6 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     }
 
 
-
-
-    private IEnumerator Attack()
-    {
-        if (!morreu)
-        {
-            // preparar ataque
-            ChangeAnimationState(MINOTAURO_PREPARING);
-            Vector2 directionToPlayer = player.transform.position - transform.position;
-            directionToPlayer.y = 0;
-            if (transform.position.x < player.position.x)
-            {
-                transform.localScale = new Vector2(1, 1);
-            }
-            else
-            {
-                transform.localScale = new Vector2(-1, 1);
-            }
-            yield return new WaitForSeconds(duracaoPreparing);
-            // atacar
-            ChangeAnimationState(MINOTAURO_DASH);
-            rb2d.velocity = directionToPlayer.normalized * dashSpeed;
-            //retornar
-            yield return new WaitForSeconds(attackDelay);
-            ChangeAnimationState(MINOTAURO_IDLE);
-            isAttacking = false;
-        }
-    }
-
     private void OnParticleCollision(GameObject other)
     {
         lives--;
@@ -294,8 +281,12 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     void Morreu()
     {
         healthBar.HealthToggle(false);
+        if (!DeathSound.isPlaying)
+        {
+            DeathSound.Play();
+        }
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
-        this.GetComponent<PolygonCollider2D>().enabled = false;
+        this.GetComponent<BoxCollider2D>().enabled = false;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
         Destroy(gameObject, 1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);

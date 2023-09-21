@@ -32,7 +32,7 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
     Rigidbody2D rb2d;
 
     [SerializeField] private AudioSource hitSound;
-    [SerializeField] private AudioSource attackSound;
+    [SerializeField] private AudioSource DashSound;
 
     //Retirar colisao com o player quando o inimigo morre
     public string layerToIgnore = "player";
@@ -114,9 +114,9 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
             {
                 isAttacking = true;
 
-                if (!attackSound.isPlaying)
+                if (!DashSound.isPlaying)
                 {
-                    attackSound.Play();
+                    DashSound.Play();
                 }
                 
                 StartCoroutine(Attack());

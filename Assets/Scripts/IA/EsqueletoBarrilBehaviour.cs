@@ -132,7 +132,10 @@ public class EsqueletoBarrilBehaviour : MonoBehaviour, IDamageable
 
     void ThrowBarrelAtPlayer()
     {
-       
+        if (!attackSound.isPlaying)
+        {
+            attackSound.Play();
+        }
         Instantiate(barrilPrefab, throwPoint.position, throwPoint.rotation);
 
         ChangeAnimationState(ESQUELETO_RELOADING);
