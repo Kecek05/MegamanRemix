@@ -8,6 +8,8 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     private bool morreu = false;
     private bool doDash = true, doFire = false, startBattle = false;
 
+
+    [SerializeField] public GameObject Fire;
     private Transform throwPoint;
     public GameObject FirePrefab;
     //Animacao
@@ -23,6 +25,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     public float duracaoPreparing;
     private bool isAttacking = false;
     [SerializeField] private float attackDelay = 0.3f;
+    [SerializeField] private float delayBetweenAtt;
 
     [SerializeField] Transform player;
     [SerializeField] float agroRangeX;
@@ -140,8 +143,12 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
             ChangeAnimationState(MINOTAURO_DASH);
             rb2d.velocity = directionToPlayer.normalized * dashSpeed;
             //retornar
-            yield return new WaitForSeconds(attackDelay);
+
+            float animDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+            yield return new WaitForSeconds(animDelay);
             ChangeAnimationState(MINOTAURO_IDLE);
+            yield return new WaitForSeconds(delayBetweenAtt - animDelay);
+           
             isAttacking = false;
             doDash = false;
             doFire = true;
@@ -152,7 +159,19 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     {
         print("FireAttack");
 
-        Instantiate(FirePrefab, throwPoint.position, throwPoint.rotation);
+        ChangeAnimationState(MINOTAURO_FOGO);
+        float animDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+        if (transform.position.x < player.position.x)
+        {
+            transform.localScale = new Vector2(1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector2(-1, 1);
+        }
+        yield return new WaitForSeconds(animDelay);
+        //Instantiate(FirePrefab, throwPoint.position, throwPoint.rotation);
+        Fire.SetActive(true);
         //if (!morreu)
         //{
         //    // preparar ataque
@@ -173,10 +192,11 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
         //    rb2d.velocity = directionToPlayer.normalized * dashSpeed;
         //    //retornar
             yield return new WaitForSeconds(attackDelay);
-        //    ChangeAnimationState(MINOTAURO_IDLE);
-        //    isAttacking = false;
-        //    doFire = false;
-        //    doDash = true;
+            Fire.SetActive(false);
+            ChangeAnimationState(MINOTAURO_IDLE);
+            isAttacking = false;
+            doFire = false;
+            doDash = true;
         //}
     }
 
