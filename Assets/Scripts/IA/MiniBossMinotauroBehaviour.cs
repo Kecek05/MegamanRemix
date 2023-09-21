@@ -6,11 +6,10 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 {
     public int lives = 3;
     private bool morreu = false;
-    private bool doDash = true, doFire = false, startBattle = false;
+    private bool doDash = true, doFire = false, startBattle = false, doWalk = false;
 
 
     [SerializeField] public GameObject Fire;
-    public GameObject FirePrefab;
     //Animacao
     private Animator anim;
     private string currentState;
@@ -19,6 +18,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     const string MINOTAURO_DASH = "MinoBoss_Dash";
     const string MINOTAURO_DEATH = "MinoBoss_Death";
     const string MINOTAURO_FOGO = "MinoBoss_Fogo";
+    const string MINOTAURO_WALK = "Minotauro_Walk";
 
     public float dashSpeed;
     public float duracaoPreparing;
@@ -29,6 +29,9 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     [SerializeField] Transform player;
     [SerializeField] float agroRangeX;
     [SerializeField] float agroRangeY;
+
+    [SerializeField] float attackRangeX;
+    [SerializeField] float attackRangeY;
 
     [SerializeField] float moveSpeed;
 
@@ -62,7 +65,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
-        ChangeAnimationState(MINOTAURO_IDLE);
+       
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -87,33 +90,42 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
             {
                 //comeca luta
                 startBattle = true;
-                //chase player
-                //AttackPlayer();
             }
             else
             {
-                //dont chase
-                //StopChasing();
+                if(!startBattle)
+                StopChasing();
             }
 
             if (startBattle)
             {
                 if (doDash)
+                {
                     if (!isAttacking)
                     {
                         print("tryDash");
                         isAttacking = true;
                         StartCoroutine(DashAttack());
                     }
-                    else if (doFire)
-                        print("doFire");
+                }
+                else if (doWalk)
+                {
+                    Walk();
+                }
+                else if (doFire)
+                {
+                    print("doFire");
+
+
                     if (!isAttacking)
                     {
-                       print("tryFire");
-                       isAttacking = true;
-                       StartCoroutine(FireAttack());
+                        print("tryFire");
+                        isAttacking = true;
+                        StartCoroutine(FireAttack());
                     }
+                }
             }
+            
 
 
         }
@@ -150,53 +162,73 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
            
             isAttacking = false;
             doDash = false;
-            doFire = true;
+            doWalk = true;
+            doFire = false;
         }
     }
+    private void DoFire()
+    {
+        doFire = true;
+    }
 
+    private void Walk()
+    {
+        print("doWalk");
+        float distToPlayerX = Mathf.Abs(transform.position.x - player.position.x);
+        float distToPlayerY = Mathf.Abs(transform.position.y - player.position.y);
+
+        if (distToPlayerX < attackRangeX && distToPlayerY < attackRangeY)
+        {
+            doWalk = false;
+            Invoke("DoFire", 1.5f);
+        } else
+        {
+            print("walking");
+            if (transform.position.x < player.position.x)
+            {
+              
+
+                rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
+                transform.localScale = new Vector2(1, 1);
+            }
+            else if (transform.position.x > player.position.x )
+            {
+
+                rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
+                transform.localScale = new Vector2(-1, 1);
+            }
+
+            if (lives > 0 && isAttacking == false)
+                ChangeAnimationState(MINOTAURO_WALK);
+        }
+    }
     private IEnumerator FireAttack()
     {
-        print("FireAttack");
+        if (!morreu) { 
+            print("FireAttack");
 
-        ChangeAnimationState(MINOTAURO_FOGO);
-        float animDelay = anim.GetCurrentAnimatorStateInfo(0).length;
-        if (transform.position.x < player.position.x)
-        {
-            transform.localScale = new Vector2(1, 1);
+            ChangeAnimationState(MINOTAURO_FOGO);
+            float animDelay = anim.GetCurrentAnimatorStateInfo(0).length;
+            if (transform.position.x < player.position.x)
+            {
+                transform.localScale = new Vector2(1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector2(-1, 1);
+            }
+            Fire.SetActive(true);
+            yield return new WaitForSeconds(animDelay -0.2f);
+
+
+
+                yield return new WaitForSeconds(attackDelay);
+                Fire.SetActive(false);
+                ChangeAnimationState(MINOTAURO_IDLE);
+                isAttacking = false;
+                doFire = false;
+                doDash = true;
         }
-        else
-        {
-            transform.localScale = new Vector2(-1, 1);
-        }
-        yield return new WaitForSeconds(animDelay);
-        //Instantiate(FirePrefab, throwPoint.position, throwPoint.rotation);
-        Fire.SetActive(true);
-        //if (!morreu)
-        //{
-        //    // preparar ataque
-        //    ChangeAnimationState(MINOTAURO_PREPARING);
-        //    Vector2 directionToPlayer = player.transform.position - transform.position;
-        //    directionToPlayer.y = 0;
-        //    if (transform.position.x < player.position.x)
-        //    {
-        //        transform.localScale = new Vector2(1, 1);
-        //    }
-        //    else
-        //    {
-        //        transform.localScale = new Vector2(-1, 1);
-        //    }
-        //    yield return new WaitForSeconds(duracaoPreparing);
-        //    // atacar
-        //    ChangeAnimationState(MINOTAURO_DASH);
-        //    rb2d.velocity = directionToPlayer.normalized * dashSpeed;
-        //    //retornar
-            yield return new WaitForSeconds(attackDelay);
-            Fire.SetActive(false);
-            ChangeAnimationState(MINOTAURO_IDLE);
-            isAttacking = false;
-            doFire = false;
-            doDash = true;
-        //}
     }
 
 

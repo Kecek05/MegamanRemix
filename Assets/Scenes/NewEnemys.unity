@@ -1353,6 +1353,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &582677949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6911142721213439596, guid: 42275e8f69985294e909231c5d5f74b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 6911142720699296721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &582677957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582677949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10127e6f1e35d2641bbbcee8b7d44408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &596504938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23994,6 +24012,31 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.53125
       objectReference: {fileID: 0}
+    - target: {fileID: 617815374066606539, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.78125
+      objectReference: {fileID: 0}
+    - target: {fileID: 617815374066606539, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142721213439596, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142721213439596, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142721213439596, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6911142722039513297, guid: 42275e8f69985294e909231c5d5f74b4,
         type: 3}
       propertyPath: m_RootOrder
@@ -24054,6 +24097,41 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2009794723}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: attackRangeX
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: attackRangeY
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: delayBetweenAtt
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911142722039513298, guid: 42275e8f69985294e909231c5d5f74b4,
+        type: 3}
+      propertyPath: duracaoPreparing
+      value: 2.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6911142722039513391, guid: 42275e8f69985294e909231c5d5f74b4,
         type: 3}
       propertyPath: m_Name
