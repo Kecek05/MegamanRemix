@@ -10,7 +10,6 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
 
     [SerializeField] public GameObject Fire;
-    private Transform throwPoint;
     public GameObject FirePrefab;
     //Animacao
     private Animator anim;
@@ -63,7 +62,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
-        throwPoint = transform.Find("FirePoint");
+        ChangeAnimationState(MINOTAURO_IDLE);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
