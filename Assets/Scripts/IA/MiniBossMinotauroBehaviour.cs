@@ -8,6 +8,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     private bool morreu = false;
     private bool doDash = true, doFire = false, startBattle = false, doWalk = false;
 
+    public HealthBarScript healthBar;
 
     [SerializeField] public GameObject Fire;
     //Animacao
@@ -65,7 +66,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
-       
+        healthBar.SetMaxHealth(lives);
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -90,6 +91,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
             {
                 //comeca luta
                 startBattle = true;
+                healthBar.HealthToggle(true);
             }
             else
             {
@@ -240,29 +242,6 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
             ChangeAnimationState(MINOTAURO_IDLE);
     }
 
-    void AttackPlayer()
-    {
-
-        if (lives > 0)
-        {
-
-
-            if (!isAttacking)
-            {
-                isAttacking = true;
-
-
-
-                StartCoroutine(Attack());
-
-            }
-
-
-        }
-
-
-
-    }
 
 
 
@@ -296,7 +275,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     private void OnParticleCollision(GameObject other)
     {
         lives--;
-
+        healthBar.SetHealth(lives);
         StartCoroutine(HitFeedback());
         if (lives <= 0)
         {
@@ -314,7 +293,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
 
     void Morreu()
     {
-
+        healthBar.HealthToggle(false);
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
         this.GetComponent<PolygonCollider2D>().enabled = false;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
