@@ -19,7 +19,7 @@ public class MiniBossMinotauroBehaviour : MonoBehaviour, IDamageable
     const string MINOTAURO_DASH = "MinoBoss_Dash";
     const string MINOTAURO_DEATH = "MinoBoss_Death";
     const string MINOTAURO_FOGO = "MinoBoss_Fogo";
-    const string MINOTAURO_WALK = "Minotauro_Walk";
+    const string MINOTAURO_WALK = "MinoBoss_Walk";
 
     public float dashSpeed;
     public float duracaoPreparing;
