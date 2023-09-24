@@ -185,7 +185,7 @@ public class MinotauroDashBehaviour : MonoBehaviour, IDamageable
     {
 
         //Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("player"));
-        this.GetComponent<PolygonCollider2D>().enabled = false;
+        this.GetComponent<BoxCollider2D>().enabled = false;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
         Destroy(gameObject, 1f);
         Instantiate(DeathPlat, transform.position, Quaternion.identity);

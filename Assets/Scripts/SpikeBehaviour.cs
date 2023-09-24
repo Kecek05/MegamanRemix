@@ -98,7 +98,7 @@ public class SpikeBehaviour : MonoBehaviour, IDamageable
 
     public void Damage(float damageAmount)
     {
-        Hit();
+        //Hit();
         
     }
 

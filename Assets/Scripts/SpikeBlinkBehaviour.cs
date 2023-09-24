@@ -38,7 +38,7 @@ public class SpikeBlinkBehaviour : MonoBehaviour, IDamageable
     }
     public void Damage(float damageAmount)
     {
-        Hit();
+        //Hit();
 
     }
 
@@ -50,10 +50,14 @@ public class SpikeBlinkBehaviour : MonoBehaviour, IDamageable
     private IEnumerator Piscar()
     {
         // Reduz a transparência
-        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, transparencia);
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0f);
 
         // Aguarda a duração do piscar
-        yield return new WaitForSeconds(duracaoPiscada);
+        yield return new WaitForSeconds(duracaoPiscada/2);
+
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, transparencia);
+
+        yield return new WaitForSeconds(duracaoPiscada/2);
 
         // Restaura a transparência original do jogador
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);

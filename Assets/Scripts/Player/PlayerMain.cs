@@ -15,7 +15,7 @@ public class PlayerMain : MonoBehaviour
     //Audio
     //public GameObject audioManagerPrefab;
     //private AudioManager audioManager;
-    
+
 
 
     [SerializeField] float moveSpeed;
@@ -261,19 +261,19 @@ public class PlayerMain : MonoBehaviour
 
     private bool isGraveBat()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveBatLayer);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .5f, graveBatLayer);
     }
     private bool isGraveJump()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveJumpLayer);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .5f, graveJumpLayer);
     }
    private bool isChao()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .5f, jumpableGround);
     }
     private bool isGrave()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, graveLayer);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .5f, graveLayer);
     }
 
     private void UpdateAnimation()
